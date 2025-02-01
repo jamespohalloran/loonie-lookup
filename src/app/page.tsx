@@ -10,12 +10,14 @@ export default async function Home(props: {
   const searchParams = await props.searchParams
   const query = searchParams?.query || ''
 
-  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(query.toLowerCase()))
+  const filteredProducts = products.filter(
+    (product) => searchParams?.query && product.name.toLowerCase().includes(query.toLowerCase())
+  )
 
   return (
     <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
       <Hero />
-      <SearchResults products={filteredProducts} />
+      {searchParams?.query && <SearchResults products={filteredProducts} />}
     </div>
   )
 }
