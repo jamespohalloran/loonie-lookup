@@ -8,7 +8,7 @@ export default function Search() {
   const { replace } = useRouter()
 
   function handleSearch(term: string) {
-    const params = new URLSearchParams(searchParams)
+    const params = new URLSearchParams(searchParams || '')
     if (term) {
       params.set('query', term)
     } else {
@@ -29,7 +29,7 @@ export default function Search() {
           onChange={(e) => {
             handleSearch(e.target.value)
           }}
-          defaultValue={searchParams.get('query')?.toString()}
+          defaultValue={searchParams?.get('query')?.toString()}
         />
       </div>
     </div>
