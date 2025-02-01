@@ -14,7 +14,7 @@ export function SearchResults({ products }: { products: any[] }) {
   })
 
   return (
-    <div className="mt-8 grid grid-cols-1 gap-x-8 sm:grid-cols-2">
+    <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
       <div>
         <h3 className="text-base font-semibold text-gray-900">🇨🇦 Made in Canada</h3>
         <div className="rounded-lg border border-gray-200 p-4">
