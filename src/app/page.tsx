@@ -17,7 +17,7 @@ export default async function Home(props: {
   return (
     <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
       <Hero />
-      {searchParams?.query && <SearchResults products={filteredProducts} />}
+      <SearchResults products={filteredProducts} />
     </div>
   )
 }
