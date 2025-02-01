@@ -4,7 +4,6 @@ export function SearchResults({ products }: { products: any[] }) {
   if (!products.length) {
     return <></>
   }
-  console.log(products)
 
   const mappedProducts = products.map((product) => {
     return {
@@ -12,6 +11,8 @@ export function SearchResults({ products }: { products: any[] }) {
       isCanadian: product.percentCanadian >= 50,
     }
   })
+
+  console.log('mappedProducts ' + JSON.stringify(mappedProducts))
 
   return (
     <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
@@ -34,6 +35,7 @@ export function SearchResults({ products }: { products: any[] }) {
 }
 
 function SearchColumn({ products }: { products: any[] }) {
+  console.log(products)
   return (
     <ul role="list" className="divide-y divide-gray-200 bg-white">
       {products.map((product) => (
