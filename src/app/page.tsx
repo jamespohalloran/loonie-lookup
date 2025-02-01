@@ -1,6 +1,6 @@
 import Hero from '@/components/hero'
 import { SearchResults } from '@/components/search-results'
-import { products } from './products'
+import { categories, products } from './products'
 export const runtime = 'edge'
 
 export default async function Home(props: {
@@ -16,10 +16,13 @@ export default async function Home(props: {
     if (!query) return false
     const formattedQuery = query.toLowerCase()
 
+    const category = categories[product.categoryId]
     return (
       product.name.toLowerCase().includes(formattedQuery) ||
       product.company.toLowerCase().includes(formattedQuery) ||
-      product.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery))
+      product.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery)) ||
+      category.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery)) ||
+      category.name.toLowerCase().includes(formattedQuery)
     )
   })
 
