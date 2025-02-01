@@ -1,85 +1,113 @@
+import { babyFormula, babyFormulaCategory } from './products/babyFormula'
+import { bacon, baconCategory } from './products/bacon'
+import { bbqSauce, bbqsauceCategory } from './products/bbqSauce'
+import { beef, beefCategory } from './products/beef'
 import { beer } from './products/beer'
+import { bottledWater, bottledWaterCategory } from './products/bottledWater'
+import { bread, breadCategory } from './products/bread'
 import { butter, butterCategory } from './products/butter'
+import { candy, candyCategory } from './products/candy'
+import { cannedFish, cannedFishCategory } from './products/cannedFish'
+import { cannedSoup, cannedSoupCategory } from './products/cannedSoup'
+import { cannedVegetables, cannedVegetablesCategory } from './products/cannedVegetables'
+import { cereal, cerealCategory } from './products/cereal'
 import { cheese, cheeseCategory } from './products/cheese'
+import { chicken, chickenCategory } from './products/chicken'
 import { chips } from './products/chips'
+import { chocolate, chocolateCategory } from './products/chocolate'
+import { coffee, coffeeCategory } from './products/coffee'
+import { cookingOil, cookingOilCategory } from './products/cookingOil'
+import { crackers, crackersCategory } from './products/crackers'
+import { diapers, diapersCategory } from './products/diapers'
+import { dishSoap, dishSoapCategory } from './products/dishSoap'
+import { eggs, eggsCategory } from './products/eggs'
+import { energyDrinks, energyDrinksCategory } from './products/energyDrinks'
+import { flour, flourCategory } from './products/flour'
+import { frozenMeals, frozenMealsCategory } from './products/frozenMeals'
+import { frozenPizza, frozenPizzaCategory } from './products/frozenPizza'
+import { frozenVegetables, frozenVegetablesCategory } from './products/frozenVegetables'
+import { granolaBars, granolaBarsCategory } from './products/granolaBars'
 import { iceCream } from './products/iceCream'
+import { jam, jamCategory } from './products/jam'
+import { juice, juiceCategory } from './products/juice'
+import { ketchup, ketchupCategory } from './products/ketchup'
+import { detergentCategory, laundryDetergent } from './products/laundryDetergent'
+import { mayoCategory, mayonnaise } from './products/mayonnaise'
 import { milk, milkCategory } from './products/milk'
+import { mustard, mustardCategory } from './products/mustard'
+import { paperTowels, paperTowelsCategory } from './products/paperTowels'
+import { pasta, pastaCategory } from './products/pasta'
+import { peanutButter, peanutButterCategory } from './products/peanutButter'
+import { popcorn, popcornCategory } from './products/popcorn'
+import { pork, porkCategory } from './products/pork'
+import { proteinBars, proteinBarsCategory } from './products/proteinBars'
+import { rice, riceCategory } from './products/rice'
+import { saladDressing, saladDressingCategory } from './products/saladDressing'
+import { sausages, sausagesCategory } from './products/sausages'
+import { shampoo, shampooCategory } from './products/shampoo'
+import { soap, soapCategory } from './products/soap'
 import { soda } from './products/soda'
+import { sugar, sugarCategory } from './products/sugar'
+import { tea, teaCategory } from './products/tea'
+import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
+import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { yogurt, yogurtCategory } from './products/yogurt'
 
 export const products: Product[] = [
-  {
-    name: 'Heinz Ketchup',
-    company: 'Heinz',
-    percentCanadian: 0,
-    notes: 'Made in the USA',
-    categoryId: 'condiments',
-    aliases: ['heinz', 'ketchup'],
-  },
-  {
-    name: 'French’s Ketchup',
-    company: 'French’s',
-    percentCanadian: 100,
-    notes: 'Made with Canadian tomatoes, produced in Canada',
-    categoryId: 'condiments',
-    aliases: ['french’s', 'ketchup'],
-  },
-  {
-    name: 'Old Dutch Chips',
-    company: 'Old Dutch Foods',
-    percentCanadian: 100,
-    notes: 'Made in Canada, locally sourced potatoes',
-    categoryId: 'snacks',
-    aliases: ['old dutch', 'chips'],
-  },
-  {
-    name: 'Kraft Peanut Butter',
-    company: 'Kraft Heinz',
-    percentCanadian: 0,
-    notes: 'Made in the USA, peanuts sourced from the USA',
-    categoryId: 'snacks',
-    aliases: ['kraft', 'peanut butter'],
-  },
-  {
-    name: 'Tim Hortons Coffee',
-    company: 'Tim Hortons',
-    percentCanadian: 100,
-    notes: 'Roasted in Canada, beans sourced from around the world',
-    categoryId: 'beverages',
-    aliases: ['tim hortons', 'coffee'],
-  },
-  {
-    name: 'Smucker’s Jam',
-    company: 'Smucker’s',
-    percentCanadian: 10,
-    notes: 'Made in Canada, but fruit is mostly imported',
-    categoryId: 'snacks',
-    aliases: ['smucker’s', 'jam'],
-  },
-  {
-    name: 'Maple Leaf Bacon',
-    company: 'Maple Leaf Foods',
-    percentCanadian: 80,
-    notes: 'Processed in Canada, some pork sourced from the USA',
-    categoryId: 'meat',
-    aliases: ['maple leaf', 'bacon'],
-  },
-  {
-    name: 'Lays Chips',
-    company: 'PepsiCo (Frito-Lay)',
-    percentCanadian: 75,
-    notes: 'Made in Canada, potatoes sourced locally when possible',
-    categoryId: 'snacks',
-    aliases: ['lays', 'chips'],
-  },
   ...soda,
   ...beer,
   ...chips,
   ...iceCream,
+  ...soap,
   ...milk,
   ...cheese,
   ...yogurt,
   ...butter,
+  ...bread,
+  ...eggs,
+  ...bacon,
+  ...sausages,
+  ...chicken,
+  ...beef,
+  ...pork,
+  ...frozenVegetables,
+  ...frozenPizza,
+  ...frozenMeals,
+  ...crackers,
+  ...popcorn,
+  ...cereal,
+  ...granolaBars,
+  ...pasta,
+  ...rice,
+  ...cannedSoup,
+  ...cannedVegetables,
+  ...cannedFish,
+  ...peanutButter,
+  ...jam,
+  ...ketchup,
+  ...mustard,
+  ...mayonnaise,
+  ...bbqSauce,
+  ...saladDressing,
+  ...cookingOil,
+  ...flour,
+  ...sugar,
+  ...coffee,
+  ...tea,
+  ...bottledWater,
+  ...juice,
+  ...energyDrinks,
+  ...chocolate,
+  ...candy,
+  ...proteinBars,
+  ...babyFormula,
+  ...diapers,
+  ...toiletPaper,
+  ...paperTowels,
+  ...laundryDetergent,
+  ...dishSoap,
+  ...shampoo,
+  ...toothpaste,
 ]
 
 export const categories = {
@@ -87,6 +115,59 @@ export const categories = {
   cheese: cheeseCategory,
   yogurt: yogurtCategory,
   butter: butterCategory,
+  bread: breadCategory,
+  eggs: eggsCategory,
+  bacon: baconCategory,
+  sausages: sausagesCategory,
+  chicken: chickenCategory,
+  beef: beefCategory,
+  pork: porkCategory,
+  frozenVegetables: frozenVegetablesCategory,
+  frozenPizza: frozenPizzaCategory,
+  frozenMeals: frozenMealsCategory,
+  // iceCream: iceCreamCategory,
+  // chips: chipsCategory,
+  crackers: crackersCategory,
+  popcorn: popcornCategory,
+  cereal: cerealCategory,
+  granolaBars: granolaBarsCategory,
+  pasta: pastaCategory,
+  rice: riceCategory,
+  cannedSoup: cannedSoupCategory,
+  cannedVegetables: cannedVegetablesCategory,
+  cannedFish: cannedFishCategory,
+  peanutButter: peanutButterCategory,
+  jam: jamCategory,
+  ketchup: ketchupCategory,
+  mustard: mustardCategory,
+  mayonnaise: mayoCategory,
+  bbqsauce: bbqsauceCategory,
+  saladDressing: saladDressingCategory,
+  cookingOil: cookingOilCategory,
+  flour: flourCategory,
+  sugar: sugarCategory,
+  coffee: coffeeCategory,
+  tea: teaCategory,
+  bottledWater: bottledWaterCategory,
+  juice: juiceCategory,
+  energyDrinks: energyDrinksCategory,
+  chocolate: chocolateCategory,
+  candy: candyCategory,
+  proteinBars: proteinBarsCategory,
+  babyFormula: babyFormulaCategory,
+  diapers: diapersCategory,
+  toiletPaper: toiletPaperCategory,
+  paperTowels: paperTowelsCategory,
+  detergent: detergentCategory,
+  dishSoap: dishSoapCategory,
+  shampoo: shampooCategory,
+  toothpaste: toothpasteCategory,
+  soap: soapCategory,
+  // milk: milkCategory,
+  // cheese: cheeseCategory,
+  // yogurt: yogurtCategory,
+  // butter: butterCategory,
+  // soap: soapCategory,
   chips: {
     name: 'Chips',
     description: 'Potato chips and snack foods',

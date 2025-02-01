@@ -1,0 +1,102 @@
+import { Product } from '../products'
+
+export const candy: Product[] = [
+  {
+    name: 'Maynards',
+    company: 'Mondelez International',
+    percentCanadian: 100,
+    notes:
+      'A Canadian candy brand known for popular products including Fuzzy Peach, Sour Patch Kids and Swedish Berries. Widely available.',
+    categoryId: 'candy',
+    aliases: ['maynards candy'],
+    popularity: 95,
+  },
+  {
+    name: 'Mars',
+    company: 'Mars Incorporated',
+    percentCanadian: 0,
+    notes: 'An American company producing globally known candy bars such as Mars Bar, Snickers, and Twix.',
+    categoryId: 'candy',
+    aliases: ['mars chocolate', 'mars bar'],
+    popularity: 90,
+  },
+  {
+    name: 'Aero',
+    company: 'Nestle Canada Inc.',
+    percentCanadian: 100,
+    notes: 'Produced in Toronto by Nestle Canada and known for its unique bubbly texture.',
+    categoryId: 'candy',
+    aliases: ['aero chocolate', 'nestle aero'],
+    popularity: 85,
+  },
+  {
+    name: 'Caramilk',
+    company: 'Cadbury',
+    percentCanadian: 100,
+    notes: 'A classic Canadian chocolate bar made by Cadburys since the 1960s. Widely available across Canada.',
+    categoryId: 'candy',
+    aliases: ['cadbury caramilk', 'caramilk bar'],
+    popularity: 80,
+  },
+  {
+    name: 'Coffee Crisp',
+    company: 'Nestle Canada Inc.',
+    percentCanadian: 100,
+    notes:
+      'A Canadian chocolate bar that’s been a staple since the 1930s, known for its coffee flavour. Made in Toronto.',
+    categoryId: 'candy',
+    aliases: ['coffee crisp bar', 'nestle coffee crisp'],
+    popularity: 75,
+  },
+  {
+    name: 'Reese Peanut Butter Cups',
+    company: 'The Hershey Company',
+    percentCanadian: 0,
+    notes: 'US-made chocolate filled with peanut butter. Very popular in Canada.',
+    categoryId: 'candy',
+    aliases: ["reese's", 'reese chocolate'],
+    popularity: 80,
+  },
+  {
+    name: 'Kit Kat',
+    company: 'Nestle Canada Inc.',
+    percentCanadian: 100,
+    notes: 'Produced in Toronto, this chocolate-covered wafer bar is a favourite across Canada.',
+    categoryId: 'candy',
+    aliases: ['kit kat bar', 'nestle kit kat'],
+    popularity: 75,
+  },
+  {
+    name: "M&M's",
+    company: 'Mars Incorporated',
+    percentCanadian: 0,
+    notes: 'US-made candy coated chocolates, popular in Canada.',
+    categoryId: 'candy',
+    aliases: ['m&ms chocolate', 'mars m&ms'],
+    popularity: 70,
+  },
+  {
+    name: "Hershey's",
+    company: 'The Hershey Company',
+    percentCanadian: 0,
+    notes: 'American company known for Hershey’s Chocolate Bars and Kisses, popular in Canada.',
+    categoryId: 'candy',
+    aliases: ["hershey's chocolate", "hershey's kisses"],
+    popularity: 65,
+  },
+  {
+    name: 'Twizzlers',
+    company: 'The Hershey Company',
+    percentCanadian: 0,
+    notes: 'Twizzlers, a US-made licorice candy, is widely available in Canada.',
+    categoryId: 'candy',
+    aliases: ['hershey twizzlers', 'twizzlers licorice'],
+    popularity: 60,
+  },
+]
+
+export const candyCategory = {
+  name: 'Candies',
+  description: 'Sweet confectionaries often made with sugar, chocolate, and various flavorings.',
+  aliases: ['sweets', 'candy', 'chocolates'],
+}
