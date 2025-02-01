@@ -1,3 +1,12 @@
+import { beer } from './products/beer'
+import { butter, butterCategory } from './products/butter'
+import { cheese, cheeseCategory } from './products/cheese'
+import { chips } from './products/chips'
+import { iceCream } from './products/iceCream'
+import { milk, milkCategory } from './products/milk'
+import { soda } from './products/soda'
+import { yogurt, yogurtCategory } from './products/yogurt'
+
 export const products: Product[] = [
   {
     name: 'Heinz Ketchup',
@@ -48,14 +57,6 @@ export const products: Product[] = [
     aliases: ['smucker’s', 'jam'],
   },
   {
-    name: 'Chapman’s Ice Cream',
-    company: 'Chapman’s',
-    percentCanadian: 100,
-    notes: 'Made in Canada with Canadian dairy',
-    categoryId: 'frozen',
-    aliases: ['chapman’s', 'ice cream'],
-  },
-  {
     name: 'Maple Leaf Bacon',
     company: 'Maple Leaf Foods',
     percentCanadian: 80,
@@ -71,257 +72,26 @@ export const products: Product[] = [
     categoryId: 'snacks',
     aliases: ['lays', 'chips'],
   },
-  {
-    name: 'Breyers',
-    company: 'Unilever',
-    percentCanadian: 30,
-    notes: 'Manufactured in Canada but owned by Unilever. Some ingredients are imported.',
-    categoryId: 'ice_cream',
-    aliases: ['breyers'],
-  },
-  {
-    name: 'Häagen-Dazs',
-    company: 'Nestlé',
-    percentCanadian: 10,
-    notes: 'Mostly imported from the U.S., though some varieties are produced in Canada.',
-    categoryId: 'ice_cream',
-    aliases: ['haagen dazs'],
-  },
-  {
-    name: "Ben & Jerry's",
-    company: 'Unilever',
-    percentCanadian: 5,
-    notes: 'Imported from the U.S., not manufactured in Canada.',
-    categoryId: 'ice_cream',
-    aliases: ['ben and jerrys', 'ben & jerry'],
-  },
-  {
-    name: "Chapman's",
-    company: "Chapman's",
-    percentCanadian: 100,
-    notes: 'Family-owned Canadian brand, made in Ontario using Canadian dairy.',
-    categoryId: 'ice_cream',
-    aliases: ['chapmans'],
-  },
-  {
-    name: 'Kawartha Dairy',
-    company: 'Kawartha Dairy',
-    percentCanadian: 100,
-    notes: 'Ontario-based brand, all products are made in Canada using locally sourced dairy.',
-    categoryId: 'ice_cream',
-    aliases: ['kawartha'],
-  },
-  {
-    name: 'Cows Creamery',
-    company: 'Cows Inc.',
-    percentCanadian: 100,
-    notes: 'PEI-based brand, known for using high-quality Canadian dairy.',
-    categoryId: 'ice_cream',
-    aliases: ['cows', 'cows creamery'],
-  },
-  {
-    name: "President's Choice Ice Cream",
-    company: 'Loblaw Companies',
-    percentCanadian: 90,
-    notes: 'Loblaw store brand, manufactured in Canada, but some ingredients may be imported.',
-    categoryId: 'ice_cream',
-    aliases: ['presidents choice', 'pc ice cream'],
-  },
-  {
-    name: 'Nestlé Real Dairy',
-    company: 'Nestlé Canada',
-    percentCanadian: 50,
-    notes: 'Produced in Canada using Canadian dairy, but owned by Nestlé and may use some imported ingredients.',
-    categoryId: 'ice_cream',
-    aliases: ['nestle', 'real dairy'],
-  },
-  {
-    name: 'Great Value Ice Cream',
-    company: 'Walmart Canada',
-    percentCanadian: 40,
-    notes: "Walmart's store brand. Some varieties are made in Canada, but ingredients and sourcing vary.",
-    categoryId: 'ice_cream',
-    aliases: ['great value', 'walmart ice cream'],
-  },
-  {
-    name: 'Agropur Iceberg',
-    company: 'Agropur Cooperative',
-    percentCanadian: 100,
-    notes: 'Canadian dairy cooperative brand, made entirely in Canada with local dairy.',
-    categoryId: 'ice_cream',
-    aliases: ['iceberg', 'agropur'],
-  },
-  {
-    name: 'Coca-Cola',
-    company: 'The Coca-Cola Company',
-    percentCanadian: 0,
-    notes: 'An American brand, Coca-Cola products sold in Canada are produced locally but the company is U.S.-owned.',
-    categoryId: 'soda',
-    aliases: ['coke', 'coca cola'],
-  },
-  {
-    name: 'Pepsi',
-    company: 'PepsiCo',
-    percentCanadian: 0,
-    notes: 'An American brand, Pepsi products sold in Canada are produced locally but the company is U.S.-owned.',
-    categoryId: 'soda',
-    aliases: ['pepsi'],
-  },
-  {
-    name: 'Canada Dry',
-    company: 'Keurig Dr Pepper',
-    percentCanadian: 50,
-    notes:
-      'Originally a Canadian brand, now owned by the American company Keurig Dr Pepper. Some production still occurs in Canada.',
-    categoryId: 'soda',
-    aliases: ['canada dry'],
-  },
-  {
-    name: 'Crush',
-    company: 'Keurig Dr Pepper',
-    percentCanadian: 50,
-    notes: 'An American brand, but popular in Canada with some local production.',
-    categoryId: 'soda',
-    aliases: ['crush'],
-  },
-  {
-    name: 'Big 8',
-    company: 'Big 8 Beverages',
-    percentCanadian: 100,
-    notes: 'A Canadian brand based in Nova Scotia, offering a variety of soft drinks.',
-    categoryId: 'soda',
-    aliases: ['big 8'],
-  },
-  {
-    name: 'Bec Cola',
-    company: 'Bec Soda Inc.',
-    percentCanadian: 100,
-    notes: 'A Quebec-based company producing organic cola sweetened with maple syrup.',
-    categoryId: 'soda',
-    aliases: ['bec cola'],
-  },
-  {
-    name: 'Brio Chinotto',
-    company: 'Brio Beverages Inc.',
-    percentCanadian: 100,
-    notes: 'A Canadian-produced Italian-style soda popular in Italian communities.',
-    categoryId: 'soda',
-    aliases: ['brio', 'chinotto'],
-  },
-  {
-    name: "Bull's Head",
-    company: "Bull's Head",
-    percentCanadian: 100,
-    notes: 'A Quebec-based brand best known for its ginger ale.',
-    categoryId: 'soda',
-    aliases: ["bull's head"],
-  },
-  {
-    name: 'Schweppes',
-    company: 'Keurig Dr Pepper',
-    percentCanadian: 50,
-    notes: 'Originally a Swiss brand, now owned by Keurig Dr Pepper. Some production occurs in Canada.',
-    categoryId: 'soda',
-    aliases: ['schweppes'],
-  },
-  {
-    name: '7UP',
-    company: 'Keurig Dr Pepper',
-    percentCanadian: 50,
-    notes: 'An American brand, but popular in Canada with some local production.',
-    categoryId: 'soda',
-    aliases: ['7up', 'seven up'],
-  },
-  {
-    name: 'Molson Canadian',
-    company: 'Molson Coors Beverage Company',
-    percentCanadian: 50,
-    notes:
-      'Founded in Canada, Molson merged with Coors in 2005 to form Molson Coors, a multinational company. Molson Canadian is brewed in Canada using local ingredients.',
-    categoryId: 'beer',
-    aliases: ['molson', 'molson canadian'],
-  },
-  {
-    name: 'Labatt Blue',
-    company: 'Anheuser-Busch InBev',
-    percentCanadian: 50,
-    notes:
-      'Originally a Canadian brand, Labatt was acquired by Interbrew (now Anheuser-Busch InBev) in 1995. Labatt Blue is brewed in Canada with local ingredients.',
-    categoryId: 'beer',
-    aliases: ['labatt', 'labatt blue'],
-  },
-  {
-    name: "Alexander Keith's",
-    company: 'Anheuser-Busch InBev',
-    percentCanadian: 50,
-    notes:
-      "Founded in Nova Scotia, Canada, Alexander Keith's was sold to Oland Brewery in 1928 and is now owned by Anheuser-Busch InBev. The beer is still brewed in Canada.",
-    categoryId: 'beer',
-    aliases: ["alexander keith's", "keith's"],
-  },
-  {
-    name: 'Moosehead Lager',
-    company: 'Moosehead Breweries',
-    percentCanadian: 100,
-    notes:
-      "Moosehead Breweries is Canada's oldest independent brewery, family-owned and operated in Saint John, New Brunswick.",
-    categoryId: 'beer',
-    aliases: ['moosehead', 'moosehead lager'],
-  },
-  {
-    name: 'Sleeman Honey Brown Lager',
-    company: 'Sleeman Breweries',
-    percentCanadian: 50,
-    notes:
-      'Sleeman Breweries was re-established in 1988 and sold to Sapporo Brewery in 2006. Sleeman Honey Brown Lager is brewed in Canada.',
-    categoryId: 'beer',
-    aliases: ['sleeman', 'honey brown lager'],
-  },
-  {
-    name: 'Steam Whistle Pilsner',
-    company: 'Steam Whistle Brewing',
-    percentCanadian: 100,
-    notes: 'An independent Canadian brewery based in Toronto, known for its flagship Steam Whistle Pilsner.',
-    categoryId: 'beer',
-    aliases: ['steam whistle', 'steam whistle pilsner'],
-  },
-  {
-    name: 'Unibroue La Fin du Monde',
-    company: 'Unibroue',
-    percentCanadian: 50,
-    notes:
-      'Unibroue, based in Quebec, was sold to Sleeman Breweries in 2004, which is now owned by Sapporo Brewery. La Fin du Monde is brewed in Canada.',
-    categoryId: 'beer',
-    aliases: ['unibroue', 'la fin du monde'],
-  },
-  {
-    name: 'Budweiser',
-    company: 'Anheuser-Busch InBev',
-    percentCanadian: 0,
-    notes: 'An American brand owned by Anheuser-Busch InBev. Budweiser sold in Canada is brewed domestically.',
-    categoryId: 'beer',
-    aliases: ['budweiser', 'bud'],
-  },
-  {
-    name: 'Coors Light',
-    company: 'Molson Coors Beverage Company',
-    percentCanadian: 0,
-    notes: 'An American brand under Molson Coors. Coors Light sold in Canada is brewed domestically.',
-    categoryId: 'beer',
-    aliases: ['coors light', 'coors'],
-  },
-  {
-    name: 'Corona Extra',
-    company: 'Grupo Modelo (Anheuser-Busch InBev)',
-    percentCanadian: 0,
-    notes:
-      'A Mexican beer brand owned by Grupo Modelo, which is part of Anheuser-Busch InBev. Corona Extra is imported into Canada.',
-    categoryId: 'beer',
-    aliases: ['corona', 'corona extra'],
-  },
+  ...soda,
+  ...beer,
+  ...chips,
+  ...iceCream,
+  ...milk,
+  ...cheese,
+  ...yogurt,
+  ...butter,
 ]
 
 export const categories = {
+  milk: milkCategory,
+  cheese: cheeseCategory,
+  yogurt: yogurtCategory,
+  butter: butterCategory,
+  chips: {
+    name: 'Chips',
+    description: 'Potato chips and snack foods',
+    aliases: ['chips', 'snacks'],
+  },
   ice_cream: {
     name: 'Ice Cream',
     description: 'Ice cream and frozen desserts',
@@ -486,4 +256,5 @@ export interface Product {
   notes: string
   categoryId: keyof typeof categories
   aliases: string[]
+  popularity?: number
 }
