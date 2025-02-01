@@ -2,6 +2,7 @@ export function SearchResults({ products }: { products: any[] }) {
   if (!products.length) {
     return <></>
   }
+  console.log(products)
   return (
     <div className="mt-8 flex items-end justify-between">
       <div>

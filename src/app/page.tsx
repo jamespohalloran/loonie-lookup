@@ -1,5 +1,6 @@
 import Hero from '@/components/hero'
 import { SearchResults } from '@/components/search-results'
+import client from '../../tina/__generated__/client'
 
 export default async function Home(props: {
   searchParams?: Promise<{
@@ -10,14 +11,18 @@ export default async function Home(props: {
   const searchParams = await props.searchParams
   const query = searchParams?.query || ''
 
-  const filteredProducts = products.filter(
-    (product) => searchParams?.query && product.name.toLowerCase().includes(query.toLowerCase())
-  )
+  const filteredProducts = query
+    ? (
+        await client.queries.productConnection({
+          filter: { title: { startsWith: query } },
+        })
+      ).data.productConnection.edges
+    : []
 
   return (
     <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
       <Hero />
-      <SearchResults products={filteredProducts} />
+      <SearchResults products={filteredProducts || []} />
     </div>
   )
 }
