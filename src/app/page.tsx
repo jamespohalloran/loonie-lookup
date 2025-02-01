@@ -1,6 +1,5 @@
 import Hero from '@/components/hero'
 import { SearchResults } from '@/components/search-results'
-import client from '../../tina/__generated__/client'
 export const runtime = 'edge'
 
 export default async function Home(props: {
@@ -12,15 +11,9 @@ export default async function Home(props: {
   const searchParams = await props.searchParams
   const query = searchParams?.query || ''
 
-  hitTina()
-
-  const filteredProducts = query
-    ? (
-        await client.queries.productConnection({
-          filter: { title: { startsWith: query } },
-        })
-      ).data.productConnection.edges
-    : []
+  const filteredProducts = products.filter(
+    (product) => query && product.name.toLowerCase().includes(query.toLowerCase())
+  )
 
   return (
     <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -84,30 +77,3 @@ const products = [
     lastSeen: null,
   },
 ]
-
-async function hitTina() {
-  var myHeaders = new Headers()
-  myHeaders.append('X-API-KEY', process.env.TINA_TOKEN!)
-  myHeaders.append('Content-Type', 'application/json')
-
-  var graphql = JSON.stringify({
-    query: '{\n        collections{\n            name\n        }\n}',
-    variables: {},
-  })
-  var requestOptions = {
-    method: 'POST',
-    headers: myHeaders,
-    body: graphql,
-  }
-
-  const version = '1.5'
-  let res = await fetch(
-    `https://content.tinajs.io/${version}/content/${process.env.NEXT_PUBLIC_TINA_CLIENT_ID!}/github/main`,
-    requestOptions
-  )
-    .then((response) => response.text())
-    .then((result) => console.log(result))
-    .catch((error) => console.log('error', error))
-
-  console.log(res)
-}
