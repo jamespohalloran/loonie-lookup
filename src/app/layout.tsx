@@ -4,6 +4,7 @@ import type React from 'react'
 import { ApplicationLayout } from './application-layout'
 export const runtime = 'edge'
 import { Inter } from 'next/font/google'
+import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: {
@@ -25,6 +26,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head></head>
       <body className={inter.className}>
         <ApplicationLayout>{children}</ApplicationLayout>
+        <Toaster />
       </body>
     </html>
   )

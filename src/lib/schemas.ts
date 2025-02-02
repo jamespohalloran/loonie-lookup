@@ -21,4 +21,11 @@ export const productRequestSchema = z.object({
   okToContact: z.boolean().default(false)
 });
 
-export type ProductRequest = z.infer<typeof productRequestSchema>; 
+export type ProductRequest = z.infer<typeof productRequestSchema>;
+
+export const feedbackSchema = z.object({
+  email: z.string().email("Invalid email address"),
+  feedback: z.string().min(1, "Feedback is required"),
+})
+
+export type FeedbackSchema = z.infer<typeof feedbackSchema> 
