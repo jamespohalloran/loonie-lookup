@@ -2,6 +2,7 @@
 
 import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { Input } from './ui/input'
 
 export default function Search() {
   const searchParams = useSearchParams()
@@ -17,7 +18,6 @@ export default function Search() {
         params.delete('query')
       }
 
-      // Instead of using Next.js router, update the URL manually
       window.history.replaceState(null, '', `${pathname}?${params.toString()}`)
     }, 200)
 
@@ -27,12 +27,11 @@ export default function Search() {
   return (
     <div>
       <div className="mt-2">
-        <input
+        <Input
           id="search"
           name="search"
           type="search"
           placeholder="Product name, brand, or category"
-          className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
           onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
         />

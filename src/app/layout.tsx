@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import type React from 'react'
 import { ApplicationLayout } from './application-layout'
 export const runtime = 'edge'
+import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
   description: 'Search for Canadian alternatives to your favourite products.',
 }
 
+const inter = Inter({ subsets: ['latin'] })
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -19,11 +22,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       lang="en"
       className="text-zinc-950 antialiased lg:bg-zinc-100 dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950"
     >
-      <head>
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-      </head>
-      <body>
+      <head></head>
+      <body className={inter.className}>
         <ApplicationLayout>{children}</ApplicationLayout>
       </body>
     </html>
