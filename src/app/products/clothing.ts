@@ -164,15 +164,6 @@ export const clothing: Product[] = [
     popularity: 70
   },
   {
-    name: 'American Tall',
-    company: 'American Tall',
-    percentCanadian: 80,
-    notes: 'American Tall is a multigenerational, Canadian business, based in Ontario. As the company expanded, it began manufacturing most of it\'s products in Asia',
-    categoryId: 'clothing',
-    aliases: ['american tall clothing', 'american tall apparel'],
-    popularity: 70
-  },
-  {
     name: 'Hudson\'s Bay (The Bay)',
     company: 'Hudson\'s Bay Company',
     percentCanadian: 0,
