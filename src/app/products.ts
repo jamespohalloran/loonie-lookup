@@ -1,3 +1,4 @@
+import { allPurposeCleanerCategory, allPurposeCleaners } from './products/all-purpose-cleaners'
 import { babyFormula, babyFormulaCategory } from './products/babyFormula'
 import { bacon, baconCategory } from './products/bacon'
 import { bbqSauce, bbqsauceCategory } from './products/bbqSauce'
@@ -109,6 +110,7 @@ export const products: Product[] = [
   ...dishSoap,
   ...shampoo,
   ...toothpaste,
+  ...allPurposeCleaners,
   ...streamingServices,
 ]
 
@@ -166,6 +168,7 @@ export const categories = {
   toothpaste: toothpasteCategory,
   soap: soapCategory,
   streamingServices: streamingServicesCategory,
+  allPurposeCleaners: allPurposeCleanerCategory,
   // milk: milkCategory,
   // cheese: cheeseCategory,
   // yogurt: yogurtCategory,
