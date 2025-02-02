@@ -8,7 +8,7 @@ export const laundryDetergents: Product[] = [
     notes: 'Made in the US. Available in most grocery stores across Canada.',
     categoryId: 'laundryDetergents',
     aliases: ['tide detergent'],
-    popularity: 95
+    popularity: 95,
   },
   {
     name: 'Sunlight',
@@ -16,7 +16,8 @@ export const laundryDetergents: Product[] = [
     percentCanadian: 0,
     categoryId: 'laundryDetergents',
     aliases: ['sunlight detergent'],
-    popularity: 80
+    popularity: 80,
+    notes: '',
   },
   {
     name: 'Purex',
@@ -24,7 +25,8 @@ export const laundryDetergents: Product[] = [
     percentCanadian: 0,
     categoryId: 'laundryDetergents',
     aliases: ['purex detergent'],
-    popularity: 75
+    popularity: 75,
+    notes: '',
   },
   {
     name: 'Presidents Choice',
@@ -33,7 +35,7 @@ export const laundryDetergents: Product[] = [
     notes: 'Loblaw’s private label detergent. Made mainly with Canadian ingredients.',
     categoryId: 'laundryDetergents',
     aliases: ['pc detergent', "president's choice detergent"],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Great Value',
@@ -41,7 +43,8 @@ export const laundryDetergents: Product[] = [
     percentCanadian: 0,
     categoryId: 'laundryDetergents',
     aliases: ['great value detergent', 'walmart detergent'],
-    popularity: 80
+    popularity: 80,
+    notes: '',
   },
   {
     name: 'Kirkland Signature',
@@ -49,7 +52,8 @@ export const laundryDetergents: Product[] = [
     percentCanadian: 0,
     categoryId: 'laundryDetergents',
     aliases: ['kirkland detergent', 'costco detergent'],
-    popularity: 70
+    popularity: 70,
+    notes: '',
   },
   {
     name: 'Attitude',
@@ -58,39 +62,43 @@ export const laundryDetergents: Product[] = [
     notes: 'A eco-friendly Canadian brand, available in select health food stores and major grocery stores.',
     categoryId: 'laundryDetergents',
     aliases: ['attitude detergent'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Compliments',
     company: 'Sobeys',
     percentCanadian: 90,
-    notes: 'Sobeys’ store brand detergent, made mainly with Canadian ingredients. Widely available in Sobeys locations across Canada.',
+    notes:
+      'Sobeys’ store brand detergent, made mainly with Canadian ingredients. Widely available in Sobeys locations across Canada.',
     categoryId: 'laundryDetergents',
     aliases: ['compliments laundry soap', 'sobeys laundry detergent'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Seventh Generation',
     company: 'Unilever',
     percentCanadian: 0,
-    notes: 'A United States-based company that produces cleaning, paper, and personal care products with a focus on sustainability.',
+    notes:
+      'A United States-based company that produces cleaning, paper, and personal care products with a focus on sustainability.',
     categoryId: 'laundryDetergents',
     aliases: ['seventh generation detergent'],
-    popularity: 50
+    popularity: 50,
   },
   {
     name: 'Arm & Hammer',
     company: 'Church & Dwight',
     percentCanadian: 0,
-    notes: 'A United States-based manufacturer of household products that is widely known for its brands of baking soda and cleaning products.',
+    notes:
+      'A United States-based manufacturer of household products that is widely known for its brands of baking soda and cleaning products.',
     categoryId: 'laundryDetergents',
     aliases: ['arm and hammer detergent'],
-    popularity: 85
+    popularity: 85,
   },
 ]
 
 export const laundryDetergentsCategory = {
   name: 'Laundry Detergents',
-  description: 'Household products used for cleaning clothes and textiles. They are typically made from chemicals to remove stains and odors.',
-  aliases: ['washing powders', 'fabric care', 'cleaning agents']
+  description:
+    'Household products used for cleaning clothes and textiles. They are typically made from chemicals to remove stains and odors.',
+  aliases: ['washing powders', 'fabric care', 'cleaning agents'],
 }

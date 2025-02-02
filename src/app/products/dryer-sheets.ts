@@ -8,7 +8,7 @@ export const dryerSheets: Product[] = [
     notes: 'Originally a US product but widely available in various scents throughout Canada.',
     categoryId: 'dryerSheets',
     aliases: ['bounce dryer sheets'],
-    popularity: 95
+    popularity: 95,
   },
   {
     name: 'Downy',
@@ -17,7 +17,7 @@ export const dryerSheets: Product[] = [
     notes: 'Another offering from Procter & Gamble, Downy sheets are found in most Canadian homes.',
     categoryId: 'dryerSheets',
     aliases: ['downy dryer sheets'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Snuggle',
@@ -26,7 +26,7 @@ export const dryerSheets: Product[] = [
     notes: 'Not Canadian, made by the Sun Products, which is a United States corporation.',
     categoryId: 'dryerSheets',
     aliases: ['snuggle dryer sheets'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Gain',
@@ -35,7 +35,7 @@ export const dryerSheets: Product[] = [
     notes: 'Produced by the mega corporation Procter & Gamble and famous for their original scent.',
     categoryId: 'dryerSheets',
     aliases: ['gain dryer sheets'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Purex',
@@ -44,7 +44,7 @@ export const dryerSheets: Product[] = [
     notes: 'Made by Henkel, a German company, and widely available in Canada.',
     categoryId: 'dryerSheets',
     aliases: ['purex dryer sheets'],
-    popularity: 75
+    popularity: 75,
   },
   {
     name: 'Arm & Hammer',
@@ -53,7 +53,7 @@ export const dryerSheets: Product[] = [
     notes: 'Another USA-produced dryer sheet brand, known for their baking soda ingredient.',
     categoryId: 'dryerSheets',
     aliases: ['arm & hammer dryer sheets'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Seventh Generation',
@@ -62,7 +62,7 @@ export const dryerSheets: Product[] = [
     notes: 'Known for being an eco-friendly option. Part of the Unilever family with origin in USA.',
     categoryId: 'dryerSheets',
     aliases: ['seventh generation dryer sheets'],
-    popularity: 65
+    popularity: 65,
   },
   {
     name: 'Method',
@@ -71,7 +71,7 @@ export const dryerSheets: Product[] = [
     notes: 'Part of Method Products, a San Francisco, California-based corporation.',
     categoryId: 'dryerSheets',
     aliases: ['method dryer sheets'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Great Value',
@@ -79,7 +79,8 @@ export const dryerSheets: Product[] = [
     percentCanadian: 0,
     categoryId: 'dryerSheets',
     aliases: ['great value dryer sheets', 'walmart dryer sheets'],
-    popularity: 55
+    popularity: 55,
+    notes: '',
   },
   {
     name: 'Kirkland Signature',
@@ -87,12 +88,14 @@ export const dryerSheets: Product[] = [
     percentCanadian: 0,
     categoryId: 'dryerSheets',
     aliases: ['kirkland dryer sheets', 'costco dryer sheets'],
-    popularity: 50
-  }
+    popularity: 50,
+    notes: '',
+  },
 ]
 
 export const dryerSheetsCategory = {
   name: 'Dryer Sheets',
-  description: 'Used to soften clothes and reduce static cling in the dryer. Available in scented and unscented versions.',
-  aliases: ['laundry', 'laundry aids']
+  description:
+    'Used to soften clothes and reduce static cling in the dryer. Available in scented and unscented versions.',
+  aliases: ['laundry', 'laundry aids'],
 }

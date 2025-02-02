@@ -8,7 +8,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['connoisseurs jewelry cleaner'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Weiman',
@@ -17,7 +17,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['weiman jewelry cleaner'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Hagerty',
@@ -26,7 +26,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['hagerty jewelry cleaner'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Brilliant',
@@ -35,7 +35,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['brilliant jewelry cleaner'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Blitz',
@@ -44,7 +44,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['blitz jewelry cleaner'],
-    popularity: 55
+    popularity: 55,
   },
   {
     name: 'Sparkle Bright',
@@ -53,7 +53,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['sparkle bright jewelry cleaner'],
-    popularity: 50
+    popularity: 50,
   },
   {
     name: 'Powell Leonard',
@@ -62,7 +62,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['powell leonard jewelry cleaner'],
-    popularity: 45
+    popularity: 45,
   },
   {
     name: 'Regent Labs',
@@ -71,16 +71,7 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['regent labs jewelry cleaner'],
-    popularity: 40
-  },
-  {
-    name: 'E'arrs',
-    company: 'E'arrs Incorporated',
-    percentCanadian: 0,
-    notes: 'Purely manufactured in the US',
-    categoryId: 'jewelryCleaners',
-    aliases: ['earrs jewelry cleaner'],
-    popularity: 35
+    popularity: 40,
   },
   {
     name: 'GODDARDS',
@@ -89,13 +80,12 @@ export const jewelryCleaners: Product[] = [
     notes: 'Purely manufactured in the US',
     categoryId: 'jewelryCleaners',
     aliases: ['goddards jewelry cleaner'],
-    popularity: 30
-  }
+    popularity: 30,
+  },
 ]
 
 export const jewelryCleanersCategory = {
   name: 'Jewelry Cleaners',
   description: 'Solutions used to clean, shine and protect jewelries.',
-  aliases: ['cleaners2', 'shine.component', 'protect.component']
+  aliases: ['cleaners2', 'shine.component', 'protect.component'],
 }
-

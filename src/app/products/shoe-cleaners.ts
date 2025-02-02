@@ -8,7 +8,7 @@ export const shoeCleaners: Product[] = [
     notes: 'A popular shoe cleaner brand made in the USA.',
     categoryId: 'shoeCleaners',
     aliases: ['sof sole cleaner'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Crep Protect',
@@ -16,7 +16,8 @@ export const shoeCleaners: Product[] = [
     percentCanadian: 0,
     categoryId: 'shoeCleaners',
     aliases: ['crep protect cleaner'],
-    popularity: 80
+    popularity: 80,
+    notes: '',
   },
   {
     name: 'Jason Markk',
@@ -25,7 +26,7 @@ export const shoeCleaners: Product[] = [
     notes: 'One of the most renowned shoe cleaning products internationally, based in the USA.',
     categoryId: 'shoeCleaners',
     aliases: ['jason markk cleaner'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Reshoevn8r',
@@ -34,7 +35,7 @@ export const shoeCleaners: Product[] = [
     notes: 'US-based, this alternative shoe cleaning brand is known for its cleaning kits.',
     categoryId: 'shoeCleaners',
     aliases: ['reshoevn8r cleaner'],
-    popularity: 65
+    popularity: 65,
   },
   {
     name: 'Angelus Shoe Cleaner',
@@ -43,7 +44,7 @@ export const shoeCleaners: Product[] = [
     notes: 'US-based company focusing on cleaner for leather shoes specifically.',
     categoryId: 'shoeCleaners',
     aliases: ['angelus cleaner'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Pink Miracle',
@@ -52,7 +53,7 @@ export const shoeCleaners: Product[] = [
     notes: 'US-based shoe cleaner known for being effective on various types of materials.',
     categoryId: 'shoeCleaners',
     aliases: ['pink miracle cleaner'],
-    popularity: 55
+    popularity: 55,
   },
   {
     name: 'Sneaker LAB',
@@ -61,7 +62,7 @@ export const shoeCleaners: Product[] = [
     notes: 'A shoe cleaner brand based in South Africa, well-known internationally.',
     categoryId: 'shoeCleaners',
     aliases: ['sneaker lab cleaner'],
-    popularity: 50
+    popularity: 50,
   },
   {
     name: 'Shoe MGK',
@@ -70,7 +71,7 @@ export const shoeCleaners: Product[] = [
     notes: 'An American shoe cleaner product widely used across Canada.',
     categoryId: 'shoeCleaners',
     aliases: ['shoe mgk cleaner'],
-    popularity: 45
+    popularity: 45,
   },
   {
     name: 'KIWI Quick Dry Sneaker Cleaner',
@@ -79,7 +80,7 @@ export const shoeCleaners: Product[] = [
     notes: 'This product from KIWI, a globally recognized brand owned by SC Johnson, is not Canadian.',
     categoryId: 'shoeCleaners',
     aliases: ['kiwi cleaner'],
-    popularity: 40
+    popularity: 40,
   },
   {
     name: 'SneakERASERS',
@@ -88,12 +89,12 @@ export const shoeCleaners: Product[] = [
     notes: 'These are essentially instant shoe cleaning sponges, from a US-based company.',
     categoryId: 'shoeCleaners',
     aliases: ['sneakerasers cleaner'],
-    popularity: 35
-  }
+    popularity: 35,
+  },
 ]
 
 export const shoeCleanersCategory = {
   name: 'Shoe Cleaner',
   description: 'Products used for cleaning, maintaining and restoring footwear.',
-  aliases: ['shoe care', 'footwear cleaner', 'sneaker cleaner']
+  aliases: ['shoe care', 'footwear cleaner', 'sneaker cleaner'],
 }

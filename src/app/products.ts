@@ -55,6 +55,38 @@ import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { yogurt, yogurtCategory } from './products/yogurt'
 
+import { airFresheners, airFreshenersCategory } from './products/air-fresheners'
+import { automotiveCleaners, automotiveCleanersCategory } from './products/automotive-cleaners'
+import { bleachWhiteners, bleachWhitenersCategory } from './products/bleach-whiteners'
+import { carpetShampoo, carpetShampooCategory } from './products/carpet-shampoo'
+import { dishwasherDetergents, dishwasherDetergentsCategory } from './products/dishwasher-detergents'
+import { dishwashingLiquid, dishwashingLiquidCategory } from './products/dishwashing-liquid'
+import { disinfectant, disinfectantCategory } from './products/disinfectants'
+import { drainCleaners, drainCleanersCategory } from './products/drain-cleaners'
+import { dryerSheets, dryerSheetsCategory } from './products/dryer-sheets'
+import { electronicsScreenCleaners, electronicsScreenCleanersCategory } from './products/electronics-screen-cleaners'
+import { fabricRefreshers, fabricRefreshersCategory } from './products/fabric-refreshers'
+import { fabricSofteners, fabricSoftenersCategory } from './products/fabric-softeners'
+import { garbageDisposalCleaners, garbageDisposalCleanersCategory } from './products/garbage-disposal-cleaners'
+import { glassCleaners, glassCleanersCategory } from './products/glass-cleaners'
+import { hardwoodFloorCleaners, hardwoodFloorCleanersCategory } from './products/hardwood-floor-cleaners'
+import { jewelryCleaners, jewelryCleanersCategory } from './products/jewelry-cleaners'
+import { laundryDetergents, laundryDetergentsCategory } from './products/laundry-detergents'
+import { leatherCleaners, leatherCleanersCategory } from './products/leather-cleaners'
+import { mildewMoldRemovers, mildewMoldRemoversCategory } from './products/mildew-mold-removers'
+import { odorEliminators, odorEliminatorsCategory } from './products/odor-eliminators'
+import { ovenCleaners, ovenCleanersCategory } from './products/oven-cleaners'
+import { petStainOdorRemovers, petStainOdorRemoversCategory } from './products/pet-stain-odor-removers'
+import { rugUpholsteryCleaners, rugUpholsteryCleanersCategory } from './products/rug-upholstery-cleaners'
+import { shoeCleaners, shoeCleanersCategory } from './products/shoe-cleaners'
+import { showerTubCleaner, showerTubCleanerCategory } from './products/shower-tub-cleaners'
+import { stainRemovers, stainRemoversCategory } from './products/stain-removers'
+import { stainlessSteelCleaners, stainlessSteelCleanersCategory } from './products/stainless-steel-cleaners'
+import { tileGroutCleaners, tileGroutCleanersCategory } from './products/tile-grout-cleaners'
+import { tileLaminateCleaner, tileLaminateCleanerCategory } from './products/tile-laminate-cleaners'
+import { toiletBowlCleaners, toiletBowlCleanersCategory } from './products/toilet-bowl-cleaners'
+import { woodPolish, woodPolishCategory } from './products/wood-polish'
+
 export const products: Product[] = [
   ...soda,
   ...beer,
@@ -112,6 +144,37 @@ export const products: Product[] = [
   ...toothpaste,
   ...allPurposeCleaners,
   ...streamingServices,
+  ...glassCleaners,
+  ...disinfectant,
+  ...woodPolish,
+  ...stainlessSteelCleaners,
+  ...dishwashingLiquid,
+  ...dishwasherDetergents,
+  ...ovenCleaners,
+  ...drainCleaners,
+  ...garbageDisposalCleaners,
+  ...toiletBowlCleaners,
+  ...showerTubCleaner,
+  ...tileGroutCleaners,
+  ...mildewMoldRemovers,
+  ...hardwoodFloorCleaners,
+  ...tileLaminateCleaner,
+  ...carpetShampoo,
+  ...rugUpholsteryCleaners,
+  ...laundryDetergents,
+  ...fabricSofteners,
+  ...bleachWhiteners,
+  ...stainRemovers,
+  ...dryerSheets,
+  ...airFresheners,
+  ...fabricRefreshers,
+  ...odorEliminators,
+  ...electronicsScreenCleaners,
+  ...jewelryCleaners,
+  ...leatherCleaners,
+  ...shoeCleaners,
+  ...automotiveCleaners,
+  ...petStainOdorRemovers,
 ]
 
 export const categories = {
@@ -169,6 +232,39 @@ export const categories = {
   soap: soapCategory,
   streamingServices: streamingServicesCategory,
   allPurposeCleaners: allPurposeCleanerCategory,
+
+  airFresheners: airFreshenersCategory,
+  automotiveCleaners: automotiveCleanersCategory,
+  bleachWhiteners: bleachWhitenersCategory,
+  carpetShampoo: carpetShampooCategory,
+  dishwasherDetergents: dishwasherDetergentsCategory,
+  dishwashingLiquid: dishwashingLiquidCategory,
+  disinfectants: disinfectantCategory,
+  drainCleaners: drainCleanersCategory,
+  dryerSheets: dryerSheetsCategory,
+  electronicsScreenCleaners: electronicsScreenCleanersCategory,
+  fabricRefreshers: fabricRefreshersCategory,
+  fabricSofteners: fabricSoftenersCategory,
+  garbageDisposalCleaners: garbageDisposalCleanersCategory,
+  glassCleaners: glassCleanersCategory,
+  hardwoodFloorCleaners: hardwoodFloorCleanersCategory,
+  jewelryCleaners: jewelryCleanersCategory,
+  laundryDetergents: laundryDetergentsCategory,
+  leatherCleaners: leatherCleanersCategory,
+  mildewMoldRemovers: mildewMoldRemoversCategory,
+  odorEliminators: odorEliminatorsCategory,
+  ovenCleaners: ovenCleanersCategory,
+  petStainOdorRemovers: petStainOdorRemoversCategory,
+  rugUpholsteryCleaners: rugUpholsteryCleanersCategory,
+  shoeCleaners: shoeCleanersCategory,
+  showerTubCleaner: showerTubCleanerCategory,
+  stainRemovers: stainRemoversCategory,
+  stainlessSteelCleaners: stainlessSteelCleanersCategory,
+  tileGroutCleaners: tileGroutCleanersCategory,
+  tileLaminateCleaner: tileLaminateCleanerCategory,
+  toiletBowlCleaners: toiletBowlCleanersCategory,
+  woodPolish: woodPolishCategory,
+
   // milk: milkCategory,
   // cheese: cheeseCategory,
   // yogurt: yogurtCategory,

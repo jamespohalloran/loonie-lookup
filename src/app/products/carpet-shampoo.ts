@@ -8,7 +8,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Bissell carpet shampoo'],
-    popularity: 95
+    popularity: 95,
   },
   {
     name: 'Rug Doctor',
@@ -17,7 +17,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Rug Doctor carpet shampoo'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Hoover',
@@ -26,7 +26,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Hoover carpet shampoo'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Resolve',
@@ -35,7 +35,7 @@ export const carpetShampoo: Product[] = [
     notes: 'Made by the UK-based company RB. Available in most grocery stores across Canada.',
     categoryId: 'carpetShampoo',
     aliases: ['Resolve carpet shampoo'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Kirby',
@@ -43,7 +43,8 @@ export const carpetShampoo: Product[] = [
     percentCanadian: 0,
     categoryId: 'carpetShampoo',
     aliases: ['Kirby carpet shampoo'],
-    popularity: 75
+    popularity: 75,
+    notes: '',
   },
   {
     name: 'Zep',
@@ -52,7 +53,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Zep carpet shampoo'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Folex',
@@ -61,7 +62,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Folex carpet shampoo'],
-    popularity: 65
+    popularity: 65,
   },
   {
     name: 'BlueMagic',
@@ -70,7 +71,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['BlueMagic carpet shampoo'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Shaw',
@@ -79,7 +80,7 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Shaw carpet shampoo'],
-    popularity: 55
+    popularity: 55,
   },
   {
     name: 'Capture',
@@ -88,12 +89,13 @@ export const carpetShampoo: Product[] = [
     notes: 'US based company.',
     categoryId: 'carpetShampoo',
     aliases: ['Capture carpet shampoo'],
-    popularity: 50
-  }
+    popularity: 50,
+  },
 ]
 
 export const carpetShampooCategory = {
   name: 'Carpet Shampoo',
-  description: 'A cleaning formula used in conjunction with a carpet cleaner to eliminate dirt, stains, allergens, and odours in carpets.',
-  aliases: ['carpet cleaner', 'carpet detergent', 'stain remover']
+  description:
+    'A cleaning formula used in conjunction with a carpet cleaner to eliminate dirt, stains, allergens, and odours in carpets.',
+  aliases: ['carpet cleaner', 'carpet detergent', 'stain remover'],
 }
