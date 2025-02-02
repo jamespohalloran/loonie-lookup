@@ -1,3 +1,5 @@
+'use client'
+
 import KofiButton from 'kofi-button'
 
 export default function Footer() {

@@ -1,3 +1,5 @@
+'use client'
+
 import { categories, Product } from '@/app/products'
 import { PlusIcon } from '@heroicons/react/16/solid'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
@@ -17,8 +19,6 @@ export function SearchResults({ products, query }: { products: Product[]; query:
       isCanadian: product.percentCanadian >= 50,
     }
   })
-
-  console.log('mappedProducts ' + JSON.stringify(mappedProducts))
 
   return (
     <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
@@ -41,7 +41,6 @@ export function SearchResults({ products, query }: { products: Product[]; query:
 }
 
 function SearchColumn({ products }: { products: Product[] }) {
-  console.log(products)
   return (
     <ul role="list" className="divide-y divide-gray-200 bg-white">
       {products.map((product) => (

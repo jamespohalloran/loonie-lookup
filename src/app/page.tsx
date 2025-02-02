@@ -1,16 +1,13 @@
+'use client'
+
 import Hero from '@/components/hero'
 import { SearchResults } from '@/components/search-results'
+import { useSearchParams } from 'next/navigation'
 import { categories, products } from './products'
-export const runtime = 'edge'
 
-export default async function Home(props: {
-  searchParams?: Promise<{
-    query?: string
-    page?: string
-  }>
-}) {
-  const searchParams = await props.searchParams
-  const query = searchParams?.query || ''
+export default function Home() {
+  const searchParams = useSearchParams()
+  const query = searchParams.get('query') || ''
 
   const filteredProducts = products
     .filter((product) => {
@@ -27,8 +24,7 @@ export default async function Home(props: {
       )
     })
     .slice(0, 20)
-
-    //prioritize sort if it matches category name
+    // Prioritize sort if it matches category name
     .sort((a, b) => {
       const categoryA = categories[a.categoryId]
       const categoryB = categories[b.categoryId]
