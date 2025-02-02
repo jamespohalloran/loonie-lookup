@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,12 +19,10 @@
     "next": "14.2.3",
     "openai": "^4.82.0",
     "react": "^18",
-    "react-dom": "^18",
-    "tinacms": "^2.6.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
-    "@tinacms/cli": "^1.8.2",
     "@types/node": "^20.17.16",
     "@types/react": "^18",
     "@types/react-dom": "^18",

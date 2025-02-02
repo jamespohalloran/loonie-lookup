@@ -1,6 +1,7 @@
+import { categories, Product } from '@/app/products'
 import { PlusIcon } from '@heroicons/react/16/solid'
 
-export function SearchResults({ products }: { products: any[] }) {
+export function SearchResults({ products }: { products: Product[] }) {
   if (!products.length) {
     return <></>
   }
@@ -34,13 +35,18 @@ export function SearchResults({ products }: { products: any[] }) {
   )
 }
 
-function SearchColumn({ products }: { products: any[] }) {
+function SearchColumn({ products }: { products: Product[] }) {
   console.log(products)
   return (
     <ul role="list" className="divide-y divide-gray-200 bg-white">
       {products.map((product) => (
         <li key={product.name} className="py-4 first:pt-0">
           <p className="text-sm font-semibold text-gray-900">{product.name}</p>
+          <a href={`/?query=${categories[product.categoryId].name.toString()}`}>
+            <span className="pointer inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-gray-200 ring-inset">
+              {categories[product.categoryId].name}
+            </span>
+          </a>
           <p className="text-xs text-gray-500">{product.company}</p>
           <p className="text-xs text-gray-500">🇨🇦 {product.percentCanadian}% Canadian</p>
           {product.notes && <p className="text-xs text-gray-400">{product.notes}</p>}
@@ -71,13 +77,15 @@ function Empty() {
       {/* <h3 className="mt-2 text-sm font-semibold text-gray-900">No Products</h3> */}
       <p className="mt-1 text-sm text-gray-500">Help us by submitting a product</p>
       <div className="mt-6">
-        <button
-          type="button"
-          className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-          <PlusIcon aria-hidden="true" className="mr-1.5 -ml-0.5 size-5" />
-          Add Product
-        </button>
+        <a target="_blank" href="https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products">
+          <button
+            type="button"
+            className="inline-flex cursor-pointer items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            <PlusIcon aria-hidden="true" className="mr-1.5 -ml-0.5 size-5" />
+            Add Product
+          </button>
+        </a>
       </div>
     </div>
   )
