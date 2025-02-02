@@ -1,3 +1,6 @@
+'use client'
+
+import { Suspense } from 'react'
 import Search from './search'
 
 export default function Hero() {
@@ -10,7 +13,9 @@ export default function Hero() {
         <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600">
           Search for Canadian alternatives to your favourite products.
         </p>
-        <Search />
+        <Suspense>
+          <Search />
+        </Suspense>
       </div>
     </div>
   )
