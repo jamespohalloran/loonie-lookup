@@ -1,0 +1,59 @@
+name: Add New Product
+description: Suggest a new product entry
+title: "[New Product]: "
+labels: ["new product"]
+body:
+
+- type: input
+  id: name
+  attributes:
+  label: Product Name
+  description: "Enter the product name (e.g., Dove)."
+  placeholder: "Dove"
+  validations:
+  required: true
+
+- type: input
+  id: company
+  attributes:
+  label: Company
+  description: "Enter the company that produces this product (e.g., Unilever)."
+  placeholder: "Unilever"
+  validations:
+  required: true
+
+- type: input
+  id: percentCanadian
+  attributes:
+  label: Percent Canadian
+  description: "Enter the percentage of Canadian ownership (e.g., 0 for multinational, 100 for 100% canadian)."
+  placeholder: "0"
+  validations:
+  required: true
+
+- type: textarea
+  id: notes
+  attributes:
+  label: Notes
+  description: "Provide any additional details about the product."
+  placeholder: "Produced by Unilever, a multinational consumer goods company."
+  validations:
+  required: false
+
+- type: input
+  id: categoryId
+  attributes:
+  label: Category ID
+  description: "Enter a category ID for this product (e.g., soap)."
+  placeholder: "soap"
+  validations:
+  required: true
+
+- type: textarea
+  id: aliases
+  attributes:
+  label: Aliases
+  description: "Enter alternative names for this product, separated by commas."
+  placeholder: "body wash"
+  validations:
+  required: false
