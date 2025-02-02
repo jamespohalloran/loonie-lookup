@@ -50,7 +50,7 @@ export default async function Home(props: {
           This project is currently in a prototype phase. AI was used to help generate the initial list of products, and
           the data is not guaranteed to be accurate. The content is available on GitHub, and contributions are welcome
           if the project proves to be useful. Feel free to check out the{' '}
-          <a className="underline" href="https://https://github.com/jamespohalloran/loonie-lookup">
+          <a className="underline" href="https://github.com/jamespohalloran/loonie-lookup">
             repository
           </a>{' '}
           and contribute!
