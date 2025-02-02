@@ -2,9 +2,13 @@ import { categories, Product } from '@/app/products'
 import { PlusIcon } from '@heroicons/react/16/solid'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
 
-export function SearchResults({ products }: { products: Product[] }) {
-  if (!products.length) {
+export function SearchResults({ products, query }: { products: Product[]; query: string }) {
+  if (!query) {
     return <></>
+  }
+
+  if (!products.length) {
+    return <Empty />
   }
 
   const mappedProducts = products.map((product) => {
@@ -22,7 +26,7 @@ export function SearchResults({ products }: { products: Product[] }) {
         <h3 className="text-base font-semibold text-gray-900">🇨🇦 Made in Canada</h3>
         <div className="rounded-lg border border-gray-200 p-4">
           <SearchColumn products={mappedProducts.filter((p) => p.isCanadian)} />
-          {mappedProducts.filter((p) => p.isCanadian).length === 0 && <Empty />}
+          {query && mappedProducts.filter((p) => p.isCanadian).length === 0 && <Empty />}
         </div>
       </div>
       <div>
@@ -41,7 +45,7 @@ function SearchColumn({ products }: { products: Product[] }) {
   return (
     <ul role="list" className="divide-y divide-gray-200 bg-white">
       {products.map((product) => (
-        <li key={product.name} className="relative flex flex-col py-2 first:pt-0">
+        <li key={`${product.name}-${product.categoryId}`} className="relative flex flex-col py-2 first:pt-0">
           <a
             target="_blank"
             href={`https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products/${product.categoryId}.ts`}
@@ -70,7 +74,7 @@ function SearchColumn({ products }: { products: Product[] }) {
 
 function Empty() {
   return (
-    <div className="text-center">
+    <div className="mt-2 text-center">
       <svg
         fill="none"
         stroke="currentColor"
@@ -87,7 +91,7 @@ function Empty() {
         />
       </svg>
       {/* <h3 className="mt-2 text-sm font-semibold text-gray-900">No Products</h3> */}
-      <p className="mt-1 text-sm text-gray-500">Help us by submitting a product</p>
+      <p className="mt-1 text-sm text-gray-500">No matching results. Help us by submitting a product</p>
       <div className="mt-6">
         <a target="_blank" href="https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products">
           <button
