@@ -12,6 +12,11 @@ export default function Footer() {
           <div>
             <KofiButton color="#0a9396" title="Tip the dev" kofiID="S6S5EMUTW" />
           </div>
+          <div>
+            <a href="/terms" className="hover:underline">
+              Terms
+            </a>
+          </div>
         </div>
       </div>
     </footer>
