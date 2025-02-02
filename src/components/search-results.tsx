@@ -3,6 +3,7 @@
 import { categories, Product } from '@/app/products'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
 import { SearchResultsEmpty } from './search-results-empty';
+import { EditProductDialog } from './edit-product-dialog'
 
 export function SearchResults({ products, query }: { products: Product[]; query: string }) {
   if (!query) {
@@ -45,17 +46,14 @@ function SearchColumn({ products }: { products: Product[] }) {
     <ul role="list" className="divide-y divide-gray-200 bg-white">
       {products.map((product) => (
         <li key={`${product.name}-${product.categoryId}`} className="relative flex flex-col py-2 first:pt-0">
-          <a
-            target="_blank"
-            href={`https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products/${product.categoryId}.ts`}
-          >
+          <EditProductDialog product={product}>
             <button
               className="absolute top-2 right-2 cursor-pointer text-gray-400 hover:text-gray-600"
               aria-label={`Edit ${product.name}`}
             >
               <PencilSquareIcon className="h-5 w-5" />
             </button>
-          </a>
+          </EditProductDialog>
           <p className="text-sm font-semibold text-gray-900">{product.name}</p>
           <a href={`/?query=${categories[product.categoryId].name.toString()}`}>
             <span className="pointer inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-gray-200 ring-inset">
