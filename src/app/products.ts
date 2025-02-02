@@ -47,6 +47,7 @@ import { sausages, sausagesCategory } from './products/sausages'
 import { shampoo, shampooCategory } from './products/shampoo'
 import { soap, soapCategory } from './products/soap'
 import { soda } from './products/soda'
+import { streamingServices, streamingServicesCategory } from './products/streamingService'
 import { sugar, sugarCategory } from './products/sugar'
 import { tea, teaCategory } from './products/tea'
 import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
@@ -108,6 +109,7 @@ export const products: Product[] = [
   ...dishSoap,
   ...shampoo,
   ...toothpaste,
+  ...streamingServices,
 ]
 
 export const categories = {
@@ -163,6 +165,7 @@ export const categories = {
   shampoo: shampooCategory,
   toothpaste: toothpasteCategory,
   soap: soapCategory,
+  streamingServices: streamingServicesCategory,
   // milk: milkCategory,
   // cheese: cheeseCategory,
   // yogurt: yogurtCategory,
