@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s - Loonie Lookup',
     default: 'Loonie Lookup',
   },
-  description: 'Search for Canadian Alternatives to your favourite products.',
+  description: 'Search for Canadian alternatives to your favourite products.',
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

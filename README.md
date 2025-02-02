@@ -1,6 +1,6 @@
 # Loonie Lookup
 
-Search for Canadian Alternatives to your favourite products.
+Search for Canadian alternatives to your favourite products.
 
 To run the project, first install the npm dependencies:
 

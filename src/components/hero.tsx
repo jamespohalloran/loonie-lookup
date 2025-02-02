@@ -8,7 +8,7 @@ export default function Hero() {
           Shop Canadian 🇨🇦
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600">
-          Search for Canadian Alternatives to your favourite products.
+          Search for Canadian alternatives to your favourite products.
         </p>
         <Search />
       </div>
