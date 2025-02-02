@@ -38,3 +38,5 @@ next-env.d.ts
 node_modules
 .env
 scripts/
+
+.env.local
