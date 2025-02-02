@@ -1,12 +1,11 @@
 'use client'
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function Search() {
   const searchParams = useSearchParams()
   const pathname = usePathname()
-  const { replace } = useRouter()
   const [searchTerm, setSearchTerm] = useState(searchParams?.get('query') || '')
 
   useEffect(() => {
@@ -17,11 +16,13 @@ export default function Search() {
       } else {
         params.delete('query')
       }
-      replace(`${pathname}?${params.toString()}`)
-    }, 200) // Adjust debounce time as needed (e.g., 300-500ms)
+
+      // Instead of using Next.js router, update the URL manually
+      window.history.replaceState(null, '', `${pathname}?${params.toString()}`)
+    }, 200)
 
     return () => clearTimeout(handler)
-  }, [searchTerm, pathname, replace, searchParams])
+  }, [searchTerm, pathname, searchParams])
 
   return (
     <div>
