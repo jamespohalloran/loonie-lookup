@@ -76,7 +76,7 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
         <Dialog.Content className="fixed left-1/2 top-1/2 w-full max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white p-6 shadow-lg">
           <Dialog.Title className="text-lg font-semibold">Request a Product</Dialog.Title>
           <Dialog.Description className="mt-2 text-sm text-gray-500">
-            Tell us what Canadian products you'd like to see listed
+            Tell us what Canadian products you&apos;d like to see listed
           </Dialog.Description>
 
           {error && (
