@@ -42,13 +42,10 @@ export default function Home() {
     })
 
   return (
-    <div className="px-6 pt-12 sm:px-6 sm:pt-32 lg:px-8">
+    <div className="px-6 pt-12 sm:px-6 lg:px-8">
       <Hero />
-      
-      <SearchResults 
-        query={query} 
-        category={category} 
-        products={filteredProducts || []} />
+
+      <SearchResults query={query} category={category} products={filteredProducts || []} />
 
       {/* Project Status Section */}
       <div className="mt-24 rounded-lg bg-gray-100 p-6">
