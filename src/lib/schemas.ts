@@ -29,3 +29,17 @@ export const feedbackSchema = z.object({
 })
 
 export type FeedbackSchema = z.infer<typeof feedbackSchema>
+
+export const productEditSchema = z.object({
+  name: z.string().min(1, 'Product name is required'),
+  company: z.string().min(1, 'Company name is required'),
+  categoryId: z.string().min(1, 'Category is required'),
+  percentCanadian: z.number().min(0).max(100),
+  notes: z.string().optional(),
+  submitterName: z.string().min(1, 'Your name is required'),
+  submitterEmail: z.string().email('Invalid email address'),
+  editNotes: z.string().min(1, 'Please explain your changes'),
+  currentUrl: z.string().url('Invalid URL'),
+})
+
+export type ProductEditSubmission = z.infer<typeof productEditSchema>
