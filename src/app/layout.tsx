@@ -11,7 +11,21 @@ export const metadata: Metadata = {
     template: '%s - Loonie Lookup',
     default: 'Loonie Lookup',
   },
-  description: 'Search for Canadian alternatives to your favourite products.',
+  description: 'Search for Canadian alternatives to your most used products.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_CA',
+    url: 'https://loonielookup.ca',
+    siteName: 'Loonie Lookup',
+    images: [
+      {
+        url: 'https://loonielookup.ca/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Loonie Lookup',
+      },
+    ],
+  },
 }
 
 const inter = Inter({ subsets: ['latin'] })
