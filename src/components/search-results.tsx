@@ -5,8 +5,8 @@ import { PencilSquareIcon } from '@heroicons/react/24/outline'
 import { SearchResultsEmpty } from './search-results-empty';
 import { EditProductDialog } from './edit-product-dialog'
 
-export function SearchResults({ products, query }: { products: Product[]; query: string }) {
-  if (!query) {
+export function SearchResults({ products, query, category }: { products: Product[]; query: string; category: string }) {
+  if (!query && !category) {
     return <></>
   }
 

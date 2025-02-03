@@ -10,10 +10,12 @@ export default function Hero({ showSearch = true }: { showSearch?: boolean }) {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [searchTerm, setSearchTerm] = useState(searchParams?.get('query') || '')
+  const [category, setCategory] = useState(searchParams?.get('category') || '')
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault()
     setSearchTerm('')
+    setCategory('')
     router.push('/', { scroll: false })
   }
 
@@ -28,11 +30,14 @@ export default function Hero({ showSearch = true }: { showSearch?: boolean }) {
         <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600">
           Search for Canadian alternatives to your favourite products.
         </p>
-        { showSearch && ( 
-          <Suspense>
-            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          </Suspense>
-        )}
+        <Suspense>
+          <Search 
+            searchTerm={searchTerm} 
+            setSearchTerm={setSearchTerm} 
+            category={category} 
+            setCategory={setCategory} 
+          />
+        </Suspense>
       </div>
     </div>
   )
