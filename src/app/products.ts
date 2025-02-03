@@ -340,3 +340,7 @@ export interface Product {
   aliases: string[]
   popularity?: number
 }
+
+export function getProductsByCategory(categoryId: keyof typeof categories) {
+  return products.filter(product => product.categoryId === categoryId);
+}
