@@ -40,14 +40,23 @@ const TermsPage = () => {
         or take responsibility for the accuracy, privacy policies, or practices of these third parties.
       </p>
 
-      <h2 className="mt-6 text-xl font-semibold">6. Changes to Terms</h2>
+      <h2 className="mt-6 text-xl font-semibold">6. Tracking and Data Collection</h2>
+      <p className="mb-4">
+        This application may collect usage data, such as interactions with features, error reports, and performance
+        metrics. This data is used to improve the application's functionality, enhance user experience, and optimize
+        performance. We do not sell or share this data with third parties for advertising purposes.
+      </p>
+
+      <h2 className="mt-6 text-xl font-semibold">7. Changes to Terms</h2>
       <p className="mb-4">
         We reserve the right to modify these terms at any time. Any changes will be posted on this page, and continued
         use of the application constitutes acceptance of the revised terms.
       </p>
 
-      <h2 className="mt-6 text-xl font-semibold">7. Contact</h2>
-      <p className="mb-4">If you have any questions about these terms, please contact us at support@example.com.</p>
+      <h2 className="mt-6 text-xl font-semibold">8. Contact</h2>
+      <p className="mb-4">
+        If you have any questions about these terms, please contact us at james.p.ohalloran@gmail.com
+      </p>
     </div>
   )
 }
