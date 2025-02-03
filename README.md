@@ -27,7 +27,7 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![All Contributors](https://img.shields.io/github/all-contributors/projectOwner/projectName?color=ee8449&style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/github/all-contributors/jamespohalloran/loonie-lookup?color=ee8449&style=flat-square)](#contributors)
 
 ## How to Contribute
 
