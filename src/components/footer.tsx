@@ -35,6 +35,11 @@ export default function Footer() {
             <a href="/categories" className="hover:underline">
               Product Categories
             </a>
+            
+            <span className="hidden sm:inline">|</span>
+            <a href="https://github.com/jamespohalloran/loonie-lookup">
+              GitHub
+            </a>
           </div>
         </div>
       </div>

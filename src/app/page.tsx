@@ -4,11 +4,14 @@ import Hero from '@/components/hero'
 import { SearchResults } from '@/components/search-results'
 import { useSearchParams } from 'next/navigation'
 import { categories, products } from './products'
+import { ProductRequestAndSuggestCta } from '@/components/product-request-and-suggest-cta'
+import { SharePopover } from '@/components/share-popover'
 
 export default function Home() {
   const searchParams = useSearchParams()
   const query = searchParams.get('query') || ''
   const category = searchParams.get('category') || ''
+  const shareUrl = `https://loonielookup.ca/`
 
   const filteredProducts = products
     .filter((product) => {
@@ -49,18 +52,20 @@ export default function Home() {
 
       {/* Project Status Section */}
       <div className="mt-24 rounded-lg bg-gray-100 p-6">
-        <h2 className="text-2xl font-bold">About Loonie Lookup</h2>
         <p className="mt-2 text-gray-700">
-          This is a new project and is still maturing. AI was used to help generate the initial list of products, and
-          the data is not guaranteed to be accurate. The content is available on GitHub, and contributions are welcome.
-          Feel free to check out the{' '}
-          <a className="underline" href="https://github.com/jamespohalloran/loonie-lookup">
-            repository
-          </a>{' '}
-          and contribute!
+        Welcome to <strong>Loonie Lookup</strong>—your friendly hub for finding Canadian-owned products! Our mission is simple: to become the go-to source of truth for everything made and owned in Canada (or not!). We’re continuously refining our listings to help you “<strong>Search for Canadian alternatives to your most used products.</strong>”
         </p>
-        Sharing the project with your friends is also greatly appreciated! 🙏
+        <p className="mt-2 text-gray-700">
+          Because this is a community-driven project, we’d love your help. Submit new products you’ve discovered, or let us know which items you’d like added. Every contribution moves us closer to showcasing the best of Canadian ownership. Join us, and let’s support homegrown businesses together!
+        </p>
+        <p className="mt-2 mb-2 text-gray-700">
+          
+        </p>
+        <SharePopover url={shareUrl} text="Share the project with your friends! 🙏" />
       </div>
-    </div>
+
+      <h3 className="text-2xl font-bold mt-24">Get involved!!</h3>
+      <ProductRequestAndSuggestCta />
+    </div>    
   )
 }
