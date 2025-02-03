@@ -47,7 +47,7 @@ const TermsPage = () => {
       </p>
 
       <h2 className="mt-6 text-xl font-semibold">7. Contact</h2>
-      <p className="mb-4">If you have any questions about these terms, please contact us at support@example.com.</p>
+      <p className="mb-4">If you have any questions about these terms, please contact us at james.p.ohalloran@gmail.com.</p>
     </div>
   )
 }
