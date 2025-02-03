@@ -451,3 +451,12 @@ export interface Product {
 export function getProductsByCategory(categoryId: keyof typeof categories) {
   return products.filter((product) => product.categoryId === categoryId)
 }
+
+export function getCategories() {
+  return Object.entries(categories)
+    .map(([key, value]) => ({
+      key,
+      ...value,
+    }))
+    .sort((a, b) => (a.name || "").localeCompare(b.name || ""))
+}

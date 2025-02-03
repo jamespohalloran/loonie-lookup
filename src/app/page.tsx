@@ -8,19 +8,26 @@ import { categories, products } from './products'
 export default function Home() {
   const searchParams = useSearchParams()
   const query = searchParams.get('query') || ''
+  const category = searchParams.get('category') || ''
 
   const filteredProducts = products
     .filter((product) => {
-      if (!query) return false
+      if (category) {
+        return product.categoryId === category
+      }
+      return true
+    })
+    .filter((product) => {
+      if (!query) return category ? true : false
       const formattedQuery = query.toLowerCase()
 
-      const category = categories[product.categoryId]
+      const cat = categories[product.categoryId]
       return (
         product.name.toLowerCase().includes(formattedQuery) ||
         product.company.toLowerCase().includes(formattedQuery) ||
         product.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery)) ||
-        category.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery)) ||
-        category.name.toLowerCase().includes(formattedQuery)
+        cat.aliases.some((alias) => alias.toLowerCase().includes(formattedQuery)) ||
+        cat.name.toLowerCase().includes(formattedQuery)
       )
     })
     .slice(0, 20)
@@ -37,7 +44,11 @@ export default function Home() {
   return (
     <div className="px-6 py-12 sm:px-6 sm:py-32 lg:px-8">
       <Hero />
-      <SearchResults query={query} products={filteredProducts || []} />
+      
+      <SearchResults 
+        query={query} 
+        category={category} 
+        products={filteredProducts || []} />
 
       {/* Project Status Section */}
       <div className="mt-24 rounded-lg bg-gray-100 p-6">

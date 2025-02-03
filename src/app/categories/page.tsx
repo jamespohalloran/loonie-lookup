@@ -1,17 +1,11 @@
 import Link from "next/link"
-import { categories } from "@/app/products"
+import { getCategories } from "@/app/products"
 import { Card } from "@/components/ui/card"
 import Hero from "@/components/hero"
 
 export default function CategoriesPage() {
-  // Convert categories object to array and sort alphabetically by name
-  const sortedCategories = Object.entries(categories)
-    .map(([key, value]) => ({
-      key,
-      ...value,
-    }))
-    .sort((a, b) => (a.name || "").localeCompare(b.name || ""))
-
+  const sortedCategories = getCategories()
+  
   return (
     <div className="min-h-screen bg-white">
       <main className="max-w-4xl mx-auto px-4 py-8">
