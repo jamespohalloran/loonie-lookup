@@ -22,22 +22,19 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="mt-8 flex items-center justify-center space-x-4">
-            <div>
-              <KofiButton color="#0a9396" title="Tip the dev" kofiID="S6S5EMUTW" />
-            </div>
-            <div className="flex gap-x-4">
-              <FeedbackDialog />
-              <span>|</span>
-              <a href="/terms" className="hover:underline">
-                Terms
-              </a>
-              <span>|</span>
+          <div className="mt-8 flex flex-wrap gap-y-4 space-x-4 sm:flex-nowrap sm:space-x-4 md:justify-center">
+            <KofiButton color="#0a9396" title="Tip the dev" kofiID="S6S5EMUTW" />
 
-              <a href="/categories" className="hover:underline">
-                Product Categories
-              </a>
-            </div>
+            <FeedbackDialog />
+            <span className="hidden sm:inline">|</span>
+            <a href="/terms" className="hover:underline">
+              Terms
+            </a>
+            <span className="hidden sm:inline">|</span>
+
+            <a href="/categories" className="hover:underline">
+              Product Categories
+            </a>
           </div>
         </div>
       </div>
