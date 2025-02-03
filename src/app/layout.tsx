@@ -1,10 +1,10 @@
+import { Toaster } from '@/components/ui/toaster'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import type React from 'react'
 import { ApplicationLayout } from './application-layout'
 export const runtime = 'edge'
-import { Inter } from 'next/font/google'
-import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: {
