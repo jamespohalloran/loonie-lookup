@@ -1,13 +1,17 @@
 'use client'
 
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Input } from './ui/input'
 
-export default function Search() {
+interface SearchProps {
+  searchTerm: string
+  setSearchTerm: (term: string) => void
+}
+
+export default function Search({ searchTerm, setSearchTerm }: SearchProps) {
   const searchParams = useSearchParams()
   const pathname = usePathname()
-  const [searchTerm, setSearchTerm] = useState(searchParams?.get('query') || '')
 
   useEffect(() => {
     const handler = setTimeout(() => {
