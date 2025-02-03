@@ -221,9 +221,9 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                           </FormDescription>
                           <FormControl>
                             <Input 
-                              ref={firstInputRef}
                               placeholder="Product name" 
                               {...field} 
+                              ref={firstInputRef}
                             />
                           </FormControl>
                           <FormMessage />
@@ -364,8 +364,8 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                           <FormLabel>Your Name</FormLabel>
                           <FormControl>
                             <Input 
-                              ref={step === 'submitter' ? firstInputRef : undefined}
                               {...field} 
+                              ref={step === 'submitter' ? firstInputRef : undefined}                              
                             />
                           </FormControl>
                           <FormMessage />
