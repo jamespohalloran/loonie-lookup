@@ -1,36 +1,28 @@
 'use client'
 
-import * as React from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { X } from "lucide-react"
-import { ProductRequest, productRequestSchema } from "@/lib/schemas"
-import { submitProductRequest } from "@/lib/actions"
-import { useToast } from "@/hooks/use-toast"
 import {
   Dialog,
-  DialogPortal,
-  DialogOverlay,
+  DialogClose,
   DialogContent,
-  DialogTitle,
   DialogDescription,
   DialogFooter,
-  DialogClose,
   DialogHeader,
-} from "@/components/ui/dialog"
-import { Button } from "./ui/button"
-import { Input } from "./ui/input"
-import { Textarea } from "./ui/textarea"
-import { Checkbox } from "./ui/checkbox"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { useToast } from '@/hooks/use-toast'
+import { submitProductRequest } from '@/lib/actions'
+import { ProductRequest, productRequestSchema } from '@/lib/schemas'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { X } from 'lucide-react'
+import * as React from 'react'
+import { useForm } from 'react-hook-form'
+import { Button } from './ui/button'
+import { Checkbox } from './ui/checkbox'
+import { Input } from './ui/input'
+import { Textarea } from './ui/textarea'
 
 interface RequestProductDialogProps {
   open: boolean
@@ -59,15 +51,18 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
     }
   }, [open])
 
-  const handleClose = React.useCallback((isOpen: boolean) => {
-    if (!isOpen) {
-      form.reset()
-      setError(null)
-      setIsSubmitting(false)
-      setUnexpectedError(null)
-      onOpenChange(false)
-    }
-  }, [form, onOpenChange])
+  const handleClose = React.useCallback(
+    (isOpen: boolean) => {
+      if (!isOpen) {
+        form.reset()
+        setError(null)
+        setIsSubmitting(false)
+        setUnexpectedError(null)
+        onOpenChange(false)
+      }
+    },
+    [form, onOpenChange]
+  )
 
   // Reset form state when dialog opens/closes
   React.useEffect(() => {
@@ -83,21 +78,21 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
 
     try {
       await submitProductRequest(data)
-      
+
       toast({
-        title: "Request submitted successfully!",
-        description: "Thank you for helping us grow our Canadian product listings.",
+        title: 'Request submitted successfully!',
+        description: 'Thank you for helping us grow our Canadian product listings.',
         duration: 5000,
       })
-      
+
       handleClose(false)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
-      
+
       toast({
-        title: "Error",
-        description: "Failed to submit request. Please try again.",
-        variant: "destructive",
+        title: 'Error',
+        description: 'Failed to submit request. Please try again.',
+        variant: 'destructive',
       })
     } finally {
       setIsSubmitting(false)
@@ -111,14 +106,14 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Error</DialogTitle>
-            <DialogDescription>
-              An unexpected error occurred. Please try again.
-            </DialogDescription>
+            <DialogDescription>An unexpected error occurred. Please try again.</DialogDescription>
           </DialogHeader>
-          <Button onClick={() => {
-            setUnexpectedError(null)
-            handleClose(false)
-          }}>
+          <Button
+            onClick={() => {
+              setUnexpectedError(null)
+              handleClose(false)
+            }}
+          >
             Close
           </Button>
         </DialogContent>
@@ -130,7 +125,7 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
     <Dialog open={open} onOpenChange={handleClose}>
       <DialogPortal>
         <DialogOverlay />
-        <DialogContent className="max-h-[95vh] flex flex-col overflow-hidden">
+        <DialogContent className="flex max-h-[95vh] flex-col overflow-hidden">
           <DialogHeader className="flex-shrink-0 pb-2">
             <DialogTitle>Request a Product</DialogTitle>
             <DialogDescription>
@@ -156,7 +151,7 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
             </DialogDescription>
           </DialogHeader>
 
-          <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+          <div className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <FormField
@@ -166,11 +161,7 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
                     <FormItem>
                       <FormLabel>Your Name</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="John Doe"
-                          {...field}
-                          ref={firstInputRef}
-                        />
+                        <Input placeholder="John Doe" {...field} ref={firstInputRef} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -203,14 +194,9 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Product Request</FormLabel>
-                      <FormDescription>
-                        What product would you like to see from a Canadian company?
-                      </FormDescription>
+                      <FormDescription>What product would you like to see from a Canadian company?</FormDescription>
                       <FormControl>
-                        <Textarea
-                          placeholder="Describe the type of product you're looking for..."
-                          {...field}
-                        />
+                        <Textarea placeholder="Describe the type of product you're looking for..." {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -223,15 +209,10 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
                   render={({ field }) => (
                     <FormItem className="flex flex-row items-start space-x-3 space-y-0">
                       <FormControl>
-                        <Checkbox
-                          checked={field.value}
-                          onCheckedChange={field.onChange}
-                        />
+                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>
-                          Contact me when similar products are added
-                        </FormLabel>
+                        <FormLabel>Contact me when similar products are added</FormLabel>
                       </div>
                     </FormItem>
                   )}
@@ -240,19 +221,11 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
             </Form>
           </div>
 
-          <DialogFooter className="flex-shrink-0 mt-auto border-t pt-2">
-            <Button
-              type="button"
-              variant="ghost"
-              onClick={() => handleClose(false)}
-              disabled={isSubmitting}
-            >
+          <DialogFooter className="mt-auto flex-shrink-0 border-t pt-2">
+            <Button type="button" variant="ghost" onClick={() => handleClose(false)} disabled={isSubmitting}>
               Cancel
             </Button>
-            <Button
-              onClick={form.handleSubmit(onSubmit)}
-              disabled={isSubmitting}
-            >
+            <Button onClick={form.handleSubmit(onSubmit)} disabled={isSubmitting}>
               {isSubmitting ? 'Submitting...' : 'Submit Request'}
             </Button>
           </DialogFooter>
@@ -265,4 +238,4 @@ export function RequestProductDialog({ open, onOpenChange }: RequestProductDialo
       </DialogPortal>
     </Dialog>
   )
-} 
+}
