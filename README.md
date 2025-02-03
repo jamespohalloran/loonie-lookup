@@ -16,7 +16,18 @@ npm run dev
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Contributing
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+### How to Contribute
 
 Product data is found [here](https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products) grouped by category.
 It also needs to be added to the root-level products.ts page.
