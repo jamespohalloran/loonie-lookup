@@ -43,8 +43,8 @@ const TermsPage = () => {
       <h2 className="mt-6 text-xl font-semibold">6. Tracking and Data Collection</h2>
       <p className="mb-4">
         This application may collect usage data, such as interactions with features, error reports, and performance
-        metrics. This data is used to improve the application's functionality, enhance user experience, and optimize
-        performance. We do not sell or share this data with third parties for advertising purposes.
+        metrics. This data is used to improve the application&apos;s functionality, enhance user experience, and
+        optimize performance. We do not sell or share this data with third parties for advertising purposes.
       </p>
 
       <h2 className="mt-6 text-xl font-semibold">7. Changes to Terms</h2>
