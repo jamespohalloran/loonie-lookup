@@ -24,6 +24,10 @@ export default function Footer() {
             <a href="/terms" className="hover:underline">
               Terms
             </a>
+            <span>|</span>
+            <a href="/categories" className="hover:underline">
+              Product Categories
+            </a>
           </div>
         </div>
       </div>
