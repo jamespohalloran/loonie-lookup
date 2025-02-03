@@ -1,36 +1,28 @@
 'use client'
 
-import * as React from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { X } from "lucide-react"
-import { ProductSubmission, productSubmissionSchema } from "@/lib/schemas"
-import { Slider } from "./ui/slider"
-import { submitProductSuggestion } from "@/lib/actions"
-import { useToast } from "@/hooks/use-toast"
 import {
   Dialog,
-  DialogPortal,
-  DialogOverlay,
+  DialogClose,
   DialogContent,
-  DialogTitle,
   DialogDescription,
   DialogFooter,
-  DialogClose,
   DialogHeader,
-} from "@/components/ui/dialog"
-import { Button } from "./ui/button"
-import { Input } from "./ui/input"
-import { Textarea } from "./ui/textarea"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { useToast } from '@/hooks/use-toast'
+import { submitProductSuggestion } from '@/lib/actions'
+import { ProductSubmission, productSubmissionSchema } from '@/lib/schemas'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { X } from 'lucide-react'
+import * as React from 'react'
+import { useForm } from 'react-hook-form'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
+import { Slider } from './ui/slider'
+import { Textarea } from './ui/textarea'
 
 interface SuggestProductDialogProps {
   open: boolean
@@ -44,7 +36,7 @@ const PRODUCT_FIELDS = [
   'category',
   'searchAliases',
   'proposedPopularity',
-  'notes'
+  'notes',
 ] as const
 
 export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialogProps) {
@@ -54,7 +46,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
   const [unexpectedError, setUnexpectedError] = React.useState<Error | null>(null)
   const { toast } = useToast()
   const firstInputRef = React.useRef<HTMLInputElement>(null)
-  
+
   const form = useForm<ProductSubmission>({
     resolver: zodResolver(productSubmissionSchema),
     defaultValues: {
@@ -82,17 +74,20 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
     }
   }, [form])
 
-  const handleClose = React.useCallback((isOpen: boolean) => {
-    if (!isOpen) {
-      form.reset()
-      setError(null)
-      setStep('product')
-      setIsSubmitting(false)
-      setUnexpectedError(null)
-      onOpenChange(false)
-    }
-  }, [form, onOpenChange])
-  
+  const handleClose = React.useCallback(
+    (isOpen: boolean) => {
+      if (!isOpen) {
+        form.reset()
+        setError(null)
+        setStep('product')
+        setIsSubmitting(false)
+        setUnexpectedError(null)
+        onOpenChange(false)
+      }
+    },
+    [form, onOpenChange]
+  )
+
   // Reset form state when dialog opens/closes
   React.useEffect(() => {
     if (!open) {
@@ -122,21 +117,21 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
 
     try {
       await submitProductSuggestion(data)
-      
+
       toast({
-        title: "Product suggestion submitted!",
-        description: "Thank you for helping us build our Canadian product database.",
+        title: 'Product suggestion submitted!',
+        description: 'Thank you for helping us build our Canadian product database.',
         duration: 5000,
       })
-      
+
       handleClose(false)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
-      
+
       toast({
-        title: "Error",
-        description: "Failed to submit product suggestion. Please try again.",
-        variant: "destructive",
+        title: 'Error',
+        description: 'Failed to submit product suggestion. Please try again.',
+        variant: 'destructive',
       })
     } finally {
       setIsSubmitting(false)
@@ -151,14 +146,14 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Error</DialogTitle>
-              <DialogDescription>
-                An unexpected error occurred. Please try again.
-              </DialogDescription>
+              <DialogDescription>An unexpected error occurred. Please try again.</DialogDescription>
             </DialogHeader>
-            <Button onClick={() => {
-              setUnexpectedError(null)
-              handleClose(false)
-            }}>
+            <Button
+              onClick={() => {
+                setUnexpectedError(null)
+                handleClose(false)
+              }}
+            >
               Close
             </Button>
           </DialogContent>
@@ -171,14 +166,12 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
     <Dialog open={open} onOpenChange={handleClose}>
       <DialogPortal>
         <DialogOverlay />
-        <DialogContent className="max-h-[95vh] flex flex-col overflow-hidden">
+        <DialogContent className="flex max-h-[95vh] flex-col overflow-hidden">
           <DialogHeader className="flex-shrink-0 pb-2">
-            <DialogTitle className="text-lg font-semibold">
-              Submit Product Suggestion
-            </DialogTitle>
-            
+            <DialogTitle className="text-lg font-semibold">Submit Product Suggestion</DialogTitle>
+
             <DialogDescription className="mt-2 text-sm text-gray-500">
-              <span className="text-md font-semibold block">
+              <span className="text-md block font-semibold">
                 {step === 'product' ? 'Product Details' : 'Your Information'}
               </span>
               {step === 'product'
@@ -205,7 +198,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
             </DialogDescription>
           </DialogHeader>
 
-          <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+          <div className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)}>
                 <div className="flex-1 overflow-y-auto">
@@ -216,15 +209,9 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Product Name</FormLabel>
-                          <FormDescription>
-                            Enter the name of the product you want to suggest.
-                          </FormDescription>
+                          <FormDescription>Enter the name of the product you want to suggest.</FormDescription>
                           <FormControl>
-                            <Input                               
-                              placeholder="Product name" 
-                              {...field} 
-                              ref={firstInputRef}
-                            />
+                            <Input placeholder="Product name" {...field} ref={firstInputRef} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -255,7 +242,8 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                         <FormItem>
                           <FormLabel>Percent Canadian Owned</FormLabel>
                           <FormDescription>
-                            Enter the percentage of Canadian ownership (e.g., 0 for multinational, 100 for 100% Canadian).
+                            Enter the percentage of Canadian ownership (e.g., 0 for multinational, 100 for 100%
+                            Canadian).
                           </FormDescription>
                           <FormControl>
                             <div className="space-y-2">
@@ -266,7 +254,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                                 min={0}
                                 step={1}
                               />
-                              <span className="text-sm text-muted-foreground">{field.value}%</span>
+                              <span className="text-muted-foreground text-sm">{field.value}%</span>
                             </div>
                           </FormControl>
                           <FormMessage />
@@ -280,9 +268,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Category</FormLabel>
-                          <FormDescription>
-                            Suggest what category this product belongs to.
-                          </FormDescription>
+                          <FormDescription>Suggest what category this product belongs to.</FormDescription>
                           <FormControl>
                             <Input placeholder="soap" {...field} />
                           </FormControl>
@@ -297,11 +283,9 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Notes</FormLabel>
-                          <FormDescription>
-                            Provide any additional details about the product.
-                          </FormDescription>
+                          <FormDescription>Provide any additional details about the product.</FormDescription>
                           <FormControl>
-                            <Textarea 
+                            <Textarea
                               placeholder="Produced by Unilever, a multinational consumer goods company."
                               {...field}
                             />
@@ -334,9 +318,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Proposed Popularity</FormLabel>
-                          <FormDescription>
-                            Rate how popular you think this product is (1-100).
-                          </FormDescription>
+                          <FormDescription>Rate how popular you think this product is (1-100).</FormDescription>
                           <FormControl>
                             <div className="space-y-2">
                               <Slider
@@ -346,7 +328,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                                 min={1}
                                 step={1}
                               />
-                              <span className="text-sm text-muted-foreground">{field.value}%</span>
+                              <span className="text-muted-foreground text-sm">{field.value}%</span>
                             </div>
                           </FormControl>
                           <FormMessage />
@@ -363,10 +345,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                         <FormItem>
                           <FormLabel>Your Name</FormLabel>
                           <FormControl>
-                            <Input 
-                              {...field} 
-                              ref={step === 'submitter' ? firstInputRef : undefined}                              
-                            />
+                            <Input {...field} ref={step === 'submitter' ? firstInputRef : undefined} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -380,12 +359,7 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                         <FormItem>
                           <FormLabel>Your Email</FormLabel>
                           <FormControl>
-                            <Input 
-                              type="email"
-                              inputMode="email"
-                              autoComplete="email"
-                              {...field} 
-                            />
+                            <Input type="email" inputMode="email" autoComplete="email" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -396,8 +370,8 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
               </form>
             </Form>
           </div>
-          <div className="flex-shrink-0 mt-auto border-t pt-2">
-            <DialogFooter className="flex flex-col sm:flex-row gap-2">
+          <div className="mt-auto flex-shrink-0 border-t pt-2">
+            <DialogFooter className="flex flex-col gap-2 sm:flex-row">
               {step === 'submitter' && (
                 <Button
                   type="button"
@@ -419,20 +393,11 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
                 Cancel
               </Button>
               {step === 'product' ? (
-                <Button
-                  type="button"
-                  onClick={handleNext}
-                  disabled={isSubmitting}
-                  className="w-full sm:w-auto"
-                >
+                <Button type="button" onClick={handleNext} disabled={isSubmitting} className="w-full sm:w-auto">
                   Next
                 </Button>
               ) : (
-                <Button                  
-                  disabled={isSubmitting}
-                  className="w-full sm:w-auto"
-                  onClick={form.handleSubmit(onSubmit)}
-                >
+                <Button disabled={isSubmitting} className="w-full sm:w-auto" onClick={form.handleSubmit(onSubmit)}>
                   {isSubmitting ? 'Submitting...' : 'Submit'}
                 </Button>
               )}
@@ -447,4 +412,4 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
       </DialogPortal>
     </Dialog>
   )
-} 
+}
