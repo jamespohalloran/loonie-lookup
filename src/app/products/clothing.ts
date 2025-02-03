@@ -8,7 +8,7 @@ export const clothing: Product[] = [
     notes: 'A Toronto-based brand offering ethical and sustainable streetwear, made in Canada.',
     categoryId: 'clothing',
     aliases: ['muttonhead apparel', 'muttonhead clothing'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Encircled',
@@ -17,7 +17,7 @@ export const clothing: Product[] = [
     notes: 'A sustainable and ethical womenswear brand based in Toronto, focusing on versatile fashion.',
     categoryId: 'clothing',
     aliases: ['encircled fashion', 'encircled clothing'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Eliza Faulkner',
@@ -26,7 +26,7 @@ export const clothing: Product[] = [
     notes: 'A Montreal-based brand known for bold, feminine designs, all made in Canada.',
     categoryId: 'clothing',
     aliases: ['eliza faulkner clothing', 'eliza faulkner fashion'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Tuck Shop Trading Co.',
@@ -35,7 +35,7 @@ export const clothing: Product[] = [
     notes: 'A Toronto brand producing high-quality, locally made casual apparel.',
     categoryId: 'clothing',
     aliases: ['tuck shop clothing', 'tuck shop apparel'],
-    popularity: 75
+    popularity: 75,
   },
   {
     name: 'Folk Clothing',
@@ -44,7 +44,7 @@ export const clothing: Product[] = [
     notes: 'Focused on natural fabrics and ethical production, all made in Canada.',
     categoryId: 'clothing',
     aliases: ['folk clothing canada'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Smythe',
@@ -53,7 +53,7 @@ export const clothing: Product[] = [
     notes: 'Known for its tailored jackets, Smythe manufactures all of its pieces in Canada.',
     categoryId: 'clothing',
     aliases: ['smythe jackets', 'smythe blazers'],
-    popularity: 88
+    popularity: 88,
   },
   {
     name: 'Piper & Skye',
@@ -62,7 +62,7 @@ export const clothing: Product[] = [
     notes: 'A luxury handbag and accessories brand committed to sustainable materials and Canadian production.',
     categoryId: 'clothing',
     aliases: ['piper & skye handbags', 'piper and skye'],
-    popularity: 65
+    popularity: 65,
   },
   {
     name: 'OKAYOK',
@@ -71,111 +71,292 @@ export const clothing: Product[] = [
     notes: 'A Toronto-based clothing brand offering playful and modern essentials made in Canada.',
     categoryId: 'clothing',
     aliases: ['okayok clothing', 'okayok apparel'],
-    popularity: 60
-    },
+    popularity: 60,
+  },
   {
-    name: "Redwood Classics",
-    company: "Redwood Classics Apparel",
+    name: 'Redwood Classics',
+    company: 'Redwood Classics Apparel',
     percentCanadian: 100,
-    notes: "A heritage-inspired brand that focuses on premium, Canadian-made basics and outerwear.",
-    categoryId: "clothing",
-    aliases: ["redwood classics apparel", "redwood clothing"],
-    popularity: 78
-    },
-    {
-    name: "Naked & Famous Denim",
-    company: "Naked & Famous Denim",
+    notes: 'A heritage-inspired brand that focuses on premium, Canadian-made basics and outerwear.',
+    categoryId: 'clothing',
+    aliases: ['redwood classics apparel', 'redwood clothing'],
+    popularity: 78,
+  },
+  {
+    name: 'Naked & Famous Denim',
+    company: 'Naked & Famous Denim',
     percentCanadian: 100,
-    notes: "A Montreal-based brand known for high-quality raw denim, all made in Canada.",
-    categoryId: "clothing",
-    aliases: ["naked and famous", "naked & famous jeans"],
-    popularity: 92
-    },
-    {
-    name: "Franc",
-    company: "Franc",
+    notes: 'A Montreal-based brand known for high-quality raw denim, all made in Canada.',
+    categoryId: 'clothing',
+    aliases: ['naked and famous', 'naked & famous jeans'],
+    popularity: 92,
+  },
+  {
+    name: 'Franc',
+    company: 'Franc',
     percentCanadian: 100,
-    notes: "A sustainable basics brand making high-quality, minimalist clothing in Canada.",
-    categoryId: "clothing",
-    aliases: ["franc apparel", "franc clothing"],
-    popularity: 83
-    },
-    {
-    name: "Kotn",
-    company: "Kotn",
+    notes: 'A sustainable basics brand making high-quality, minimalist clothing in Canada.',
+    categoryId: 'clothing',
+    aliases: ['franc apparel', 'franc clothing'],
+    popularity: 83,
+  },
+  {
+    name: 'Kotn',
+    company: 'Kotn',
     percentCanadian: 100,
-    notes: "A sustainable clothing brand known for ethically sourced cotton and timeless basics.",
-    categoryId: "clothing",
-    aliases: ["kotn clothing", "kotn apparel"],
-    popularity: 89
-    },
-    {
-    name: "Horses Atelier",
-    company: "Horses Atelier",
+    notes: 'A sustainable clothing brand known for ethically sourced cotton and timeless basics.',
+    categoryId: 'clothing',
+    aliases: ['kotn clothing', 'kotn apparel'],
+    popularity: 89,
+  },
+  {
+    name: 'Horses Atelier',
+    company: 'Horses Atelier',
     percentCanadian: 100,
-    notes: "A Toronto-based womenswear brand specializing in high-quality, ethically made garments.",
-    categoryId: "clothing",
-    aliases: ["horses atelier clothing", "horses atelier fashion"],
-    popularity: 74
-    },
-    {
-    name: "Province of Canada",
-    company: "Province of Canada",
+    notes: 'A Toronto-based womenswear brand specializing in high-quality, ethically made garments.',
+    categoryId: 'clothing',
+    aliases: ['horses atelier clothing', 'horses atelier fashion'],
+    popularity: 74,
+  },
+  {
+    name: 'Province of Canada',
+    company: 'Province of Canada',
     percentCanadian: 100,
-    notes: "A lifestyle brand producing premium Canadian-made clothing inspired by Canadian heritage.",
-    categoryId: "clothing",
-    aliases: ["province of canada apparel", "province of canada clothing"],
-    popularity: 81
-    },
-    {
-    name: "Comrags",
-    company: "Comrags",
+    notes: 'A lifestyle brand producing premium Canadian-made clothing inspired by Canadian heritage.',
+    categoryId: 'clothing',
+    aliases: ['province of canada apparel', 'province of canada clothing'],
+    popularity: 81,
+  },
+  {
+    name: 'Comrags',
+    company: 'Comrags',
     percentCanadian: 100,
-    notes: "A Toronto-based womenswear brand known for stylish, locally made designs.",
-    categoryId: "clothing",
-    aliases: ["comrags clothing", "comrags fashion"],
-    popularity: 66
+    notes: 'A Toronto-based womenswear brand known for stylish, locally made designs.',
+    categoryId: 'clothing',
+    aliases: ['comrags clothing', 'comrags fashion'],
+    popularity: 66,
   },
   {
     name: 'Joe Fresh',
     company: 'Joe Fresh',
     percentCanadian: 80,
-    notes: 'A longstanding Candian staple, featured in Loblaws stores. Although Joe Fresh is a Canadian brand, its products are manufactured overseas, and it has expanded significantly into the U.S. market.',
+    notes:
+      'A longstanding Candian staple, featured in Loblaws stores. Although Joe Fresh is a Canadian brand, its products are manufactured overseas, and it has expanded significantly into the U.S. market.',
     categoryId: 'clothing',
     aliases: ['joe fresh clothing', 'joe fresh apparel'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Winners',
     company: 'TJX Companies',
     percentCanadian: 0,
-    notes: 'Winners is a Canadian discount retail chain owned by the U.S.-based TJX Companies, offering a variety of clothing brands, many of which are not Canadian.',
+    notes:
+      'Winners is a Canadian discount retail chain owned by the U.S.-based TJX Companies, offering a variety of clothing brands, many of which are not Canadian.',
     categoryId: 'clothing',
     aliases: ['winners clothing', 'winners apparel'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'American Tall',
     company: 'American Tall',
     percentCanadian: 80,
-    notes: 'American Tall is a multigenerational, Canadian business, based in Ontario. As the company expanded, it began manufacturing most of it\'s products in Asia',
+    notes:
+      "American Tall is a multigenerational, Canadian business, based in Ontario. As the company expanded, it began manufacturing most of it's products in Asia",
     categoryId: 'clothing',
     aliases: ['american tall clothing', 'american tall apparel'],
-    popularity: 70
+    popularity: 70,
   },
   {
-    name: 'Hudson\'s Bay (The Bay)',
-    company: 'Hudson\'s Bay Company',
+    name: "Hudson's Bay (The Bay)",
+    company: "Hudson's Bay Company",
     percentCanadian: 0,
-    notes: 'The Bay operates department stores across the nation. It is now primarily owned by a U.S. private equity firm. Although it stocks Canadian brands, many of its products are from international brands or manufactured overseas.',
+    notes:
+      'The Bay operates department stores across the nation. It is now primarily owned by a U.S. private equity firm. Although it stocks Canadian brands, many of its products are from international brands or manufactured overseas.',
     categoryId: 'clothing',
     aliases: ['american tall clothing', 'american tall apparel'],
-    popularity: 70
-  }
+    popularity: 70,
+  },
+  {
+    name: 'Roots',
+    company: 'Roots Canada',
+    percentCanadian: 80,
+    notes:
+      'An iconic Canadian brand known for its casual and outdoor apparel. While designed in Canada, much of its production occurs overseas.',
+    categoryId: 'clothing',
+    aliases: ['roots apparel', 'roots clothing'],
+    popularity: 90,
+  },
+  {
+    name: 'Frank And Oak',
+    company: 'Frank And Oak',
+    percentCanadian: 100,
+    notes: 'A Montreal-based sustainable fashion brand known for its modern, eco-friendly clothing.',
+    categoryId: 'clothing',
+    aliases: ['frank and oak apparel', 'frank and oak clothing'],
+    popularity: 87,
+  },
+  {
+    name: 'Good for Sunday',
+    company: 'Good for Sunday',
+    percentCanadian: 100,
+    notes: 'A Canadian brand focused on sustainable, comfortable clothing made with eco-friendly materials.',
+    categoryId: 'clothing',
+    aliases: ['good for sunday apparel', 'good for sunday clothing'],
+    popularity: 72,
+  },
+  {
+    name: 'Mackage',
+    company: 'Mackage',
+    percentCanadian: 80,
+    notes:
+      'A luxury outerwear brand known for high-quality coats and jackets, designed in Canada but with global production.',
+    categoryId: 'clothing',
+    aliases: ['mackage coats', 'mackage jackets'],
+    popularity: 88,
+  },
+  {
+    name: 'Canada Goose',
+    company: 'Canada Goose',
+    percentCanadian: 100,
+    notes: 'A globally recognized Canadian brand specializing in high-end, cold-weather outerwear, made in Canada.',
+    categoryId: 'clothing',
+    aliases: ['canada goose jackets', 'canada goose coats'],
+    popularity: 95,
+  },
+  {
+    name: 'Sentaler',
+    company: 'Sentaler',
+    percentCanadian: 100,
+    notes: 'A luxury outerwear brand known for alpaca wool coats, handmade in Canada.',
+    categoryId: 'clothing',
+    aliases: ['sentaler coats', 'sentaler outerwear'],
+    popularity: 84,
+  },
+  {
+    name: 'Soia & Kyo',
+    company: 'Soia & Kyo',
+    percentCanadian: 80,
+    notes:
+      'A Canadian outerwear brand that combines minimalist design with warmth, designed in Canada but manufactured abroad.',
+    categoryId: 'clothing',
+    aliases: ['soia and kyo coats', 'soia & kyo jackets'],
+    popularity: 82,
+  },
+  {
+    name: 'Lululemon',
+    company: 'Lululemon Athletica',
+    percentCanadian: 80,
+    notes:
+      'A globally recognized brand known for high-quality activewear, designed in Canada but primarily manufactured overseas.',
+    categoryId: 'clothing',
+    aliases: ['lululemon apparel', 'lululemon clothing'],
+    popularity: 98,
+  },
+  {
+    name: 'Arc’teryx',
+    company: 'Arc’teryx',
+    percentCanadian: 80,
+    notes:
+      'A high-performance outdoor clothing and gear brand, with some production in Canada but much outsourced internationally.',
+    categoryId: 'clothing',
+    aliases: ['arcteryx jackets', 'arcteryx outdoor clothing'],
+    popularity: 94,
+  },
+  {
+    name: 'ecologyst',
+    company: 'ecologyst',
+    percentCanadian: 100,
+    notes: 'A sustainable fashion brand making eco-friendly clothing with a focus on local production.',
+    categoryId: 'clothing',
+    aliases: ['ecologyst clothing', 'ecologyst apparel'],
+    popularity: 76,
+  },
+  {
+    name: 'DUER',
+    company: 'DUER',
+    percentCanadian: 100,
+    notes: 'A brand specializing in performance denim and casual wear, designed for active lifestyles.',
+    categoryId: 'clothing',
+    aliases: ['duer jeans', 'duer denim'],
+    popularity: 85,
+  },
+  {
+    name: 'FREED',
+    company: 'FREED',
+    percentCanadian: 100,
+    notes: 'A Canadian luxury outerwear brand focusing on high-end coats and sustainable production.',
+    categoryId: 'clothing',
+    aliases: ['freed coats', 'freed outerwear'],
+    popularity: 70,
+  },
+  {
+    name: 'Raised by Wolves',
+    company: 'Raised by Wolves',
+    percentCanadian: 100,
+    notes: 'A streetwear brand offering unique Canadian-made apparel with strong urban aesthetics.',
+    categoryId: 'clothing',
+    aliases: ['raised by wolves apparel', 'raised by wolves clothing'],
+    popularity: 78,
+  },
+  {
+    name: 'Outclass',
+    company: 'Outclass',
+    percentCanadian: 100,
+    notes: 'A Toronto-based brand producing high-quality, stylish menswear, all made in Canada.',
+    categoryId: 'clothing',
+    aliases: ['outclass clothing', 'outclass menswear'],
+    popularity: 75,
+  },
+  {
+    name: 'C’est Beau',
+    company: 'C’est Beau',
+    percentCanadian: 100,
+    notes: 'A Montreal-based brand known for minimalist, sustainable fashion made in Canada.',
+    categoryId: 'clothing',
+    aliases: ['cest beau clothing', 'cest beau fashion'],
+    popularity: 73,
+  },
+  {
+    name: 'Nike',
+    company: 'Nike, Inc.',
+    percentCanadian: 0,
+    notes:
+      'While headquartered in the U.S., most of its products are manufactured in countries like China, Vietnam, and Indonesia.',
+    categoryId: 'clothing',
+    aliases: ['nike apparel', 'nike clothing'],
+    popularity: 100,
+  },
+  {
+    name: 'Adidas',
+    company: 'Adidas AG',
+    percentCanadian: 0,
+    notes: 'A German multinational brand specializing in athletic wear, sneakers, and sports gear.',
+    categoryId: 'clothing',
+    aliases: ['adidas apparel', 'adidas clothing'],
+    popularity: 98,
+  },
+  {
+    name: 'H&M',
+    company: 'Hennes & Mauritz AB (H&M)',
+    percentCanadian: 0,
+    notes: 'A Swedish fast-fashion brand offering affordable and trendy clothing worldwide.',
+    categoryId: 'clothing',
+    aliases: ['h&m apparel', 'h&m clothing'],
+    popularity: 95,
+  },
+  {
+    name: 'Zara',
+    company: 'Inditex',
+    percentCanadian: 0,
+    notes: 'A Spanish fast-fashion retailer known for trendy styles and rapid production cycles.',
+    categoryId: 'clothing',
+    aliases: ['zara apparel', 'zara clothing'],
+    popularity: 93,
+  },
 ]
 
 export const clothingCategory = {
   name: 'Clothing',
   description: 'A selection of Canadian-designed and made clothing brands.',
-  aliases: ['apparel', 'fashion', 'clothing brands']
+  aliases: ['apparel', 'fashion', 'clothing brands'],
 }
