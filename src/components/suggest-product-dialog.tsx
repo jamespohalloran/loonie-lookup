@@ -1,95 +1,108 @@
 'use client'
 
-import * as React from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as Dialog from "@radix-ui/react-dialog"
-import { X } from "lucide-react"
-import { ProductSubmission, productSubmissionSchema } from "@/lib/schemas"
-import { Slider } from "./ui/slider"
-import { submitProductSuggestion } from "@/lib/actions"
-import { useToast } from "@/hooks/use-toast"
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { useToast } from '@/hooks/use-toast'
+import { submitProductSuggestion } from '@/lib/actions'
+import { ProductSubmission, productSubmissionSchema } from '@/lib/schemas'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { X } from 'lucide-react'
+import * as React from 'react'
+import { useForm } from 'react-hook-form'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
+import { Slider } from './ui/slider'
+import { Textarea } from './ui/textarea'
 
 interface SuggestProductDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
 }
 
+const PRODUCT_FIELDS = [
+  'productName',
+  'company',
+  'percentCanadian',
+  'category',
+  'searchAliases',
+  'proposedPopularity',
+  'notes',
+] as const
+
 export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialogProps) {
   const [isSubmitting, setIsSubmitting] = React.useState(false)
   const [error, setError] = React.useState<string | null>(null)
   const [step, setStep] = React.useState<'product' | 'submitter'>('product')
+  const [unexpectedError, setUnexpectedError] = React.useState<Error | null>(null)
   const { toast } = useToast()
-  
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    setValue,
-    watch,
-    trigger,
-    reset,
-  } = useForm<ProductSubmission>({
+  const firstInputRef = React.useRef<HTMLInputElement>(null)
+
+  const form = useForm<ProductSubmission>({
     resolver: zodResolver(productSubmissionSchema),
     defaultValues: {
       percentCanadian: 100,
       proposedPopularity: 50,
     },
+    mode: 'onChange', // Enable validation as user types
   })
 
-  // Reset form and error state when dialog opens/closes
+  // Focus management
   React.useEffect(() => {
-    if (!open) {
-      reset()
+    if (open && firstInputRef.current) {
+      setTimeout(() => firstInputRef.current?.focus(), 100)
+    }
+  }, [open, step])
+
+  // Cleanup on unmount
+  React.useEffect(() => {
+    return () => {
+      form.reset()
       setError(null)
       setStep('product')
-    }
-  }, [open, reset])
-
-  const onSubmit = async (data: ProductSubmission) => {
-    setIsSubmitting(true)
-    setError(null)
-
-    try {
-      await submitProductSuggestion(data)
-      
-      // Show success toast
-      toast({
-        title: "Product suggestion submitted!",
-        description: "Thank you for helping us build our Canadian product database.",
-        duration: 5000,
-      })
-      
-      onOpenChange(false)
-      reset()
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
-      
-      // Show error toast
-      toast({
-        title: "Error",
-        description: "Failed to submit product suggestion. Please try again.",
-        variant: "destructive",
-      })
-    } finally {
       setIsSubmitting(false)
+      setUnexpectedError(null)
     }
-  }
+  }, [form])
+
+  const handleClose = React.useCallback(
+    (isOpen: boolean) => {
+      if (!isOpen) {
+        form.reset()
+        setError(null)
+        setStep('product')
+        setIsSubmitting(false)
+        setUnexpectedError(null)
+        onOpenChange(false)
+      }
+    },
+    [form, onOpenChange]
+  )
+
+  // Reset form state when dialog opens/closes
+  React.useEffect(() => {
+    if (!open) {
+      handleClose(false)
+    }
+  }, [open, handleClose])
 
   const handleNext = async () => {
-    // Validate product fields before moving to next step
-    const isValid = await trigger([
-      'productName',
-      'company',
-      'percentCanadian',
-      'category',
-      'searchAliases',
-      'proposedPopularity',
-      'notes'
-    ])
-    
-    if (isValid) {
-      setStep('submitter')
+    try {
+      const result = await form.trigger(PRODUCT_FIELDS)
+      if (result) {
+        setStep('submitter')
+      }
+    } catch (err) {
+      setUnexpectedError(err instanceof Error ? err : new Error('Validation failed'))
     }
   }
 
@@ -97,205 +110,306 @@ export function SuggestProductDialog({ open, onOpenChange }: SuggestProductDialo
     setStep('product')
   }
 
-  const handleClose = () => {
-    setStep('product')
-    onOpenChange(false)
+  const onSubmit = async (data: ProductSubmission) => {
+    if (isSubmitting) return
+    setIsSubmitting(true)
+    setError(null)
+
+    try {
+      await submitProductSuggestion(data)
+
+      toast({
+        title: 'Product suggestion submitted!',
+        description: 'Thank you for helping us build our Canadian product database.',
+        duration: 5000,
+      })
+
+      handleClose(false)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+
+      toast({
+        title: 'Error',
+        description: 'Failed to submit product suggestion. Please try again.',
+        variant: 'destructive',
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  // Handle unexpected errors
+  if (unexpectedError) {
+    return (
+      <>
+        <Dialog open={open} onOpenChange={onOpenChange}>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Error</DialogTitle>
+              <DialogDescription>An unexpected error occurred. Please try again.</DialogDescription>
+            </DialogHeader>
+            <Button
+              onClick={() => {
+                setUnexpectedError(null)
+                handleClose(false)
+              }}
+            >
+              Close
+            </Button>
+          </DialogContent>
+        </Dialog>
+      </>
+    )
   }
 
   return (
-    <Dialog.Root open={open} onOpenChange={handleClose}>
-      <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black/50" />
-        <Dialog.Content className="fixed left-1/2 top-1/2 w-full max-w-md -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white p-6 shadow-lg">
-          <Dialog.Title className="text-lg font-semibold">
-            {step === 'product' ? 'Product Details' : 'Your Information'}
-          </Dialog.Title>
-          <Dialog.Description className="mt-2 text-sm text-gray-500">
-            {step === 'product' 
-              ? 'Tell us about the Canadian product you want to suggest'
-              : 'Almost done! Just need some details about you'}
-          </Dialog.Description>
+    <Dialog open={open} onOpenChange={handleClose}>
+      <DialogPortal>
+        <DialogOverlay />
+        <DialogContent className="flex max-h-[95vh] flex-col overflow-hidden">
+          <DialogHeader className="flex-shrink-0 pb-2">
+            <DialogTitle className="text-lg font-semibold">Submit Product Suggestion</DialogTitle>
 
-          {/* Add error message display */}
-          {error && (
-            <div className="mt-4 rounded-md bg-red-50 p-4">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                  </svg>
+            <DialogDescription className="mt-2 text-sm text-gray-500">
+              <span className="text-md block font-semibold">
+                {step === 'product' ? 'Product Details' : 'Your Information'}
+              </span>
+              {step === 'product'
+                ? 'Tell us about the Canadian product you want to suggest'
+                : 'Almost done! Just need some details about you'}
+              {error && (
+                <div className="mt-4 rounded-md bg-red-50">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm text-red-800">{error}</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="ml-3">
-                  <p className="text-sm text-red-800">{error}</p>
-                </div>
-              </div>
-            </div>
-          )}
+              )}
+            </DialogDescription>
+          </DialogHeader>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="mt-4 space-y-4">
-            {step === 'product' ? (
-              <>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Product Name</label>
-                  <p className="text-sm text-gray-500">Enter the name of the product you want to suggest.</p>
-                  <input
-                    {...register("productName")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                    placeholder="Product name"
-                  />
-                  {errors.productName && (
-                    <p className="mt-1 text-sm text-red-600">{errors.productName.message}</p>
-                  )}
-                </div>
+          <div className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)}>
+                <div className="flex-1 overflow-y-auto">
+                  <div className={step === 'product' ? 'space-y-2' : 'hidden'}>
+                    <FormField
+                      control={form.control}
+                      name="productName"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Product Name</FormLabel>
+                          <FormDescription>Enter the name of the product you want to suggest.</FormDescription>
+                          <FormControl>
+                            <Input placeholder="Product name" {...field} ref={firstInputRef} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Company</label>
-                  <p className="text-sm text-gray-500">Enter the company that produces this product (e.g., Unilever).</p>
-                  <input
-                    {...register("company")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                    placeholder="Unilever"
-                  />
-                  {errors.company && (
-                    <p className="mt-1 text-sm text-red-600">{errors.company.message}</p>
-                  )}
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="company"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Company</FormLabel>
+                          <FormDescription>
+                            Enter the company that produces this product (e.g., Unilever).
+                          </FormDescription>
+                          <FormControl>
+                            <Input placeholder="Unilever" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Percent Canadian Owned</label>
-                  <p className="text-sm text-gray-500">Enter the percentage of Canadian ownership (e.g., 0 for multinational, 100 for 100% Canadian).</p>
-                  <Slider
-                    value={[watch("percentCanadian")]}
-                    onValueChange={(value) => setValue("percentCanadian", value[0])}
-                    max={100}
-                    min={0}
-                    step={1}
-                    className="mt-2"
-                  />
-                  <span className="mt-1 block text-sm text-gray-500">{watch("percentCanadian")}%</span>
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="percentCanadian"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Percent Canadian Owned</FormLabel>
+                          <FormDescription>
+                            Enter the percentage of Canadian ownership (e.g., 0 for multinational, 100 for 100%
+                            Canadian).
+                          </FormDescription>
+                          <FormControl>
+                            <div className="space-y-2">
+                              <Slider
+                                value={[field.value]}
+                                onValueChange={(value) => field.onChange(value[0])}
+                                max={100}
+                                min={0}
+                                step={1}
+                              />
+                              <span className="text-muted-foreground text-sm">{field.value}%</span>
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Category</label>
-                  <p className="text-sm text-gray-500">Suggest what category this product belongs to.</p>
-                  <input
-                    {...register("category")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                    placeholder="soap"
-                  />
-                  {errors.category && (
-                    <p className="mt-1 text-sm text-red-600">{errors.category.message}</p>
-                  )}
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="category"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Category</FormLabel>
+                          <FormDescription>Suggest what category this product belongs to.</FormDescription>
+                          <FormControl>
+                            <Input placeholder="soap" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Notes</label>
-                  <p className="text-sm text-gray-500">Provide any additional details about the product.</p>
-                  <textarea
-                    {...register("notes")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                    rows={3}
-                    placeholder="Produced by Unilever, a multinational consumer goods company."
-                  />
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="notes"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Notes</FormLabel>
+                          <FormDescription>Provide any additional details about the product.</FormDescription>
+                          <FormControl>
+                            <Textarea
+                              placeholder="Produced by Unilever, a multinational consumer goods company."
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Aliases</label>
-                  <p className="text-sm text-gray-500">Enter alternative names for this product, separated by commas.  This will help our search engine find the product.</p>
-                  <input
-                    {...register("searchAliases")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                    placeholder="body wash"
-                  />
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="searchAliases"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Aliases</FormLabel>
+                          <FormDescription>
+                            Enter alternative names for this product, separated by commas.
+                          </FormDescription>
+                          <FormControl>
+                            <Input placeholder="body wash" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Proposed Popularity</label>
-                  <p className="text-sm text-gray-500">Rate how popular you think this product is (1-100).</p>
-                  <Slider
-                    value={[watch("proposedPopularity")]}
-                    onValueChange={(value) => setValue("proposedPopularity", value[0])}
-                    max={100}
-                    min={1}
-                    step={1}
-                    className="mt-2"
-                  />
-                  <span className="mt-1 block text-sm text-gray-500">{watch("proposedPopularity")}%</span>
-                </div>
-              </>
-            ) : (
-              <>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Your Name</label>
-                  <input
-                    {...register("submitterName")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                  />
-                  {errors.submitterName && (
-                    <p className="mt-1 text-sm text-red-600">{errors.submitterName.message}</p>
-                  )}
-                </div>
+                    <FormField
+                      control={form.control}
+                      name="proposedPopularity"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Proposed Popularity</FormLabel>
+                          <FormDescription>Rate how popular you think this product is (1-100).</FormDescription>
+                          <FormControl>
+                            <div className="space-y-2">
+                              <Slider
+                                value={[field.value]}
+                                onValueChange={(value) => field.onChange(value[0])}
+                                max={100}
+                                min={1}
+                                step={1}
+                              />
+                              <span className="text-muted-foreground text-sm">{field.value}%</span>
+                            </div>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700">Your Email</label>
-                  <input
-                    type="email"
-                    {...register("submitterEmail")}
-                    className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2"
-                  />
-                  {errors.submitterEmail && (
-                    <p className="mt-1 text-sm text-red-600">{errors.submitterEmail.message}</p>
-                  )}
-                </div>
-              </>
-            )}
+                  <div className={step === 'submitter' ? 'space-y-2' : 'hidden'}>
+                    <FormField
+                      control={form.control}
+                      name="submitterName"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Your Name</FormLabel>
+                          <FormControl>
+                            <Input {...field} ref={step === 'submitter' ? firstInputRef : undefined} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-            <div className="mt-6 flex justify-end space-x-3">
+                    <FormField
+                      control={form.control}
+                      name="submitterEmail"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Your Email</FormLabel>
+                          <FormControl>
+                            <Input type="email" inputMode="email" autoComplete="email" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                </div>
+              </form>
+            </Form>
+          </div>
+          <div className="mt-auto flex-shrink-0 border-t pt-2">
+            <DialogFooter className="flex flex-col gap-2 sm:flex-row">
               {step === 'submitter' && (
-                <button
+                <Button
                   type="button"
+                  variant="ghost"
                   onClick={handleBack}
-                  className="rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
                   disabled={isSubmitting}
+                  className="w-full sm:w-auto"
                 >
                   Back
-                </button>
+                </Button>
               )}
-              <button
+              <Button
                 type="button"
-                onClick={() => onOpenChange(false)}
-                className="rounded-md px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+                variant="ghost"
+                onClick={() => handleClose(false)}
                 disabled={isSubmitting}
+                className="w-full sm:w-auto"
               >
                 Cancel
-              </button>
+              </Button>
               {step === 'product' ? (
-                <button
-                  type="button"
-                  onClick={handleNext}
-                  className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500"
-                  disabled={isSubmitting}
-                >
+                <Button type="button" onClick={handleNext} disabled={isSubmitting} className="w-full sm:w-auto">
                   Next
-                </button>
+                </Button>
               ) : (
-                <button
-                  type="submit"
-                  className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
-                  disabled={isSubmitting}
-                >
+                <Button disabled={isSubmitting} className="w-full sm:w-auto" onClick={form.handleSubmit(onSubmit)}>
                   {isSubmitting ? 'Submitting...' : 'Submit'}
-                </button>
+                </Button>
               )}
-            </div>
-          </form>
+            </DialogFooter>
+          </div>
 
-          <Dialog.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-white transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
-            <X className="size-4" />
+          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-white transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+            <X className="h-4 w-4" />
             <span className="sr-only">Close</span>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
+          </DialogClose>
+        </DialogContent>
+      </DialogPortal>
+    </Dialog>
   )
-} 
+}
