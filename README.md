@@ -16,10 +16,14 @@ npm run dev
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Contributing
+## Contributors
+
+Thank you so much to the great folks helping with content, development, design, or even just sharing the word!
+
+## Contributing to the codebase
 
 Product data is found [here](https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products) grouped by category.
-It also needs to be added to the root-level products.ts page.
+It also needs to be added to the root-level `products.ts` page.
 
 ## Project Status
 

@@ -16,6 +16,7 @@ import { cheese, cheeseCategory } from './products/cheese'
 import { chicken, chickenCategory } from './products/chicken'
 import { chips } from './products/chips'
 import { chocolate, chocolateCategory } from './products/chocolate'
+import { clothing } from './products/clothing'
 import { coffee, coffeeCategory } from './products/coffee'
 import { cookingOil, cookingOilCategory } from './products/cookingOil'
 import { crackers, crackersCategory } from './products/crackers'
@@ -34,6 +35,7 @@ import { juice, juiceCategory } from './products/juice'
 import { ketchup, ketchupCategory } from './products/ketchup'
 import { detergentCategory, laundryDetergent } from './products/laundryDetergent'
 import { mayoCategory, mayonnaise } from './products/mayonnaise'
+import { menstrualCare } from './products/menstrual'
 import { milk, milkCategory } from './products/milk'
 import { mustard, mustardCategory } from './products/mustard'
 import { paperTowels, paperTowelsCategory } from './products/paperTowels'
@@ -53,7 +55,7 @@ import { sugar, sugarCategory } from './products/sugar'
 import { tea, teaCategory } from './products/tea'
 import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
-import { yogurt, yogurtCategory } from './products/yogurt'
+import { yogurtCategory } from './products/yogurt'
 
 import { airFresheners, airFreshenersCategory } from './products/air-fresheners'
 import { automotiveCleaners, automotiveCleanersCategory } from './products/automotive-cleaners'
@@ -88,59 +90,60 @@ import { toiletBowlCleaners, toiletBowlCleanersCategory } from './products/toile
 import { woodPolish, woodPolishCategory } from './products/wood-polish'
 
 export const products: Product[] = [
-  ...soda,
-  ...beer,
-  ...chips,
-  ...iceCream,
-  ...soap,
-  ...milk,
-  ...cheese,
-  ...yogurt,
-  ...butter,
-  ...bread,
-  ...eggs,
+  ...babyFormula,
   ...bacon,
-  ...sausages,
-  ...chicken,
+  ...bbqSauce,
   ...beef,
-  ...pork,
-  ...frozenVegetables,
-  ...frozenPizza,
-  ...frozenMeals,
-  ...crackers,
-  ...popcorn,
-  ...cereal,
-  ...granolaBars,
-  ...pasta,
-  ...rice,
+  ...beer,
+  ...bottledWater,
+  ...bread,
+  ...butter,
+  ...candy,
+  ...cannedFish,
   ...cannedSoup,
   ...cannedVegetables,
-  ...cannedFish,
-  ...peanutButter,
-  ...jam,
-  ...ketchup,
-  ...mustard,
-  ...mayonnaise,
-  ...bbqSauce,
-  ...saladDressing,
-  ...cookingOil,
-  ...flour,
-  ...sugar,
-  ...coffee,
-  ...tea,
-  ...bottledWater,
-  ...juice,
-  ...energyDrinks,
+  ...cereal,
+  ...cheese,
+  ...chicken,
+  ...chips,
   ...chocolate,
-  ...candy,
-  ...proteinBars,
-  ...babyFormula,
+  ...clothing,
+  ...coffee,
+  ...cookingOil,
+  ...crackers,
   ...diapers,
-  ...toiletPaper,
-  ...paperTowels,
-  ...laundryDetergent,
   ...dishSoap,
+  ...eggs,
+  ...energyDrinks,
+  ...flour,
+  ...frozenMeals,
+  ...frozenPizza,
+  ...frozenVegetables,
+  ...granolaBars,
+  ...iceCream,
+  ...jam,
+  ...juice,
+  ...ketchup,
+  ...laundryDetergent,
+  ...mayonnaise,
+  ...menstrualCare,
+  ...milk,
+  ...mustard,
+  ...paperTowels,
+  ...pasta,
+  ...peanutButter,
+  ...popcorn,
+  ...pork,
+  ...proteinBars,
+  ...rice,
+  ...saladDressing,
+  ...sausages,
   ...shampoo,
+  ...soap,
+  ...soda,
+  ...sugar,
+  ...tea,
+  ...toiletPaper,
   ...toothpaste,
   ...allPurposeCleaners,
   ...streamingServices,
@@ -178,58 +181,61 @@ export const products: Product[] = [
 ]
 
 export const categories = {
-  milk: milkCategory,
-  cheese: cheeseCategory,
-  yogurt: yogurtCategory,
-  butter: butterCategory,
-  bread: breadCategory,
-  eggs: eggsCategory,
+  babyFormula: babyFormulaCategory,
   bacon: baconCategory,
-  sausages: sausagesCategory,
-  chicken: chickenCategory,
+  bbqsauce: bbqsauceCategory,
   beef: beefCategory,
-  pork: porkCategory,
-  frozenVegetables: frozenVegetablesCategory,
-  frozenPizza: frozenPizzaCategory,
-  frozenMeals: frozenMealsCategory,
-  // iceCream: iceCreamCategory,
-  // chips: chipsCategory,
-  crackers: crackersCategory,
-  popcorn: popcornCategory,
-  cereal: cerealCategory,
-  granolaBars: granolaBarsCategory,
-  pasta: pastaCategory,
-  rice: riceCategory,
+  bottledWater: bottledWaterCategory,
+  bread: breadCategory,
+  butter: butterCategory,
+  candy: candyCategory,
+  cannedFish: cannedFishCategory,
   cannedSoup: cannedSoupCategory,
   cannedVegetables: cannedVegetablesCategory,
-  cannedFish: cannedFishCategory,
-  peanutButter: peanutButterCategory,
-  jam: jamCategory,
-  ketchup: ketchupCategory,
-  mustard: mustardCategory,
-  mayonnaise: mayoCategory,
-  bbqsauce: bbqsauceCategory,
-  saladDressing: saladDressingCategory,
-  cookingOil: cookingOilCategory,
-  flour: flourCategory,
-  sugar: sugarCategory,
-  coffee: coffeeCategory,
-  tea: teaCategory,
-  bottledWater: bottledWaterCategory,
-  juice: juiceCategory,
-  energyDrinks: energyDrinksCategory,
+  cereal: cerealCategory,
+  cheese: cheeseCategory,
+  chicken: chickenCategory,
   chocolate: chocolateCategory,
-  candy: candyCategory,
-  proteinBars: proteinBarsCategory,
-  babyFormula: babyFormulaCategory,
-  diapers: diapersCategory,
-  toiletPaper: toiletPaperCategory,
-  paperTowels: paperTowelsCategory,
+  coffee: coffeeCategory,
+  cookingOil: cookingOilCategory,
+  crackers: crackersCategory,
   detergent: detergentCategory,
+  diapers: diapersCategory,
   dishSoap: dishSoapCategory,
+  eggs: eggsCategory,
+  energyDrinks: energyDrinksCategory,
+  flour: flourCategory,
+  frozenMeals: frozenMealsCategory,
+  frozenPizza: frozenPizzaCategory,
+  frozenVegetables: frozenVegetablesCategory,
+  granolaBars: granolaBarsCategory,
+  jam: jamCategory,
+  juice: juiceCategory,
+  ketchup: ketchupCategory,
+  mayonnaise: mayoCategory,
+  milk: milkCategory,
+  mustard: mustardCategory,
+  paperTowels: paperTowelsCategory,
+  pasta: pastaCategory,
+  peanutButter: peanutButterCategory,
+  popcorn: popcornCategory,
+  pork: porkCategory,
+  proteinBars: proteinBarsCategory,
+  rice: riceCategory,
+  saladDressing: saladDressingCategory,
+  sausages: sausagesCategory,
   shampoo: shampooCategory,
-  toothpaste: toothpasteCategory,
   soap: soapCategory,
+  sugar: sugarCategory,
+  tea: teaCategory,
+  toiletPaper: toiletPaperCategory,
+  toothpaste: toothpasteCategory,
+  yogurt: yogurtCategory,
+  automotive: {
+    name: 'Automotive',
+    description: 'Car parts and accessories',
+    aliases: ['automotive', 'car', 'parts'],
+  },
   streamingServices: streamingServicesCategory,
   allPurposeCleaners: allPurposeCleanerCategory,
 
@@ -275,25 +281,40 @@ export const categories = {
     description: 'Potato chips and snack foods',
     aliases: ['chips', 'snacks'],
   },
-  ice_cream: {
-    name: 'Ice Cream',
-    description: 'Ice cream and frozen desserts',
-    aliases: ['ice cream', 'frozen desserts'],
+  baby: {
+    name: 'Baby',
+    description: 'Baby food and supplies',
+    aliases: ['baby', 'food', 'supplies'],
+  },
+  beauty: {
+    name: 'Beauty',
+    description: 'Makeup, skincare, and other beauty products',
+    aliases: ['beauty', 'makeup', 'skincare'],
+  },
+  beverages: {
+    name: 'Beverages',
+    description: 'Coffee, tea, and other beverages',
+    aliases: ['beverages', 'coffee', 'tea'],
   },
   beer: {
     name: 'Beer',
     description: 'Beer and alcoholic beverages',
     aliases: ['beer', 'alcoholic beverages'],
   },
-  soda: {
-    name: 'Soda',
-    description: 'Soft drinks and carbonated beverages',
-    aliases: ['soda', 'soft drinks', 'carbonated beverages', 'pop'],
+  books: {
+    name: 'Books',
+    description: 'Books and reading materials',
+    aliases: ['books', 'reading'],
   },
-  snacks: {
-    name: 'Snacks',
-    description: 'Chips, candy, and other snacks',
-    aliases: ['snacks', 'chips', 'candy'],
+  cleaning: {
+    name: 'Cleaning',
+    description: 'Cleaning supplies and household products',
+    aliases: ['cleaning', 'supplies', 'household'],
+  },
+  clothing: {
+    name: 'Clothing',
+    description: 'Clothing and accessories',
+    aliases: ['apparel', 'clothing', 'accessories', 'fashion'],
   },
   condiments: {
     name: 'Condiments',
@@ -305,20 +326,60 @@ export const categories = {
     description: 'Milk, cheese, and other dairy products',
     aliases: ['dairy', 'milk', 'cheese'],
   },
-  produce: {
-    name: 'Produce',
-    description: 'Fruits and vegetables',
-    aliases: ['produce', 'fruits', 'vegetables'],
-  },
-  beverages: {
-    name: 'Beverages',
-    description: 'Coffee, tea, and other beverages',
-    aliases: ['beverages', 'coffee', 'tea'],
+  electronics: {
+    name: 'Electronics',
+    description: 'Electronics and gadgets',
+    aliases: ['electronics', 'gadgets'],
   },
   frozen: {
     name: 'Frozen',
     description: 'Frozen meals and desserts',
     aliases: ['frozen', 'meals', 'desserts'],
+  },
+  health: {
+    name: 'Health',
+    description: 'Vitamins, supplements, and other health products',
+    aliases: ['health', 'vitamins', 'supplements'],
+  },
+  home: {
+    name: 'Home',
+    description: 'Furniture, decor, and other home items',
+    aliases: ['home', 'furniture', 'decor'],
+  },
+  ice_cream: {
+    name: 'Ice Cream',
+    description: 'Ice cream and frozen desserts',
+    aliases: ['ice cream', 'frozen desserts'],
+  },
+  meat: {
+    name: 'Meat',
+    description: 'Meat and meat products',
+    aliases: ['meat', 'products'],
+  },
+  menstrualCare: {
+    name: 'Menstrual Care',
+    description: 'Menstrual, period and other products for feminine hygiene',
+    aliases: ['menstrual', 'period', 'feminine hygiene'],
+  },
+  movies: {
+    name: 'Movies',
+    description: 'Movies and video products',
+    aliases: ['movies', 'video'],
+  },
+  music: {
+    name: 'Music',
+    description: 'Music and audio products',
+    aliases: ['music', 'audio'],
+  },
+  office: {
+    name: 'Office',
+    description: 'Office supplies and equipment',
+    aliases: ['office', 'supplies', 'equipment'],
+  },
+  outdoor: {
+    name: 'Outdoor',
+    description: 'Camping gear and outdoor equipment',
+    aliases: ['outdoor', 'camping', 'gear'],
   },
   pantry: {
     name: 'Pantry',
@@ -330,105 +391,50 @@ export const categories = {
     description: 'Shampoo, soap, and other personal care products',
     aliases: ['personal care', 'shampoo', 'soap'],
   },
-  cleaning: {
-    name: 'Cleaning',
-    description: 'Cleaning supplies and household products',
-    aliases: ['cleaning', 'supplies', 'household'],
-  },
   pet: {
     name: 'Pet',
     description: 'Pet food and supplies',
     aliases: ['pet', 'food', 'supplies'],
   },
-  baby: {
-    name: 'Baby',
-    description: 'Baby food and supplies',
-    aliases: ['baby', 'food', 'supplies'],
-  },
-  health: {
-    name: 'Health',
-    description: 'Vitamins, supplements, and other health products',
-    aliases: ['health', 'vitamins', 'supplements'],
-  },
-  beauty: {
-    name: 'Beauty',
-    description: 'Makeup, skincare, and other beauty products',
-    aliases: ['beauty', 'makeup', 'skincare'],
-  },
-  clothing: {
-    name: 'Clothing',
-    description: 'Clothing and accessories',
-    aliases: ['clothing', 'accessories'],
-  },
-  electronics: {
-    name: 'Electronics',
-    description: 'Electronics and gadgets',
-    aliases: ['electronics', 'gadgets'],
-  },
-  home: {
-    name: 'Home',
-    description: 'Furniture, decor, and other home items',
-    aliases: ['home', 'furniture', 'decor'],
-  },
-  office: {
-    name: 'Office',
-    description: 'Office supplies and equipment',
-    aliases: ['office', 'supplies', 'equipment'],
-  },
-  automotive: {
-    name: 'Automotive',
-    description: 'Car parts and accessories',
-    aliases: ['automotive', 'car', 'parts'],
-  },
-  tools: {
-    name: 'Tools',
-    description: 'Tools and hardware',
-    aliases: ['tools', 'hardware'],
-  },
-  sports: {
-    name: 'Sports',
-    description: 'Sporting goods and equipment',
-    aliases: ['sports', 'goods', 'equipment'],
-  },
-  outdoor: {
-    name: 'Outdoor',
-    description: 'Camping gear and outdoor equipment',
-    aliases: ['outdoor', 'camping', 'gear'],
-  },
-  toys: {
-    name: 'Toys',
-    description: 'Toys and games',
-    aliases: ['toys', 'games'],
-  },
-  books: {
-    name: 'Books',
-    description: 'Books and reading materials',
-    aliases: ['books', 'reading'],
-  },
-  music: {
-    name: 'Music',
-    description: 'Music and audio products',
-    aliases: ['music', 'audio'],
-  },
-  movies: {
-    name: 'Movies',
-    description: 'Movies and video products',
-    aliases: ['movies', 'video'],
-  },
-  software: {
-    name: 'Software',
-    description: 'Software and digital products',
-    aliases: ['software', 'digital'],
+  produce: {
+    name: 'Produce',
+    description: 'Fruits and vegetables',
+    aliases: ['produce', 'fruits', 'vegetables'],
   },
   services: {
     name: 'Services',
     description: 'Services and subscriptions',
     aliases: ['services', 'subscriptions'],
   },
-  meat: {
-    name: 'Meat',
-    description: 'Meat and meat products',
-    aliases: ['meat', 'products'],
+  snacks: {
+    name: 'Snacks',
+    description: 'Chips, candy, and other snacks',
+    aliases: ['snacks', 'chips', 'candy'],
+  },
+  soda: {
+    name: 'Soda',
+    description: 'Soft drinks and carbonated beverages',
+    aliases: ['soda', 'soft drinks', 'carbonated beverages', 'pop'],
+  },
+  software: {
+    name: 'Software',
+    description: 'Software and digital products',
+    aliases: ['software', 'digital'],
+  },
+  sports: {
+    name: 'Sports',
+    description: 'Sporting goods and equipment',
+    aliases: ['sports', 'goods', 'equipment'],
+  },
+  tools: {
+    name: 'Tools',
+    description: 'Tools and hardware',
+    aliases: ['tools', 'hardware'],
+  },
+  toys: {
+    name: 'Toys',
+    description: 'Toys and games',
+    aliases: ['toys', 'games'],
   },
 }
 
@@ -440,4 +446,8 @@ export interface Product {
   categoryId: keyof typeof categories
   aliases: string[]
   popularity?: number
+}
+
+export function getProductsByCategory(categoryId: keyof typeof categories) {
+  return products.filter((product) => product.categoryId === categoryId)
 }
