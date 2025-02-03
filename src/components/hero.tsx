@@ -4,9 +4,9 @@ import { Suspense } from 'react'
 import Search from './search'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
-export default function Hero() {
+export default function Hero({ showSearch = true }: { showSearch?: boolean }) {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [searchTerm, setSearchTerm] = useState(searchParams?.get('query') || '')
@@ -28,9 +28,11 @@ export default function Hero() {
         <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600">
           Search for Canadian alternatives to your favourite products.
         </p>
-        <Suspense>
-          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        </Suspense>
+        { showSearch && ( 
+          <Suspense>
+            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          </Suspense>
+        )}
       </div>
     </div>
   )
