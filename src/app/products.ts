@@ -53,6 +53,7 @@ import { tea, teaCategory } from './products/tea'
 import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { yogurt, yogurtCategory } from './products/yogurt'
+import { menstrualCare, menstrualCategory } from './products/menstrual'
 
 export const products: Product[] = [
   ...babyFormula,
@@ -91,6 +92,7 @@ export const products: Product[] = [
   ...ketchup,
   ...laundryDetergent,
   ...mayonnaise,
+  ...menstrualCare,
   ...milk,
   ...mustard,
   ...paperTowels,
@@ -246,6 +248,11 @@ export const categories = {
     name: 'Meat',
     description: 'Meat and meat products',
     aliases: ['meat', 'products'],
+  },
+  menstrualCare: {
+    name: 'Menstrual Care',
+    description: 'Menstrual, period and other products for feminine hygiene',
+    aliases: ['menstrual', 'period', 'feminine hygiene'],
   },
   movies: {
     name: 'Movies',
