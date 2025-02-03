@@ -27,7 +27,9 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-### How to Contribute
+[![All Contributors](https://img.shields.io/github/all-contributors/projectOwner/projectName?color=ee8449&style=flat-square)](#contributors)
+
+## How to Contribute
 
 Product data is found [here](https://github.com/jamespohalloran/loonie-lookup/tree/main/src/app/products) grouped by category.
 It also needs to be added to the root-level products.ts page.
