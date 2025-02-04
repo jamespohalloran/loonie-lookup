@@ -2,6 +2,15 @@ import { Product } from '../products'
 
 export const babyFormula: Product[] = [
   {
+    name: 'Baby Purées',
+    company: 'Baby Gourmet',
+    percentCanadian: 100,
+    notes: 'Certified B Corp Canadian company',
+    categoryId: 'babyFormula',
+    aliases: ['baby gourmet baby formula'],
+    popularity: 50
+  },
+  {
     name: 'Similac',
     company: 'Abbott Laboratories',
     percentCanadian: 0,
