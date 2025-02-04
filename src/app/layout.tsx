@@ -7,6 +7,7 @@ import { ApplicationLayout } from './application-layout'
 export const runtime = 'edge'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://loonielookup.ca'),
   title: {
     template: '%s - Loonie Lookup',
     default: 'Loonie Lookup',
