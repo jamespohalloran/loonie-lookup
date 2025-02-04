@@ -20,6 +20,15 @@ export const clothing: Product[] = [
     popularity: 50,
   },
   {
+    name: 'Lou Lou Lollipop',
+    company: 'Lou Lou Lollipop',
+    percentCanadian: 100,
+    notes: 'B-Corp Company located in Richmond, BC',
+    categoryId: 'clothing',
+    aliases: ['lou lou lollipop', 'lou lou lollipop clothing', 'b corp clothing'],
+    popularity: 50,
+  },
+  {
     name: 'Muttonhead',
     company: 'Muttonhead Collective',
     percentCanadian: 100,
