@@ -4,6 +4,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Diana Sauce',
     company: 'Kraft Heinz Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand known for BBQ sauces, owned by Kraft Heinz. Available nationwide.',
     categoryId: 'bbqsauce',
@@ -13,6 +14,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Presidents Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaws’ private label BBQ sauce, can be found in Loblaws-owned stores across Canada.',
     categoryId: 'bbqsauce',
@@ -22,6 +24,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Bull’s Eye',
     company: 'Kraft Heinz Canada',
+    countryCode: 'CA',
     percentCanadian: 20,
     notes: 'Owned by Kraft Heinz, Bull’s Eye BBQ Sauce is made in Canada with a mix of domestic and imported ingredients.',
     categoryId: 'bbqsauce',
@@ -31,6 +34,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Sweet Baby Ray’s',
     company: 'Ken’s Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Although it’s widely available in Canadian grocery stores, Sweet Baby Ray’s is a U.S. product.',
     categoryId: 'bbqsauce',
@@ -40,6 +44,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Kraft BBQ Sauce',
     company: 'Kraft Heinz',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand that’s widely available in Canada.',
     categoryId: 'bbqsauce',
@@ -49,6 +54,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ store brand BBQ sauce, can be found in Sobeys and affiliated stores.',
     categoryId: 'bbqsauce',
@@ -58,6 +64,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Club House La Grille',
     company: 'McCormick Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'Club House, owned by McCormick, is based in London, Ontario but its BBQ sauces are not Canadian.',
     categoryId: 'bbqsauce',
@@ -67,6 +74,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Stubb’s',
     company: 'McCormick & Co',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Stubb’s is an American BBQ sauce that’s popular in Canada.',
     categoryId: 'bbqsauce',
@@ -76,6 +84,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'KC Masterpiece',
     company: 'The HV Food Products Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'KC Masterpiece is an American BBQ sauce that is distributed in Canada.',
     categoryId: 'bbqsauce',
@@ -85,6 +94,7 @@ export const bbqSauce: Product[] = [
   {
     name: 'Cattle Boyz',
     company: 'Cattle Boyz Foods Ltd',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Cattle Boyz is a Canadian family owned and operated BBQ sauce company, available across Canada.',
     categoryId: 'bbqsauce',

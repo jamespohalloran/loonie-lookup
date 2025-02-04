@@ -4,6 +4,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Red Bull',
     company: 'Red Bull GmbH',
+    countryCode: 'AT',
     percentCanadian: 0,
     notes: 'A well-known energy drink brand originated in Austria.',
     categoryId: 'energyDrinks',
@@ -13,6 +14,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Monster Energy',
     company: 'Monster Beverage',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American energy drink brand widely available in Canada.',
     categoryId: 'energyDrinks',
@@ -22,6 +24,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Rockstar',
     company: 'Rockstar Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American energy drink brand, popular and available in many Canadian stores.',
     categoryId: 'energyDrinks',
@@ -31,6 +34,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'AMP Energy',
     company: 'PepsiCo',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced by PepsiCo, widely distributed across Canada.',
     categoryId: 'energyDrinks',
@@ -40,6 +44,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Full Throttle',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Owned by the Coca-Cola Company and distributed across Canada.',
     categoryId: 'energyDrinks',
@@ -49,6 +54,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'NOS Energy Drink',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced by the Coca-Cola Company, widespread in Canadian stores.',
     categoryId: 'energyDrinks',
@@ -58,6 +64,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Relentless',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Another energy drink brand under the Coca-Cola Company banner.',
     categoryId: 'energyDrinks',
@@ -67,6 +74,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Mountain Dew Kickstart',
     company: 'PepsiCo',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A PepsiCo product with a considerably high popularity in Canada.',
     categoryId: 'energyDrinks',
@@ -76,6 +84,7 @@ export const energyDrinks: Product[] = [
   {
     name: 'Burn',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Owned by the Coca-Cola Company and widely available across Canada.',
     categoryId: 'energyDrinks',
@@ -85,6 +94,7 @@ export const energyDrinks: Product[] = [
   {
     name: '5-hour Energy',
     company: 'Living Essentials',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand energy shot that has a steady following in Canada.',
     categoryId: 'energyDrinks',

@@ -4,6 +4,7 @@ export const chicken: Product[] = [
   {
     name: 'Maple Leaf Prime',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian meat brand, Maple Leaf products are made with Canadian-raised chicken.',
     categoryId: 'chicken',
@@ -13,6 +14,7 @@ export const chicken: Product[] = [
   {
     name: 'Lilydale',
     company: 'Sofina Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian food manufacturer producing chicken from Canadian farms. Available in grocery stores nationwide.',
     categoryId: 'chicken',
@@ -22,6 +24,7 @@ export const chicken: Product[] = [
   {
     name: 'Irresistibles',
     company: 'Metro Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Metro’s store brand chicken is sourced solely from Canada, available in their supermarkets across the country.',
     categoryId: 'chicken',
@@ -31,6 +34,7 @@ export const chicken: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'The private label brand of Sobeys, their chicken products feature Canadian-raised poultry.',
     categoryId: 'chicken',
@@ -40,6 +44,7 @@ export const chicken: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaws’ store brand chicken, sourced solely within Canada.',
     categoryId: 'chicken',
@@ -49,6 +54,7 @@ export const chicken: Product[] = [
   {
     name: 'Butterball',
     company: 'Butterball, LLC',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American poultry company, commonly recognized and available but products are imported.',
     categoryId: 'chicken',
@@ -58,6 +64,7 @@ export const chicken: Product[] = [
   {
     name: 'Janes',
     company: 'Sofina Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand producing chicken from Canadian farms. Known for their breaded chicken products.',
     categoryId: 'chicken',
@@ -67,6 +74,7 @@ export const chicken: Product[] = [
   {
     name: 'Tyson',
     company: 'Tyson Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A U.S. brand producing a wide variety of chicken products, available in Canada but not locally sourced.',
     categoryId: 'chicken',
@@ -76,6 +84,7 @@ export const chicken: Product[] = [
   {
     name: 'Your Fresh Market',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand, their chicken is a mixture of domestic and imported product.',
     categoryId: 'chicken',
@@ -85,6 +94,7 @@ export const chicken: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco Wholesale Corporation',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label, available at all Costco locations but not in regular grocery stores. Products are a mix of Canadian and imported.',
     categoryId: 'chicken',

@@ -4,6 +4,7 @@ export const soap: Product[] = [
   {
     name: 'Dove',
     company: 'Unilever',
+    countryCode: 'NL',
     percentCanadian: 0,
     notes: 'Produced by Unilever, a multinational consumer goods company.',
     categoryId: 'soap',
@@ -13,6 +14,7 @@ export const soap: Product[] = [
   {
     name: 'Lifebuoy',
     company: 'Unilever',
+    countryCode: 'NL',
     percentCanadian: 0,
     notes: 'Lifebuoy is a Unilever brand, based out of the USA.',
     categoryId: 'soap',
@@ -22,6 +24,7 @@ export const soap: Product[] = [
   {
     name: 'Irish Spring',
     company: 'Colgate-Palmolive',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Irish Spring is produced by American multinational company Colgate-Palmolive.',
     categoryId: 'soap',
@@ -31,6 +34,7 @@ export const soap: Product[] = [
   {
     name: 'Olay',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Olay is owned by Procter & Gamble, a multinational consumer goods corporation headquartered in America.',
     categoryId: 'soap',
@@ -40,6 +44,7 @@ export const soap: Product[] = [
   {
     name: 'Lush',
     company: 'Lush Retail',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Lush is a handmade cosmetics company founded in Canada. Its products are available in both physical retail stores and online.',
     categoryId: 'soap',
@@ -49,6 +54,7 @@ export const soap: Product[] = [
   {
     name: 'Ivory',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Ivory is produced by the American-based company, Procter & Gamble.',
     categoryId: 'soap',
@@ -58,6 +64,7 @@ export const soap: Product[] = [
   {
     name: 'Lever 2000',
     company: 'Unilever',
+    countryCode: 'NL',
     percentCanadian: 0,
     notes: 'Lever 2000 is owned by the multinational corporation, Unilever.',
     categoryId: 'soap',
@@ -67,6 +74,7 @@ export const soap: Product[] = [
   {
     name: 'Boreal Soap',
     company: 'Boreal Manufactory',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Boreal is a 100% Canadian brand, created using natural ingredients sourced in Canada.',
     categoryId: 'soap',
@@ -76,6 +84,7 @@ export const soap: Product[] = [
   {
     name: 'Rocky Mountain Soap Company',
     company: 'Rocky Mountain Soap Company',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Rocky Mountain Soap is a Canadian company that handcrafts soaps using 100% natural ingredients.',
     categoryId: 'soap',
@@ -85,6 +94,7 @@ export const soap: Product[] = [
   {
     name: 'The Soap Works',
     company: 'The Soap Works',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A proudly Canadian company, The Soap Works produces all-natural soaps using traditional formulas.',
     categoryId: 'soap',

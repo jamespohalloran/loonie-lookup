@@ -4,6 +4,7 @@ export const cheese: Product[] = [
   {
     name: 'Black Diamond',
     company: 'Lactalis Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand under Lactalis, using Canadian-sourced milk for cheese production.',
     categoryId: 'cheese',
@@ -12,6 +13,7 @@ export const cheese: Product[] = [
   {
     name: 'Cracker Barrel',
     company: 'Lactalis Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes:
       'Originally a Kraft brand, now owned by Lactalis. Some varieties are made in Canada, while others are imported.',
@@ -21,6 +23,7 @@ export const cheese: Product[] = [
   {
     name: 'Saputo',
     company: 'Saputo Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: "One of Canada's largest dairy companies, producing a wide variety of cheeses using Canadian milk.",
     categoryId: 'cheese',
@@ -29,6 +32,7 @@ export const cheese: Product[] = [
   {
     name: 'Tre Stelle',
     company: 'Arla Foods',
+    countryCode: 'DK',
     percentCanadian: 50,
     notes: 'Owned by a multinational company, but some cheeses are produced in Canada using Canadian dairy.',
     categoryId: 'cheese',
@@ -37,6 +41,7 @@ export const cheese: Product[] = [
   {
     name: 'Lactantia',
     company: 'Lactalis Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian dairy brand offering various cheeses made with locally sourced milk.',
     categoryId: 'cheese',
@@ -45,14 +50,16 @@ export const cheese: Product[] = [
   {
     name: 'Agropur',
     company: 'Agropur Cooperative',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian dairy cooperative producing a wide range of cheeses from Canadian dairy farms.',
     categoryId: 'cheese',
     aliases: ['agropur'],
   },
   {
-    name: 'President’s Choice Cheese',
+    name: "President’s Choice Cheese",
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes:
       "Loblaw's private label, most cheese varieties are made in Canada, but some ingredients or specialty cheeses are imported.",
@@ -62,6 +69,7 @@ export const cheese: Product[] = [
   {
     name: 'Kirkland Signature Cheese',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Some cheeses are produced in Canada, but many varieties are sourced internationally.',
     categoryId: 'cheese',
@@ -70,6 +78,7 @@ export const cheese: Product[] = [
   {
     name: 'Armstrong Cheese',
     company: 'Saputo Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian cheese brand under Saputo, made entirely with Canadian milk.',
     categoryId: 'cheese',
@@ -78,6 +87,7 @@ export const cheese: Product[] = [
   {
     name: 'Castello',
     company: 'Arla Foods',
+    countryCode: 'DK',
     percentCanadian: 30,
     notes: 'A Danish-owned brand, but some varieties are produced in Canada.',
     categoryId: 'cheese',

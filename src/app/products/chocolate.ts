@@ -4,6 +4,7 @@ export const chocolate: Product[] = [
   {
     name: 'Cadbury',
     company: 'Mondelēz International',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Originally a British brand, owned by an American confectionery, Mondelēz International.',
     categoryId: 'chocolate',
@@ -13,6 +14,7 @@ export const chocolate: Product[] = [
   {
     name: 'Hershey',
     company: 'The Hershey Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American chocolate brand.',
     categoryId: 'chocolate',
@@ -22,6 +24,7 @@ export const chocolate: Product[] = [
   {
     name: 'Ferrero Rocher',
     company: 'Ferrero SpA',
+    countryCode: 'IT',
     percentCanadian: 0,
     notes: 'Italian manufacturer of branded chocolate.',
     categoryId: 'chocolate',
@@ -31,8 +34,9 @@ export const chocolate: Product[] = [
   {
     name: 'Kit Kat',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
-    notes: 'Produced globally each year by Nestle, which acquired Rowntrees in 1988.',
+    notes: 'Produced globally each year by Nestle, which acquired Rowntrees in 1988. Owned by Swiss multinational Nestle.',
     categoryId: 'chocolate',
     aliases: ['kit kat chocolate'],
     popularity: 80,
@@ -40,8 +44,9 @@ export const chocolate: Product[] = [
   {
     name: 'Smarties',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
-    notes: 'Another Nestle product, different candy-coated chocolate than the American smarties.',
+    notes: 'Another Nestle product, different candy-coated chocolate than the American smarties. Owned by Swiss multinational Nestle.',
     categoryId: 'chocolate',
     aliases: ['smarties candy'],
     popularity: 75,
@@ -49,8 +54,9 @@ export const chocolate: Product[] = [
   {
     name: 'Aero',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
-    notes: 'A UK-based chocolate product that found its way to Canada.',
+    notes: 'A UK-based chocolate product that found its way to Canada. Owned by Swiss multinational Nestle.',
     categoryId: 'chocolate',
     aliases: ['aero chocolate'],
     popularity: 70,
@@ -58,6 +64,7 @@ export const chocolate: Product[] = [
   {
     name: 'Ganong',
     company: 'Ganong Bros. Limited',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Based in New Brunswick, Ganong Chocolates is Canada’s oldest chocolate and candy company.',
     categoryId: 'chocolate',
@@ -67,8 +74,9 @@ export const chocolate: Product[] = [
   {
     name: 'Pot of Gold',
     company: 'Hershey Canada',
-    percentCanadian: 100,
-    notes: 'Canada’s first box-chocolate brand, now owned by Hershey.',
+    countryCode: 'CA',
+    percentCanadian: 30,
+    notes: 'Canada’s first box-chocolate brand, now owned by Hershey, a US company.',
     categoryId: 'chocolate',
     aliases: ['pot of gold chocolate'],
     popularity: 60,
@@ -76,8 +84,9 @@ export const chocolate: Product[] = [
   {
     name: 'Caramilk',
     company: 'Cadbury',
+    countryCode: 'CA',
     percentCanadian: 50,
-    notes: 'The Caramilk bar was invented in 1968 at Cadbury’s factory in the Eglinton and Sloane area of Toronto.',
+    notes: 'Invented in 1968 at Cadbury’s factory in the Eglinton and Sloane area of Toronto, still produced exclusively in Ontario. Cadbury is now owned by Mondelēz International.',
     categoryId: 'chocolate',
     aliases: ['caramilk chocolate'],
     popularity: 55,
@@ -85,8 +94,9 @@ export const chocolate: Product[] = [
   {
     name: 'Coffee Crisp',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
-    notes: 'Developed based on a chocolate made in Canada since 1930s.',
+    notes: 'Developed based on a chocolate made in Canada since 1930s. Owned by Swiss multinational Nestle.',
     categoryId: 'chocolate',
     aliases: ['coffee crisp chocolate'],
     popularity: 50,

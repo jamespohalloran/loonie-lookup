@@ -28,12 +28,14 @@ import { flour, flourCategory } from './products/flour'
 import { frozenMeals, frozenMealsCategory } from './products/frozenMeals'
 import { frozenPizza, frozenPizzaCategory } from './products/frozenPizza'
 import { frozenVegetables, frozenVegetablesCategory } from './products/frozenVegetables'
+import { hosting } from './products/hosting'
 import { granolaBars, granolaBarsCategory } from './products/granolaBars'
 import { iceCream } from './products/iceCream'
 import { jam, jamCategory } from './products/jam'
 import { juice, juiceCategory } from './products/juice'
 import { ketchup, ketchupCategory } from './products/ketchup'
 import { mayoCategory, mayonnaise } from './products/mayonnaise'
+import { menstrualCare, menstrualCategory } from './products/menstrual'
 import { milk, milkCategory } from './products/milk'
 import { mustard, mustardCategory } from './products/mustard'
 import { paperTowels, paperTowelsCategory } from './products/paperTowels'
@@ -53,7 +55,7 @@ import { tea, teaCategory } from './products/tea'
 import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { yogurt, yogurtCategory } from './products/yogurt'
-import { menstrualCare, menstrualCategory } from './products/menstrual'
+
 
 export const products: Product[] = [
   ...babyFormula,
@@ -85,6 +87,7 @@ export const products: Product[] = [
   ...frozenMeals,
   ...frozenPizza,
   ...frozenVegetables,
+  ...hosting,
   ...granolaBars,
   ...iceCream,
   ...jam,
@@ -111,6 +114,7 @@ export const products: Product[] = [
   ...tea,
   ...toiletPaper,
   ...toothpaste,
+  ...yogurt,
 ]
 
 export const categories = {
@@ -132,7 +136,7 @@ export const categories = {
   coffee: coffeeCategory,
   cookingOil: cookingOilCategory,
   crackers: crackersCategory,
-  detergent: detergentCategory,
+  laundryDetergent: detergentCategory,
   diapers: diapersCategory,
   dishSoap: dishSoapCategory,
   eggs: eggsCategory,
@@ -234,6 +238,11 @@ export const categories = {
     description: 'Vitamins, supplements, and other health products',
     aliases: ['health', 'vitamins', 'supplements'],
   },
+  hosting: {
+    name: 'Hosting Services',
+    description: 'Web/Server hosting and domain services',
+    aliases: ['hosting', 'web hosting', 'domain', 'server', 'cloud', 'backend'],
+  },
   home: {
     name: 'Home',
     description: 'Furniture, decor, and other home items',
@@ -334,9 +343,98 @@ export const categories = {
 export interface Product {
   name: string
   company: string
+  countryCode?: string
   percentCanadian: number
   notes: string
   categoryId: keyof typeof categories
   aliases: string[]
   popularity?: number
 }
+
+export const countryCode = {
+  AE: { flag: '🇦🇪', name: 'United Arab Emirates' },
+  AR: { flag: '🇦🇷', name: 'Argentina' },
+  AT: { flag: '🇦🇹', name: 'Austria' },
+  AU: { flag: '🇦🇺', name: 'Australia' },
+  BE: { flag: '🇧🇪', name: 'Belgium' },
+  BG: { flag: '🇧🇬', name: 'Bulgaria' },
+  BR: { flag: '🇧🇷', name: 'Brazil' },
+  CA: { flag: '🇨🇦', name: 'Canada' },
+  CH: { flag: '🇨🇭', name: 'Switzerland' },
+  CL: { flag: '🇨🇱', name: 'Chile' },
+  CN: { flag: '🇨🇳', name: 'China' },
+  CO: { flag: '🇨🇴', name: 'Colombia' },
+  CZ: { flag: '🇨🇿', name: 'Czech Republic' },
+  DE: { flag: '🇩🇪', name: 'Germany' },
+  DK: { flag: '🇩🇰', name: 'Denmark' },
+  DZ: { flag: '🇩🇿', name: 'Algeria' },
+  EG: { flag: '🇪🇬', name: 'Egypt' },
+  ES: { flag: '🇪🇸', name: 'Spain' },
+  FI: { flag: '🇫🇮', name: 'Finland' },
+  FR: { flag: '🇫🇷', name: 'France' },
+  GB: { flag: '🇬🇧', name: 'United Kingdom' },
+  GR: { flag: '🇬🇷', name: 'Greece' },
+  HK: { flag: '🇭🇰', name: 'Hong Kong' },
+  HU: { flag: '🇭🇺', name: 'Hungary' },
+  ID: { flag: '🇮🇩', name: 'Indonesia' },
+  IE: { flag: '🇮🇪', name: 'Ireland' },
+  IL: { flag: '🇮🇱', name: 'Israel' },
+  IN: { flag: '🇮🇳', name: 'India' },
+  IQ: { flag: '🇮🇶', name: 'Iraq' },
+  IR: { flag: '🇮🇷', name: 'Iran' },
+  IS: { flag: '🇮🇸', name: 'Iceland' },
+  IT: { flag: '🇮🇹', name: 'Italy' },
+  JP: { flag: '🇯🇵', name: 'Japan' },
+  KE: { flag: '🇰🇪', name: 'Kenya' },
+  KR: { flag: '🇰🇷', name: 'South Korea' },
+  KW: { flag: '🇰🇼', name: 'Kuwait' },
+  KZ: { flag: '🇰🇿', name: 'Kazakhstan' },
+  LB: { flag: '🇱🇧', name: 'Lebanon' },
+  LK: { flag: '🇱🇰', name: 'Sri Lanka' },
+  LT: { flag: '🇱🇹', name: 'Lithuania' },
+  LU: { flag: '🇱🇺', name: 'Luxembourg' },
+  LV: { flag: '🇱🇻', name: 'Latvia' },
+  MA: { flag: '🇲🇦', name: 'Morocco' },
+  ME: { flag: '🇲🇪', name: 'Montenegro' },
+  MK: { flag: '🇲🇰', name: 'North Macedonia' },
+  MT: { flag: '🇲🇹', name: 'Malta' },
+  MX: { flag: '🇲🇽', name: 'Mexico' },
+  MY: { flag: '🇲🇾', name: 'Malaysia' },
+  NG: { flag: '🇳🇬', name: 'Nigeria' },
+  NL: { flag: '🇳🇱', name: 'Netherlands' },
+  NO: { flag: '🇳🇴', name: 'Norway' },
+  NP: { flag: '🇳🇵', name: 'Nepal' },
+  NZ: { flag: '🇳🇿', name: 'New Zealand' },
+  OM: { flag: '🇴🇲', name: 'Oman' },
+  PE: { flag: '🇵🇪', name: 'Peru' },
+  PH: { flag: '🇵🇭', name: 'Philippines' },
+  PK: { flag: '🇵🇰', name: 'Pakistan' },
+  PL: { flag: '🇵🇱', name: 'Poland' },
+  PT: { flag: '🇵🇹', name: 'Portugal' },
+  QA: { flag: '🇶🇦', name: 'Qatar' },
+  RO: { flag: '🇷🇴', name: 'Romania' },
+  RS: { flag: '🇷🇸', name: 'Serbia' },
+  RU: { flag: '🇷🇺', name: 'Russia' },
+  SA: { flag: '🇸🇦', name: 'Saudi Arabia' },
+  SE: { flag: '🇸🇪', name: 'Sweden' },
+  SG: { flag: '🇸🇬', name: 'Singapore' },
+  SI: { flag: '🇸🇮', name: 'Slovenia' },
+  SK: { flag: '🇸🇰', name: 'Slovakia' },
+  SN: { flag: '🇸🇳', name: 'Senegal' },
+  TH: { flag: '🇹🇭', name: 'Thailand' },
+  TN: { flag: '🇹🇳', name: 'Tunisia' },
+  TR: { flag: '🇹🇷', name: 'Turkey' },
+  TW: { flag: '🇹🇼', name: 'Taiwan' },
+  TZ: { flag: '🇹🇿', name: 'Tanzania' },
+  UA: { flag: '🇺🇦', name: 'Ukraine' },
+  UG: { flag: '🇺🇬', name: 'Uganda' },
+  US: { flag: '🇺🇸', name: 'United States' },
+  UY: { flag: '🇺🇾', name: 'Uruguay' },
+  VE: { flag: '🇻🇪', name: 'Venezuela' },
+  VN: { flag: '🇻🇳', name: 'Vietnam' },
+  ZA: { flag: '🇿🇦', name: 'South Africa' },
+  ZM: { flag: '🇿🇲', name: 'Zambia' },
+  ZW: { flag: '🇿🇼', name: 'Zimbabwe' },
+  GLOBAL: { flag: '🌍', name: 'Global' },
+};
+

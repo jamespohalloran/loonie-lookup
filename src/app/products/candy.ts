@@ -4,6 +4,7 @@ export const candy: Product[] = [
   {
     name: 'Maynards',
     company: 'Mondelez International',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
       'A Canadian candy brand known for popular products including Fuzzy Peach, Sour Patch Kids and Swedish Berries. Widely available.',
@@ -14,6 +15,7 @@ export const candy: Product[] = [
   {
     name: 'Mars',
     company: 'Mars Incorporated',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American company producing globally known candy bars such as Mars Bar, Snickers, and Twix.',
     categoryId: 'candy',
@@ -23,8 +25,9 @@ export const candy: Product[] = [
   {
     name: 'Aero',
     company: 'Nestle Canada Inc.',
-    percentCanadian: 100,
-    notes: 'Produced in Toronto by Nestle Canada and known for its unique bubbly texture.',
+    countryCode: 'CA',
+    percentCanadian: 70,
+    notes: 'Produced in Toronto by Nestle Canada and known for its unique bubbly texture. Canadian subsidiary, owned by Swiss multinational Nestle.',
     categoryId: 'candy',
     aliases: ['aero chocolate', 'nestle aero'],
     popularity: 85,
@@ -32,8 +35,9 @@ export const candy: Product[] = [
   {
     name: 'Caramilk',
     company: 'Cadbury',
-    percentCanadian: 100,
-    notes: 'A classic Canadian chocolate bar made by Cadburys since the 1960s. Widely available across Canada.',
+    countryCode: 'CA',
+    percentCanadian: 70,
+    notes: 'A classic Canadian chocolate bar made by Cadburys since the 1960s. Widely available across Canada. Made in Toronto but a Canadian subsidiary of US based, Mondelez International.',
     categoryId: 'candy',
     aliases: ['cadbury caramilk', 'caramilk bar'],
     popularity: 80,
@@ -41,9 +45,10 @@ export const candy: Product[] = [
   {
     name: 'Coffee Crisp',
     company: 'Nestle Canada Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
-      'A Canadian chocolate bar that’s been a staple since the 1930s, known for its coffee flavour. Made in Toronto.',
+      'A Canadian chocolate bar that’s been a staple since the 1930s, known for its coffee flavour. Made in Toronto, but a Canadian subsidiary of Swiss multinational Nestle.',
     categoryId: 'candy',
     aliases: ['coffee crisp bar', 'nestle coffee crisp'],
     popularity: 75,
@@ -51,6 +56,7 @@ export const candy: Product[] = [
   {
     name: 'Reese Peanut Butter Cups',
     company: 'The Hershey Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US-made chocolate filled with peanut butter. Very popular in Canada.',
     categoryId: 'candy',
@@ -60,8 +66,9 @@ export const candy: Product[] = [
   {
     name: 'Kit Kat',
     company: 'Nestle Canada Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'Produced in Toronto, this chocolate-covered wafer bar is a favourite across Canada.',
+    notes: 'This chocolate-covered wafer bar is a favourite across Canada. Made in Toronto but a Canadian subsidiary of Swiss multinational Nestle.',
     categoryId: 'candy',
     aliases: ['kit kat bar', 'nestle kit kat'],
     popularity: 75,
@@ -69,6 +76,7 @@ export const candy: Product[] = [
   {
     name: "M&M's",
     company: 'Mars Incorporated',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US-made candy coated chocolates, popular in Canada.',
     categoryId: 'candy',
@@ -78,6 +86,7 @@ export const candy: Product[] = [
   {
     name: "Hershey's",
     company: 'The Hershey Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American company known for Hershey’s Chocolate Bars and Kisses, popular in Canada.',
     categoryId: 'candy',
@@ -87,6 +96,7 @@ export const candy: Product[] = [
   {
     name: 'Twizzlers',
     company: 'The Hershey Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Twizzlers, a US-made licorice candy, is widely available in Canada.',
     categoryId: 'candy',

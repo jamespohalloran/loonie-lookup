@@ -4,8 +4,9 @@ export const bottledWater: Product[] = [
   {
     name: 'Nestle Pure Life',
     company: 'Nestle Canada Inc.',
-    percentCanadian: 100,
-    notes: 'Bottled in Canada, under strict control and quality standards. Widely distributed across major grocery chains.',
+    countryCode: 'CA',
+    percentCanadian: 50,
+    notes: 'Bottled in Canada, under strict control and quality standards. Widely distributed across major grocery chains. Owned by Swiss multinational Nestle.',
     categoryId: 'bottledWater',
     aliases: ['nestle pure life', 'nestle'],
     popularity: 95
@@ -13,6 +14,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Flow',
     company: 'Flow Beverages',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand that offers mineral-rich water from their own artesian source.',
     categoryId: 'bottledWater',
@@ -22,6 +24,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Naya',
     company: 'Naya Waters Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A reputed Canadian brand, well-known for its natural spring water.',
     categoryId: 'bottledWater',
@@ -31,6 +34,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Aquafina',
     company: 'PepsiCo',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Bottled water brand owned by PepsiCo, originated in the US.',
     categoryId: 'bottledWater',
@@ -40,6 +44,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Dasani',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Owned by The Coca-Cola Company, originated in the US.',
     categoryId: 'bottledWater',
@@ -49,6 +54,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Ice River Springs',
     company: 'Ice River Springs Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Known for its 100% recycled plastic bottles, Ice River Springs is a family-owned Canadian brand.',
     categoryId: 'bottledWater',
@@ -58,6 +64,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Eska',
     company: 'Joe’s No Frills',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand sourced from a natural spring in unspoiled Northern Quebec wilderness.',
     categoryId: 'bottledWater',
@@ -67,6 +74,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Perrier',
     company: 'Nestle',
+    countryCode: 'FR',
     percentCanadian: 0,
     notes: 'Premium brand of sparkling water of French origin, owned by Nestle.',
     categoryId: 'bottledWater',
@@ -76,6 +84,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Fiji',
     company: 'The Wonderful Company',
+    countryCode: 'FJ',
     percentCanadian: 0,
     notes: 'Premium brand of water imported from the Fiji Islands.',
     categoryId: 'bottledWater',
@@ -85,6 +94,7 @@ export const bottledWater: Product[] = [
   {
     name: 'Evian',
     company: 'Danone',
+    countryCode: 'FR',
     percentCanadian: 0,
     notes: 'Premium brand of water sourced from the French Alps, owned by Danone.',
     categoryId: 'bottledWater',

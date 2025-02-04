@@ -4,6 +4,7 @@ export const pasta: Product[] = [
   {
     name: 'Catelli',
     company: 'Catelli Foods Corporation',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'One of the oldest pasta brands owned by a Canadian company, producing a variety of pastas.',
     categoryId: 'pasta',
@@ -13,6 +14,7 @@ export const pasta: Product[] = [
   {
     name: 'Barilla',
     company: 'Barilla G. e R. Fratelli S.p.A.',
+    countryCode: 'IT',
     percentCanadian: 0,
     notes: 'An Italian pasta brand. No Canadian connection.',
     categoryId: 'pasta',
@@ -22,6 +24,7 @@ export const pasta: Product[] = [
   {
     name: 'Primo',
     company: 'Primo Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand producing traditional-style pasta. Available nationwide.',
     categoryId: 'pasta',
@@ -31,6 +34,7 @@ export const pasta: Product[] = [
   {
     name: 'Olivieri',
     company: 'Olivieri Foods Ltd',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A wholly owned subsidiary of Catelli Foods Corporation, specializing in fresh pasta.',
     categoryId: 'pasta',
@@ -40,6 +44,7 @@ export const pasta: Product[] = [
   {
     name: 'President’s Choice Pasta',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label pasta. Produced in Canada with international ingredients.',
     categoryId: 'pasta',
@@ -49,6 +54,7 @@ export const pasta: Product[] = [
   {
     name: 'Great Value Pasta',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s private label pasta, widely available in Walmart stores across Canada.',
     categoryId: 'pasta',
@@ -58,6 +64,7 @@ export const pasta: Product[] = [
   {
     name: 'De Cecco',
     company: 'F.lli De Cecco di Filippo S.p.A.',
+    countryCode: 'IT',
     percentCanadian: 0,
     notes: 'An Italian pasta brand. No Canadian connection.',
     categoryId: 'pasta',
@@ -67,6 +74,7 @@ export const pasta: Product[] = [
   {
     name: 'Italpasta',
     company: 'Italpasta Limited',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand supplying pasta from Ontario, using traditional Italian methods.',
     categoryId: 'pasta',
@@ -76,6 +84,7 @@ export const pasta: Product[] = [
   {
     name: 'San Remo',
     company: 'San Remo',
+    countryCode: 'AU',
     percentCanadian: 0,
     notes: 'An Australian pasta brand. No Canadian connection.',
     categoryId: 'pasta',
@@ -85,6 +94,7 @@ export const pasta: Product[] = [
   {
     name: 'Ronzoni',
     company: 'Ronzoni Foods Canada Corporation',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian pasta company owned by Catelli Foods Corporation, offering inexpensive pasta varieties.',
     categoryId: 'pasta',

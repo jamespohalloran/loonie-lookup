@@ -4,6 +4,7 @@ export const ketchup: Product[] = [
   {
     name: 'Heinz',
     company: 'Kraft Heinz Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Heinz is not a Canadian company, although they do have manufacturing plants in Canada.',
     categoryId: 'ketchup',
@@ -13,6 +14,7 @@ export const ketchup: Product[] = [
   {
     name: 'French’s',
     company: 'McCormick Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'French’s is not a Canadian company, but it manufactures its ketchup in Canada.',
     categoryId: 'ketchup',
@@ -22,6 +24,7 @@ export const ketchup: Product[] = [
   {
     name: 'President’s Choice Ketchup',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaws private label ketchup, made with 100% Canadian tomatoes.',
     categoryId: 'ketchup',
@@ -31,6 +34,7 @@ export const ketchup: Product[] = [
   {
     name: 'Primo',
     company: 'Primofoods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian-owned and operated company that produces ketchup made from locally sourced ingredients.',
     categoryId: 'ketchup',
@@ -40,6 +44,7 @@ export const ketchup: Product[] = [
   {
     name: 'No Name',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes: 'Loblaw’s budget friendly brand. Made in Canada but uses a mix of Canadian and international ingredients.',
     categoryId: 'ketchup',
@@ -49,6 +54,7 @@ export const ketchup: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Walmart’s store brand ketchup. Not a Canadian product, but widely available across the country.',
     categoryId: 'ketchup',
@@ -58,6 +64,7 @@ export const ketchup: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys Inc.',
+    countryCode: 'CA',
     percentCanadian: 85,
     notes: 'Sobeys store brand. Made in Canada from Canadian and imported ingredients.',
     categoryId: 'ketchup',
@@ -67,6 +74,7 @@ export const ketchup: Product[] = [
   {
     name: 'Simply Natural',
     company: 'Chelten House Products',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A premium, organic ketchup brand. Not Canadian and uses imported ingredients.',
     categoryId: 'ketchup',
@@ -76,6 +84,7 @@ export const ketchup: Product[] = [
   {
     name: 'Irresistibles',
     company: 'Metro Inc.',
+    countryCode: 'CA',
     percentCanadian: 85,
     notes: 'Metro’s private label brand. Manufactured in Canada using a mix of local and imported ingredients.',
     categoryId: 'ketchup',
@@ -85,6 +94,7 @@ export const ketchup: Product[] = [
   {
     name: 'E.D. Smith',
     company: 'TreeHouse Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes:
       'A premium ketchup brand in the Canadian market. Not Canadian-made despite being widely available in Canadian stores.',

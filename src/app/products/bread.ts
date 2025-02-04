@@ -4,6 +4,7 @@ export const bread: Product[] = [
   {
     name: 'Dempster’s',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Owned by Grupo Bimbo, Dempster’s is rooted in Canada and is available all across the country.',
     categoryId: 'bread',
@@ -13,6 +14,7 @@ export const bread: Product[] = [
   {
     name: 'Stonemill',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand under Canada Bread, primarily baked with 100% whole grains.',
     categoryId: 'bread',
@@ -22,6 +24,7 @@ export const bread: Product[] = [
   {
     name: 'Wonder Bread',
     company: 'Weston Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian brand, known for its soft, white bread. Found in most grocery stores across Canada.',
     categoryId: 'bread',
@@ -31,6 +34,7 @@ export const bread: Product[] = [
   {
     name: 'Country Harvest',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A staple in Canadian households, providing hearty grains and seeds.',
     categoryId: 'bread',
@@ -40,6 +44,7 @@ export const bread: Product[] = [
   {
     name: 'Gadoua',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Popular in Quebec and parts of Eastern Canada, offering a variety of bread types.',
     categoryId: 'bread',
@@ -49,6 +54,7 @@ export const bread: Product[] = [
   {
     name: 'Bon Matin',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Quebec based bread brand offering a diverse selection for bread lovers.',
     categoryId: 'bread',
@@ -58,6 +64,7 @@ export const bread: Product[] = [
   {
     name: 'Villaggio',
     company: 'Canada Bread',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'An Italian style bread brand, popular in various regions across Canada.',
     categoryId: 'bread',
@@ -67,6 +74,7 @@ export const bread: Product[] = [
   {
     name: 'All But Gluten',
     company: 'Weston Foods',
+    countryCode: 'CA',
     percentCanadian: 95,
     notes: 'A gluten-free brand providing bread options for those with gluten intolerance, available in select locations.',
     categoryId: 'bread',
@@ -76,6 +84,7 @@ export const bread: Product[] = [
   {
     name: 'ACE Bakery Bread',
     company: 'ACE Bakery',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Baked in Canada with a variety of bread types for all occasions.',
     categoryId: 'bread',
@@ -85,6 +94,7 @@ export const bread: Product[] = [
   {
     name: 'Silver Hills Sprouted Bread',
     company: 'Silver Hills Bakery',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand offering organic sprouted breads.',
     categoryId: 'bread',

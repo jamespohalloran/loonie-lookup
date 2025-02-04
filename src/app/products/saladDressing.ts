@@ -4,6 +4,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Kraft',
     company: 'Kraft Heinz Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand, with a wide range of salad dressings widely available across Canada.',
     categoryId: 'saladDressing',
@@ -13,6 +14,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Renee’s Gourmet',
     company: 'Kraft Heinz Company',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand known for gourmet dressing varieties. Available in grocery stores all over Canada.',
     categoryId: 'saladDressing',
@@ -22,6 +24,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Newman’s Own',
     company: 'Newman’s Own, Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand that donates all post-tax profits to charity. Popular internationally, including in Canada.',
     categoryId: 'saladDressing',
@@ -31,6 +34,7 @@ export const saladDressing: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Private label brand from Canadian company Loblaws, carried nationwide.',
     categoryId: 'saladDressing',
@@ -40,6 +44,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Private label brand from Canadian company Sobeys, available across Canada.',
     categoryId: 'saladDressing',
@@ -49,6 +54,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Hellmann’s',
     company: 'Unilever',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A globally recognized brand, Hellmann’s offers a range of dressings. Widely available in Canadian grocery stores.',
     categoryId: 'saladDressing',
@@ -58,6 +64,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Hidden Valley',
     company: 'The Clorox Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand known for its ranch dressing, found all over Canada.',
     categoryId: 'saladDressing',
@@ -67,6 +74,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Walmart’s store brand salad dressing, available in Walmart locations across Canada.',
     categoryId: 'saladDressing',
@@ -76,6 +84,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Wish-Bone',
     company: 'Pinnacle Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand, available all over Canada.',
     categoryId: 'saladDressing',
@@ -85,6 +94,7 @@ export const saladDressing: Product[] = [
   {
     name: 'Maple Grove Farms',
     company: 'B&G Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand offering a number of salad dressings, available in select Canadian grocery stores.',
     categoryId: 'saladDressing',

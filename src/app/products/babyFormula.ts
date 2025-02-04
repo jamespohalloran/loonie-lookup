@@ -4,6 +4,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Similac',
     company: 'Abbott Laboratories',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A brand primarily made in the U.S.',
     categoryId: 'babyFormula',
@@ -13,6 +14,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Enfamil',
     company: 'Mead Johnson & Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A brand primarily made in the U.S.',
     categoryId: 'babyFormula',
@@ -22,6 +24,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Good Start',
     company: 'Nestlé',
+    countryCode: 'CH',
     percentCanadian: 0,
     notes: 'A brand primarily made in Switzerland',
     categoryId: 'babyFormula',
@@ -31,6 +34,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Parent’s Choice',
     company: 'Walmart Canada',
+    countryCode: 'US',
     percentCanadian: 30,
     notes: 'Walmart’s store brand baby formula is a combination of Canadian and internationally sourced ingredients.',
     categoryId: 'babyFormula',
@@ -40,6 +44,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 30,
     notes: 'Costco’s private label baby formula, available at Costco locations and not regular grocery stores.',
     categoryId: 'babyFormula',
@@ -49,6 +54,7 @@ export const babyFormula: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 30,
     notes: 'Loblaw’s private label baby formula, partially sourced from Canadian ingredients.',
     categoryId: 'babyFormula',
@@ -58,6 +64,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Nestlé',
     company: 'Nestlé',
+    countryCode: 'CH',
     percentCanadian: 0,
     notes: 'A brand primarily made in Switzerland',
     categoryId: 'babyFormula',
@@ -67,6 +74,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Mead Johnson',
     company: 'Mead Johnson',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A brand primarily made in the U.S.',
     categoryId: 'babyFormula',
@@ -76,6 +84,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Gerber',
     company: 'Nestlé',
+    countryCode: 'CH',
     percentCanadian: 0,
     notes: 'A brand primarily made in Switzerland',
     categoryId: 'babyFormula',
@@ -85,6 +94,7 @@ export const babyFormula: Product[] = [
   {
     name: 'Happy Baby',
     company: 'Organic Baby Food Company',
+    countryCode: 'CA',
     percentCanadian: 70,
     notes: 'A Canadian company producing organic baby formula mainly sold in health food stores and select grocery stores.',
     categoryId: 'babyFormula',

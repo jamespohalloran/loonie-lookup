@@ -4,6 +4,7 @@ export const milk: Product[] = [
   {
     name: 'Natrel',
     company: 'Agropur Cooperative',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian dairy cooperative, producing milk sourced entirely from Canadian farms.',
     categoryId: 'milk',
@@ -12,6 +13,7 @@ export const milk: Product[] = [
   {
     name: 'Neilson',
     company: 'Saputo Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand under Saputo, all milk is sourced and processed in Canada.',
     categoryId: 'milk',
@@ -20,6 +22,7 @@ export const milk: Product[] = [
   {
     name: 'Beatrice',
     company: 'Lactalis Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian dairy brand with milk sourced from Canadian farms.',
     categoryId: 'milk',
@@ -28,6 +31,7 @@ export const milk: Product[] = [
   {
     name: 'Dairyland',
     company: 'Saputo Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A long-standing Canadian brand under Saputo, using Canadian-sourced milk.',
     categoryId: 'milk',
@@ -36,6 +40,7 @@ export const milk: Product[] = [
   {
     name: 'Lucerne',
     company: 'Sobeys Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian grocery store brand offering milk sourced from Canadian dairy farms.',
     categoryId: 'milk',
@@ -44,6 +49,7 @@ export const milk: Product[] = [
   {
     name: 'Sealtest',
     company: 'Lactalis Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian milk brand under Lactalis, all milk is sourced from Canadian farms.',
     categoryId: 'milk',
@@ -52,6 +58,7 @@ export const milk: Product[] = [
   {
     name: 'Fairlife',
     company: 'Coca-Cola Canada',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Owned by Coca-Cola, Fairlife is produced in Canada using local dairy, but the brand is American.',
     categoryId: 'milk',
@@ -60,6 +67,7 @@ export const milk: Product[] = [
   {
     name: 'Organic Meadow',
     company: 'Organic Meadow Co-op',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian organic dairy brand, all products are sourced from Canadian organic farms.',
     categoryId: 'milk',
@@ -68,6 +76,7 @@ export const milk: Product[] = [
   {
     name: 'Kirkland Signature Milk',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label milk is sourced both from Canadian and U.S. suppliers.',
     categoryId: 'milk',
@@ -76,6 +85,7 @@ export const milk: Product[] = [
   {
     name: 'Great Value Milk',
     company: 'Walmart Canada',
+    countryCode: 'US',
     percentCanadian: 40,
     notes: 'Some varieties of Great Value milk are sourced in Canada, but supply chains vary.',
     categoryId: 'milk',

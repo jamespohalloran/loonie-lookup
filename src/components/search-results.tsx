@@ -1,6 +1,6 @@
 'use client'
 
-import { categories, Product } from '@/app/products'
+import { categories, Product, countryCode } from '@/app/products'
 import { PlusIcon } from '@heroicons/react/16/solid'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
 
@@ -62,7 +62,13 @@ function SearchColumn({ products }: { products: Product[] }) {
               {categories[product.categoryId].name}
             </span>
           </a>
-          <p className="text-xs text-gray-500">{product.company}</p>
+            {!product.countryCode || product.countryCode === undefined ? (
+            <p className="text-xs text-gray-500">{product.company}</p>
+            ) : (
+            <p className="text-xs text-gray-500">
+              {product.company} {countryCode[product.countryCode as keyof typeof countryCode].flag} ({countryCode[product.countryCode as keyof typeof countryCode].name})
+            </p>
+            )}
           <p className="text-xs text-gray-500">🇨🇦 {product.percentCanadian}% Canadian</p>
           {product.notes && <p className="text-xs text-gray-400">{product.notes}</p>}
         </li>

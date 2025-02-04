@@ -4,8 +4,9 @@ export const cannedSoup: Product[] = [
   {
     name: 'Campbell’s',
     company: 'Campbell Company of Canada',
-    percentCanadian: 100,
-    notes: 'A well-known brand, products are made in Canada with some ingredients sourced internationally.',
+    countryCode: 'CA',
+    percentCanadian: 60,
+    notes: 'A well-known brand, Canadian products are made in Canada with some ingredients sourced internationally. Owned by Campbell\'s Soup Company, from New Jersey, USA.',
     categoryId: 'cannedSoup',
     aliases: ['campbell’s soup'],
     popularity: 95
@@ -13,6 +14,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Progresso',
     company: 'General Mills Sales, Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand, widely available in most Canadian grocery stores.',
     categoryId: 'cannedSoup',
@@ -22,6 +24,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Habitant',
     company: 'Smucker Foods of Canada Corp.',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Historically Canadian brand, now owned by Smucker with production in both Canada and the US.',
     categoryId: 'cannedSoup',
@@ -31,6 +34,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Amy’s Kitchen',
     company: 'Amy’s Kitchen, Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand, offers a variety of vegetarian and organic soups. Widely available in Canadian grocery stores.',
     categoryId: 'cannedSoup',
@@ -40,6 +44,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaw’s private label soup. Made in Canada, available at Loblaw stores nationwide.',
     categoryId: 'cannedSoup',
@@ -49,8 +54,9 @@ export const cannedSoup: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
-    percentCanadian: 50,
-    notes: 'Walmart’s store brand soup. Widely available in Walmart locations across Canada.',
+    countryCode: 'CA',
+    percentCanadian: 10,
+    notes: 'Walmart\'s store brand soup, made from a variety of ingredients source globally. Owned by Walmart, from Arkansas, USA.',
     categoryId: 'cannedSoup',
     aliases: ['great value soup', 'walmart soup'],
     popularity: 70
@@ -58,6 +64,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ store brand. Available at Sobeys, Safeway and other affiliate stores across Canada.',
     categoryId: 'cannedSoup',
@@ -67,6 +74,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco Wholesale Corporation',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s store brand soup. Available at Costco locations across Canada.',
     categoryId: 'cannedSoup',
@@ -76,6 +84,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Aylmer',
     company: 'Conagra Brands Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Canadian brand made with a mix of domestic and imported ingredients. Owned by Conagra, widely available in Canadian grocery stores.',
     categoryId: 'cannedSoup',
@@ -85,6 +94,7 @@ export const cannedSoup: Product[] = [
   {
     name: 'Knorr',
     company: 'Unilever Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'International brand offering a variety of soup mixes. Widely available in Canadian grocery stores.',
     categoryId: 'cannedSoup',

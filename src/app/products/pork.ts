@@ -4,6 +4,7 @@ export const pork: Product[] = [
   {
     name: 'Maple Leaf',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand specializing in meat products, known for quality pork. Available in most grocery stores across Canada.',
     categoryId: 'pork',
@@ -13,6 +14,7 @@ export const pork: Product[] = [
   {
     name: 'Schneiders',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Part of the Maple Leaf Foods family. Known for a wide range of pork products. Available nationwide.',
     categoryId: 'pork',
@@ -22,6 +24,7 @@ export const pork: Product[] = [
   {
     name: 'President’s Choice Pork',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Part of Loblaw’s private label featuring various pork products.',
     categoryId: 'pork',
@@ -31,6 +34,7 @@ export const pork: Product[] = [
   {
     name: 'Great Value Pork',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 70,
     notes: 'Walmart’s store brand pork, available in Walmart locations across Canada.',
     categoryId: 'pork',
@@ -40,6 +44,7 @@ export const pork: Product[] = [
   {
     name: 'Tenderflake',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Known for their lard product, used for pastries and other cooking. Widely available across Canada.',
     categoryId: 'pork',
@@ -49,6 +54,7 @@ export const pork: Product[] = [
   {
     name: 'Kirkland Signature Pork',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 60,
     notes: 'Costco’s private label pork, available in all Costco locations.',
     categoryId: 'pork',
@@ -58,6 +64,7 @@ export const pork: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobey’s Inc.',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Sobey’s store brand featuring a variety of pork products.',
     categoryId: 'pork',
@@ -67,6 +74,7 @@ export const pork: Product[] = [
   {
     name: 'Olymel',
     company: 'Olymel L.P.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canada’s leader in the production, processing and distribution of pork and poultry meats.',
     categoryId: 'pork',
@@ -76,6 +84,7 @@ export const pork: Product[] = [
   {
     name: 'Grimms',
     company: 'Grimm’s Fine Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Specialize in European sausages and deli products, using quality pork. Available across Western Canada and select locations nationwide.',
     categoryId: 'pork',
@@ -85,6 +94,7 @@ export const pork: Product[] = [
   {
     name: 'Heavenly Hogs',
     company: 'Peace River Pork',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Based in Alberta, they raise their hogs in a free-range system.',
     categoryId: 'pork',

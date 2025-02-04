@@ -4,6 +4,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Stouffer’s Lasagna',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'Stouffer’s is a US brand marketed and sold in Canada by Nestle Canada.',
     categoryId: 'frozenMeals',
@@ -13,6 +14,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Lean Cuisine',
     company: 'Nestle Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'Lean Cuisine is a US brand that is sold and distributed in Canada by Nestle Canada.',
     categoryId: 'frozenMeals',
@@ -22,6 +24,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Healthy Choice',
     company: 'ConAgra Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Healthy Choice is an American brand but has a presence in many Canadian grocery stores.',
     categoryId: 'frozenMeals',
@@ -31,6 +34,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'President’s Choice Frozen Meals',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
       'President’s Choice is a Canadian grocery store brand. Frozen meals are available in varieties such as lasagna and shepherd’s pie.',
@@ -41,6 +45,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Compliments is the store brand for Sobeys, a Canadian grocery store.',
     categoryId: 'frozenMeals',
@@ -50,6 +55,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Irresistibles',
     company: 'Metro Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Irresistibles is the in-store brand for Metro, a Canadian grocery store chain.',
     categoryId: 'frozenMeals',
@@ -59,6 +65,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Michelina’s',
     company: 'Bellisio Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand but is widely available in Canadian grocery stores.',
     categoryId: 'frozenMeals',
@@ -68,6 +75,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Voila!',
     company: 'Birds Eye Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Voila! is a US brand but has widespread availability in Canadian grocery stores.',
     categoryId: 'frozenMeals',
@@ -77,6 +85,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Great Value Frozen Meals',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'Great Value is Walmart’s store brand, with frozen meals available at Walmart stores across Canada.',
     categoryId: 'frozenMeals',
@@ -86,6 +95,7 @@ export const frozenMeals: Product[] = [
   {
     name: 'Amy’s Kitchen',
     company: 'Amy’s Kitchen, Inc',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Amy’s Kitchen is a US brand, but several of its products are available in Canadian markets.',
     categoryId: 'frozenMeals',

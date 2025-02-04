@@ -4,6 +4,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Bounty',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the US.',
     categoryId: 'paperTowels',
@@ -13,6 +14,7 @@ export const paperTowels: Product[] = [
   {
     name: 'SpongeTowels',
     company: 'Kruger Products',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand that manufactures in both Canada and the US.',
     categoryId: 'paperTowels',
@@ -22,6 +24,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Royale Tiger Towel',
     company: 'Irving Consumer Products',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Manufactured entirely in Canada.',
     categoryId: 'paperTowels',
@@ -31,6 +34,7 @@ export const paperTowels: Product[] = [
   {
     name: 'President’s Choice Paper Towels',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 45,
     notes: 'Manufactured with both Canadian and imported materials.',
     categoryId: 'paperTowels',
@@ -40,6 +44,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Compliments Paper Towels',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 40,
     notes: 'Manufactured with both Canadian and imported materials.',
     categoryId: 'paperTowels',
@@ -49,6 +54,7 @@ export const paperTowels: Product[] = [
   {
     name: 'AmazonBasics Paper Towels',
     company: 'Amazon',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the US.',
     categoryId: 'paperTowels',
@@ -58,6 +64,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Kirkland Signature Paper Towels',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the US.',
     categoryId: 'paperTowels',
@@ -67,6 +74,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Great Value Paper Towels',
     company: 'Walmart Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the US.',
     categoryId: 'paperTowels',
@@ -76,6 +84,7 @@ export const paperTowels: Product[] = [
   {
     name: 'Marcal Paper Towels',
     company: 'Marcal',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the US.',
     categoryId: 'paperTowels',
@@ -85,6 +94,7 @@ export const paperTowels: Product[] = [
   {
     name: 'No Name Paper Towels',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 30,
     notes: 'Manufactured with both Canadian and imported materials.',
     categoryId: 'paperTowels',

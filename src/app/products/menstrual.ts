@@ -4,6 +4,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Nixit Menstrual Cup',
     company: 'Nixit',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian-made suction-free menstrual cup made from medical-grade silicone.',
     categoryId: 'menstrualCare',
@@ -13,6 +14,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Bfree Cup',
     company: 'Bfree',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian-made antibacterial menstrual cup made from 100% medical-grade silicone.',
     categoryId: 'menstrualCare',
@@ -22,6 +24,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Tree Hugger Cloth Pads',
     company: 'Tree Hugger Cloth Pads',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Reusable menstrual pads made in Canada, eco-friendly and PFAS-tested.',
     categoryId: 'menstrualCare',
@@ -31,6 +34,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Amie Reusable Pads',
     company: 'Amie Pads',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Eco-friendly, comfortable, and beautiful reusable pads made in Canada.',
     categoryId: 'menstrualCare',
@@ -40,6 +44,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Aisle Reusable Menstrual Pads',
     company: 'Aisle (formerly Lunapads)',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian-made washable feminine hygiene products, including cloth menstrual pads and period underwear.',
     categoryId: 'menstrualCare',
@@ -49,6 +54,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Öko-Pads',
     company: 'Öko Creations',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian-made washable cloth pads and panty liners made from hemp and organic cotton.',
     categoryId: 'menstrualCare',
@@ -58,6 +64,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Sustainable Menstrual Cup',
     company: 'Sustainable Menstrual',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian-made menstrual cup designed for sustainability and comfort.',
     categoryId: 'menstrualCare',
@@ -67,6 +74,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'DivaCup',
     company: 'Diva International',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Made in Canada, DivaCup is one of the most popular menstrual cups globally.',
     categoryId: 'menstrualCare',
@@ -76,6 +84,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Lena Menstrual Cup',
     company: 'Lena',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A menstrual cup made in the US from 100% medical-grade silicone.',
     categoryId: 'menstrualCare',
@@ -85,6 +94,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Cora Menstrual Cup',
     company: 'Cora',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A US-made menstrual cup offering reusable, eco-friendly options.',
     categoryId: 'menstrualCare',
@@ -94,6 +104,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Always',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A global brand offering sanitary pads, made in various countries, with the company based in the US.',
     categoryId: 'menstrualCare',
@@ -103,6 +114,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Tampax',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Tampax offers tampons, made in multiple countries with the company based in the US.',
     categoryId: 'menstrualCare',
@@ -112,6 +124,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Kotex',
     company: 'Kimberly-Clark',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A well-known US brand offering tampons, pads, and liners, manufactured in multiple countries.',
     categoryId: 'menstrualCare',
@@ -121,6 +134,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Lilets',
     company: 'Johnson & Johnson',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An international brand offering feminine hygiene products, including pads and tampons, made in various countries, with the company based in the US.',
     categoryId: 'menstrualCare',
@@ -130,6 +144,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Seventh Generation',
     company: 'Unilever',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An eco-friendly brand from the US, offering organic cotton pads and tampons.',
     categoryId: 'menstrualCare',
@@ -139,6 +154,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Stayfree',
     company: 'Johnson & Johnson',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An international brand offering pads and tampons, manufactured in multiple countries, with the company based in the US.',
     categoryId: 'menstrualCare',
@@ -148,6 +164,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'The Honey Pot Company',
     company: 'The Honey Pot Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand offering organic cotton feminine care products, including pads, tampons, and wipes.',
     categoryId: 'menstrualCare',
@@ -157,6 +174,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Organicup',
     company: 'Organicup',
+    countryCode: 'DK',
     percentCanadian: 0,
     notes: 'A Danish brand offering organic cotton menstrual cups and organic pads, available in several countries.',
     categoryId: 'menstrualCare',
@@ -166,6 +184,7 @@ export const menstrualCare: Product[] = [
   {
     name: 'Natracare',
     company: 'Natracare',
+    countryCode: 'UK',
     percentCanadian: 0,
     notes: 'A UK-based brand offering organic cotton sanitary pads, tampons, and pantyliners, available worldwide.',
     categoryId: 'menstrualCare',
