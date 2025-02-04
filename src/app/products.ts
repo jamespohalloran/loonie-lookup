@@ -22,6 +22,7 @@ import { cookingOil, cookingOilCategory } from './products/cookingOil'
 import { crackers, crackersCategory } from './products/crackers'
 import { diapers, diapersCategory } from './products/diapers'
 import { dishSoap, dishSoapCategory } from './products/dishSoap'
+import { dinnerware } from './products/dinnerware'
 import { eggs, eggsCategory } from './products/eggs'
 import { energyDrinks, energyDrinksCategory } from './products/energyDrinks'
 import { flour, flourCategory } from './products/flour'
@@ -113,6 +114,7 @@ export const products: Product[] = [
   ...crackers,
   ...diapers,
   ...dishSoap,
+  ...dinnerware,
   ...eggs,
   ...energyDrinks,
   ...flour,
@@ -325,6 +327,11 @@ export const categories = {
     name: 'Dairy',
     description: 'Milk, cheese, and other dairy products',
     aliases: ['dairy', 'milk', 'cheese'],
+  },
+  dinnerware: {
+    name: 'Dinnerware',
+    description: 'Dinnerware and tableware',
+    aliases: ['dinnerware', 'tableware'],
   },
   electronics: {
     name: 'Electronics',
