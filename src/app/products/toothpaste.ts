@@ -2,6 +2,15 @@ import { Product } from '../products'
 
 export const toothpaste: Product[] = [
   {
+    name: 'Minty Fluoride Chewpaste',
+    company: 'Etee',
+    percentCanadian: 100,
+    notes: 'Toronto based company, plastic free.',
+    categoryId: 'toothpaste',
+    aliases: ['eete minty fluoride chew paste'],
+    popularity: 50
+  },
+  {
     name: 'Colgate',
     company: 'Colgate-Palmolive',
     countryCode: 'US',

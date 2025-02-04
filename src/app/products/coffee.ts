@@ -9,7 +9,16 @@ export const coffee: Product[] = [
     notes: 'A popular Canadian coffee brand, available in grocery stores across Canada. Owned by Restaurant Brands International a Toronto based holding group.',
     categoryId: 'coffee',
     aliases: ['tims coffee', 'tim hortons coffee'],
-    popularity: 95
+    popularity: 95,
+  },
+  {
+    name: 'Coffee Beans',
+    company: 'Just Us!',
+    percentCanadian: 100,
+    notes: 'A Canadian coffee brand, widely available in Canadian grocery stores.',
+    categoryId: 'coffee',
+    aliases: ['just us coffee beans', 'cafe'],
+    popularity: 50,
   },
   {
     name: 'Folgers',
@@ -19,7 +28,7 @@ export const coffee: Product[] = [
     notes: 'An American coffee brand, widely available in Canadian grocery stores.',
     categoryId: 'coffee',
     aliases: ['folgers coffee'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Kicking Horse Coffee',
@@ -29,17 +38,17 @@ export const coffee: Product[] = [
     notes: 'A Canadian coffee brand, based in Invermere, BC.',
     categoryId: 'coffee',
     aliases: ['kicking horse coffee'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Maxwell House',
     company: 'Kraft Heinz',
     countryCode: 'US',
     percentCanadian: 20,
-    notes: 'A coffee brand owned by American company Kraft Heinz, but packaged in Canada.' ,
+    notes: 'A coffee brand owned by American company Kraft Heinz, but packaged in Canada.',
     categoryId: 'coffee',
     aliases: ['maxwell coffee', 'maxwell house coffee'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Van Houtte',
@@ -49,7 +58,7 @@ export const coffee: Product[] = [
     notes: 'Owned by American company Keurig Dr Pepper, widely available in Canadian grocery stores.',
     categoryId: 'coffee',
     aliases: ['van houtte coffee'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Melitta',
@@ -59,7 +68,7 @@ export const coffee: Product[] = [
     notes: 'A German coffee brand, widely available in Canadian grocery stores.',
     categoryId: 'coffee',
     aliases: ['melitta coffee'],
-    popularity: 75
+    popularity: 75,
   },
   {
     name: 'McDonald’s McCafé',
@@ -69,7 +78,7 @@ export const coffee: Product[] = [
     notes: 'McCafé coffee is packed in Canada and available in McDonald’s restaurants and in retail stores.',
     categoryId: 'coffee',
     aliases: ['mccafe coffee', 'mcdonalds coffee'],
-    popularity: 85
+    popularity: 85,
   },
   {
     name: 'Nabob',
@@ -79,7 +88,7 @@ export const coffee: Product[] = [
     notes: 'A popular Canadian coffee brand, available in grocery stores across Canada. Owned by Kraft Foods, an US company.',
     categoryId: 'coffee',
     aliases: ['nabob coffee'],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'President’s Choice Coffee',
@@ -89,7 +98,7 @@ export const coffee: Product[] = [
     notes: 'Produced by Loblaw Companies. Some of the coffee is sourced internationally.',
     categoryId: 'coffee',
     aliases: ['pc coffee', "president's choice coffee"],
-    popularity: 65
+    popularity: 65,
   },
   {
     name: 'Second Cup Coffee',
@@ -240,11 +249,21 @@ export const coffee: Product[] = [
     categoryId: 'coffee',
     aliases: ['dancing goat coffee'],
     popularity: 50
-  }
+  },
+  {
+    name: 'Nespresso',
+    company: 'Nestlé Nespresso S.A.',
+    percentCanadian: 0,
+    countryCode: 'CH',
+    notes: 'While its products are available worldwide, coffee is sourced globally and processed in Switzerland.',
+    categoryId: 'coffee',
+    aliases: ['nespresso pods', 'nespresso coffee', 'nespresso machines'],
+    popularity: 95,
+  },
 ]
 
 export const coffeeCategory = {
   name: 'Coffee',
   description: 'Caffeinated beverage made from roasted coffee beans.',
-  aliases: ['caffeine', 'beans', 'morning drink']
+  aliases: ['caffeine', 'beans', 'morning drink'],
 }
