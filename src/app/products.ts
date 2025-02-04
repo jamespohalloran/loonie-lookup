@@ -265,6 +265,7 @@ export const categories = {
   disinfectants: disinfectantCategory,
   drainCleaners: drainCleanersCategory,
   dryerSheets: dryerSheetsCategory,
+  eggs: eggsCategory,
   electronics: {
     name: 'Electronics',
     description: 'Electronics and gadgets',
@@ -384,10 +385,10 @@ export const categories = {
   shampoo: shampooCategory,
   shoeCleaners: shoeCleanersCategory,
   showerTubCleaner: showerTubCleanerCategory,
-  snacks: {
-    name: 'Snacks',
-    description: 'Chips, candy, and other snacks',
-    aliases: ['snacks', 'chips', 'candy'],
+  chips: {
+    name: 'Chips',
+    description: 'Chips, tortilla chips, and other snacks',
+    aliases: ['snacks', 'chips', 'tortilla chips'],
   },
   soap: soapCategory,
   soda: {
