@@ -2,6 +2,25 @@ import { Product } from '../products'
 
 export const granolaBars: Product[] = [
   {
+    name: 'Made with Local',
+    company: 'Made with Local',
+    percentCanadian: 100,
+    notes: 'A Force for Good',
+    categoryId: 'granolaBars',
+    aliases: [
+      'made with local granola bars',
+      'Protein Nut Butter Cookies',
+      'Real Food Bars',
+      'Protein Nut Butter Cookies',
+      'Real Food Bars',
+      'Protein Nut Butter Cookies',
+      'Real Food Bars',
+      'Protein Nut Butter Cookies',
+      'Real Food Bars',
+    ],
+    popularity: 90
+  },
+  {
     name: 'Nature Valley',
     company: 'General Mills',
     percentCanadian: 0,
