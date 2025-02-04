@@ -4,11 +4,20 @@ export const coffee: Product[] = [
   {
     name: 'Tim Hortons',
     company: 'Restaurant Brands International',
-    percentCanadian: 100,
+    percentCanadian: 0,
     notes: 'A popular Canadian coffee brand, available in grocery stores across Canada.',
     categoryId: 'coffee',
     aliases: ['tims coffee', 'tim hortons coffee'],
     popularity: 95,
+  },
+  {
+    name: 'Coffee Beans',
+    company: 'Just Us!',
+    percentCanadian: 100,
+    notes: 'A Canadian coffee brand, widely available in Canadian grocery stores.',
+    categoryId: 'coffee',
+    aliases: ['just us coffee beans', 'cafe'],
+    popularity: 50,
   },
   {
     name: 'Folgers',
