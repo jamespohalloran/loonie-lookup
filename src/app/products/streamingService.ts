@@ -2,6 +2,15 @@ import { Product } from '../products'
 
 export const streamingServices: Product[] = [
   {
+    name: 'CBC Gem',
+    company: 'CBC',
+    percentCanadian: 100,
+    notes: 'Canadian based streaming service, available in Canada.',
+    categoryId: 'streamingServices',
+    aliases: ['cbc gem'],
+    popularity: 95,
+  },
+  {
     name: 'Netflix',
     company: 'Netflix Inc.',
     percentCanadian: 0,
