@@ -2,12 +2,21 @@ import { Product } from '../products'
 
 export const clothing: Product[] = [
   {
-    name: 'Women’s Clothing',
+    name: 'Women\'s Clothing',
     company: 'Milk',
     percentCanadian: 100,
-    notes: 'Clothing, women’s clothing, bamboo clothing, business attire',
+    notes: 'Clothing, women\'s clothing, bamboo clothing, business attire',
     categoryId: 'clothing',
     aliases: ['milk clothing', 'milk apparel', 'milk bamboo clothing', 'milk business attire'],
+    popularity: 50,
+  },
+  {
+    name: 'Kigurumi',
+    company: 'Kigurumi.ca',
+    percentCanadian: 100,
+    notes: 'As of 2 years ago we manufacture our own products!',
+    categoryId: 'clothing',
+    aliases: ['costumes', 'onesies', 'pajamas', 'pyjamas'],
     popularity: 50,
   },
   {
