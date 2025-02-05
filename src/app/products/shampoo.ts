@@ -4,6 +4,7 @@ export const shampoo: Product[] = [
   {
     name: 'TRESemme',
     company: 'Unilever',
+    countryCode: 'UK',
     percentCanadian: 0,
     notes: 'Originating from the US. Available in most grocery stores across Canada.',
     categoryId: 'shampoo',
@@ -13,6 +14,7 @@ export const shampoo: Product[] = [
   {
     name: 'Pantene',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A leading shampoo brand from the US. Sold widely across Canada.',
     categoryId: 'shampoo',
@@ -22,6 +24,7 @@ export const shampoo: Product[] = [
   {
     name: 'Garnier Fructis',
     company: 'LOreal',
+    countryCode: 'FR',
     percentCanadian: 0,
     notes: 'Originally a French brand. Available in most grocery stores across Canada.',
     categoryId: 'shampoo',
@@ -31,6 +34,7 @@ export const shampoo: Product[] = [
   {
     name: 'Dove',
     company: 'Unilever',
+    countryCode: 'UK',
     percentCanadian: 0,
     notes: 'A well-known brand from the UK. Found mostly in major grocery stores nationwide.',
     categoryId: 'shampoo',
@@ -40,6 +44,7 @@ export const shampoo: Product[] = [
   {
     name: 'Head & Shoulders',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Prominent US brand, widely available in Canada.',
     categoryId: 'shampoo',
@@ -49,6 +54,7 @@ export const shampoo: Product[] = [
   {
     name: 'Herbal Essences',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Another popular US brand. Available in most grocery stores across Canada.',
     categoryId: 'shampoo',
@@ -58,6 +64,7 @@ export const shampoo: Product[] = [
   {
     name: 'OGX',
     company: 'Johnson & Johnson',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand with a wide range of products. Available in major stores in Canada.',
     categoryId: 'shampoo',
@@ -67,6 +74,7 @@ export const shampoo: Product[] = [
   {
     name: 'L’Oreal',
     company: 'LOreal',
+    countryCode: 'FR',
     percentCanadian: 0,
     notes: 'French multinational company. Its shampoos are widely available in Canada.',
     categoryId: 'shampoo',
@@ -76,6 +84,7 @@ export const shampoo: Product[] = [
   {
     name: 'John Frieda',
     company: 'Kao Corporation',
+    countryCode: 'JP',
     percentCanadian: 0,
     notes:
       'British brand distributed by Japanese company, Kao Corporation. Found in most grocery stores across Canada.',
@@ -86,6 +95,7 @@ export const shampoo: Product[] = [
   {
     name: 'Aveeno',
     company: 'Johnson & Johnson',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand known for using natural ingredients. Widely available in Canada.',
     categoryId: 'shampoo',

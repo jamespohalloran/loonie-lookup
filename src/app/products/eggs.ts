@@ -4,6 +4,7 @@ export const eggs: Product[] = [
   {
     name: 'Burnbrae Farms',
     company: 'Burnbrae Farms Limited',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Family owned and operated, offering a wide variety of eggs and egg products in stores across Canada.',
     categoryId: 'eggs',
@@ -13,6 +14,7 @@ export const eggs: Product[] = [
   {
     name: 'Gray Ridge Eggs',
     company: 'Gray Ridge Egg Farms',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Committed to providing high-quality and locally farmed eggs, available in grocery stores across Canada.',
     categoryId: 'eggs',
@@ -22,6 +24,7 @@ export const eggs: Product[] = [
   {
     name: 'Golden D Eggs',
     company: 'Nutri Group',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian farming cooperative, offering 100% Canadian eggs from Quebec and Ontario.',
     categoryId: 'eggs',
@@ -31,6 +34,7 @@ export const eggs: Product[] = [
   {
     name: 'President’s Choice Eggs',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label eggs from Canadian farms.',
     categoryId: 'eggs',
@@ -40,6 +44,7 @@ export const eggs: Product[] = [
   {
     name: 'Great Value Eggs',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 70,
     notes: 'Walmart’s store brand eggs, widely available in Walmart locations across Canada.',
     categoryId: 'eggs',
@@ -49,6 +54,7 @@ export const eggs: Product[] = [
   {
     name: 'Kirkland Signature Eggs',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label eggs, available at all Costco locations but not in regular grocery stores.',
     categoryId: 'eggs',
@@ -58,6 +64,7 @@ export const eggs: Product[] = [
   {
     name: 'Maple Hill Farms',
     company: 'Maple Hill Farms',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Family owned and operated, offering organic-free range and nest laid eggs across Western Canada.',
     categoryId: 'eggs',
@@ -67,6 +74,7 @@ export const eggs: Product[] = [
   {
     name: 'Scotian Gold Eggs',
     company: 'Scotian Gold Cooperative',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian egg brand from Nova Scotia, available in select provinces.',
     categoryId: 'eggs',
@@ -76,6 +84,7 @@ export const eggs: Product[] = [
   {
     name: 'Island Gold Eggs',
     company: 'Farmer Ben’s Eggs',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian egg brand from British Columbia, available in Western Canada.',
     categoryId: 'eggs',
@@ -85,6 +94,7 @@ export const eggs: Product[] = [
   {
     name: 'Healthy Choice Farm Fresh Eggs',
     company: 'Healthy Choice',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand that provides farm fresh eggs to Ontario and Quebec.',
     categoryId: 'eggs',

@@ -31,6 +31,7 @@ export const clothing: Product[] = [
   {
     name: 'Muttonhead',
     company: 'Muttonhead Collective',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Toronto-based brand offering ethical and sustainable streetwear, made in Canada.',
     categoryId: 'clothing',
@@ -40,6 +41,7 @@ export const clothing: Product[] = [
   {
     name: 'Encircled',
     company: 'Encircled',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A sustainable and ethical womenswear brand based in Toronto, focusing on versatile fashion.',
     categoryId: 'clothing',
@@ -49,6 +51,7 @@ export const clothing: Product[] = [
   {
     name: 'Eliza Faulkner',
     company: 'Eliza Faulkner',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Montreal-based brand known for bold, feminine designs, all made in Canada.',
     categoryId: 'clothing',
@@ -58,6 +61,7 @@ export const clothing: Product[] = [
   {
     name: 'Tuck Shop Trading Co.',
     company: 'Tuck Shop Trading Co.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Toronto brand producing high-quality, locally made casual apparel.',
     categoryId: 'clothing',
@@ -67,6 +71,7 @@ export const clothing: Product[] = [
   {
     name: 'Folk Clothing',
     company: 'Folk Clothing',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Focused on natural fabrics and ethical production, all made in Canada.',
     categoryId: 'clothing',
@@ -76,6 +81,7 @@ export const clothing: Product[] = [
   {
     name: 'Smythe',
     company: 'Smythe',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Known for its tailored jackets, Smythe manufactures all of its pieces in Canada.',
     categoryId: 'clothing',
@@ -85,6 +91,7 @@ export const clothing: Product[] = [
   {
     name: 'Piper & Skye',
     company: 'Piper & Skye',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A luxury handbag and accessories brand committed to sustainable materials and Canadian production.',
     categoryId: 'clothing',
@@ -94,65 +101,71 @@ export const clothing: Product[] = [
   {
     name: 'OKAYOK',
     company: 'OKAYOK',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Toronto-based clothing brand offering playful and modern essentials made in Canada.',
     categoryId: 'clothing',
     aliases: ['okayok clothing', 'okayok apparel'],
-    popularity: 60,
+    popularity: 60
   },
   {
     name: 'Redwood Classics',
     company: 'Redwood Classics Apparel',
     percentCanadian: 100,
-    notes: 'A heritage-inspired brand that focuses on premium, Canadian-made basics and outerwear.',
-    categoryId: 'clothing',
-    aliases: ['redwood classics apparel', 'redwood clothing'],
-    popularity: 78,
+    notes: "A heritage-inspired brand that focuses on premium, Canadian-made basics and outerwear.",
+    categoryId: "clothing",
+    aliases: ["redwood classics apparel", "redwood clothing"],
+    popularity: 78
   },
   {
-    name: 'Naked & Famous Denim',
-    company: 'Naked & Famous Denim',
+    name: "Naked & Famous Denim",
+    company: "Naked & Famous Denim",
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'A Montreal-based brand known for high-quality raw denim, all made in Canada.',
-    categoryId: 'clothing',
-    aliases: ['naked and famous', 'naked & famous jeans'],
-    popularity: 92,
+    notes: "A Montreal-based brand known for high-quality raw denim, all made in Canada.",
+    categoryId: "clothing",
+    aliases: ["naked and famous", "naked & famous jeans"],
+    popularity: 92
   },
   {
-    name: 'Franc',
-    company: 'Franc',
+    name: "Franc",
+    company: "Franc",
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'A sustainable basics brand making high-quality, minimalist clothing in Canada.',
-    categoryId: 'clothing',
-    aliases: ['franc apparel', 'franc clothing'],
-    popularity: 83,
+    notes: "A sustainable basics brand making high-quality, minimalist clothing in Canada.",
+    categoryId: "clothing",
+    aliases: ["franc apparel", "franc clothing"],
+    popularity: 83
   },
   {
-    name: 'Kotn',
-    company: 'Kotn',
+    name: "Kotn",
+    company: "Kotn",
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'A sustainable clothing brand known for ethically sourced cotton and timeless basics.',
-    categoryId: 'clothing',
-    aliases: ['kotn clothing', 'kotn apparel'],
-    popularity: 89,
+    notes: "A sustainable clothing brand known for ethically sourced cotton and timeless basics.",
+    categoryId: "clothing",
+    aliases: ["kotn clothing", "kotn apparel"],
+    popularity: 89
   },
   {
-    name: 'Horses Atelier',
-    company: 'Horses Atelier',
+    name: "Horses Atelier",
+    company: "Horses Atelier",
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'A Toronto-based womenswear brand specializing in high-quality, ethically made garments.',
-    categoryId: 'clothing',
-    aliases: ['horses atelier clothing', 'horses atelier fashion'],
-    popularity: 74,
+    notes: "A Toronto-based womenswear brand specializing in high-quality, ethically made garments.",
+    categoryId: "clothing",
+    aliases: ["horses atelier clothing", "horses atelier fashion"],
+    popularity: 74
   },
   {
-    name: 'Province of Canada',
-    company: 'Province of Canada',
+    name: "Province of Canada",
+    company: "Province of Canada",
+    countryCode: 'CA',
     percentCanadian: 100,
-    notes: 'A lifestyle brand producing premium Canadian-made clothing inspired by Canadian heritage.',
-    categoryId: 'clothing',
-    aliases: ['province of canada apparel', 'province of canada clothing'],
-    popularity: 81,
+    notes: "A lifestyle brand producing premium Canadian-made clothing inspired by Canadian heritage.",
+    categoryId: "clothing",
+    aliases: ["province of canada apparel", "province of canada clothing"],
+    popularity: 81
   },
   {
     name: 'Comrags',
@@ -166,6 +179,7 @@ export const clothing: Product[] = [
   {
     name: 'Joe Fresh',
     company: 'Joe Fresh',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes:
       'A longstanding Candian staple, featured in Loblaws stores. Although Joe Fresh is a Canadian brand, its products are manufactured overseas, and it has expanded significantly into the U.S. market.',
@@ -176,6 +190,7 @@ export const clothing: Product[] = [
   {
     name: 'Winners',
     company: 'TJX Companies',
+    countryCode: 'US',
     percentCanadian: 0,
     notes:
       'Winners is a Canadian discount retail chain owned by the U.S.-based TJX Companies, offering a variety of clothing brands, many of which are not Canadian.',
@@ -186,6 +201,7 @@ export const clothing: Product[] = [
   {
     name: 'American Tall',
     company: 'American Tall',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes:
       "American Tall is a multigenerational, Canadian business, based in Ontario. As the company expanded, it began manufacturing most of it's products in Asia",

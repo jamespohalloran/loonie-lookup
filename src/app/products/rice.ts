@@ -4,6 +4,7 @@ export const rice: Product[] = [
   {
     name: 'Uncle Ben\'s',
     company: 'Mars Food',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the US.',
     categoryId: 'rice',
@@ -13,6 +14,7 @@ export const rice: Product[] = [
   {
     name: 'Minute Rice',
     company: 'Riviana Foods Inc',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the US.',
     categoryId: 'rice',
@@ -22,6 +24,7 @@ export const rice: Product[] = [
   {
     name: 'Canoe',
     company: 'McCain Foods',
+    countryCode: 'CA',
     percentCanadian: 30,
     notes: 'Made in Canada, partially owned by a Canadian company, and some rice is sourced internationally.',
     categoryId: 'rice',
@@ -31,6 +34,7 @@ export const rice: Product[] = [
   {
     name: 'Tilda',
     company: 'Tilda Ltd',
+    countryCode: 'UK',
     percentCanadian: 0,
     notes: 'Imported from the UK.',
     categoryId: 'rice',
@@ -40,6 +44,7 @@ export const rice: Product[] = [
   {
     name: 'Riceland',
     company: 'Riceland Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the US.',
     categoryId: 'rice',
@@ -49,6 +54,7 @@ export const rice: Product[] = [
   {
     name: 'President\'s Choice Rice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Made in Canada, under Loblaw’s private label.',
     categoryId: 'rice',
@@ -58,6 +64,7 @@ export const rice: Product[] = [
   {
     name: 'Dainty',
     company: 'Dainty Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Made in Canada with international ingredients.',
     categoryId: 'rice',
@@ -67,6 +74,7 @@ export const rice: Product[] = [
   {
     name: 'RiceSelect',
     company: 'Riviana Foods Inc',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'rice',
@@ -76,6 +84,7 @@ export const rice: Product[] = [
   {
     name: 'Home Grown Living Foods',
     company: 'Home Grown Living Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand made with Canadian rice.',
     categoryId: 'rice',
@@ -85,6 +94,7 @@ export const rice: Product[] = [
   {
     name: 'Wild Rows',
     company: 'Wild Rows',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand, made with Canadian wild rice.',
     categoryId: 'rice',

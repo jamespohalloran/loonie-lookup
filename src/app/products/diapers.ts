@@ -4,6 +4,7 @@ export const diapers: Product[] = [
   {
     name: 'Pampers',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Pampers diapers are manufactured in the United States.',
     categoryId: 'diapers',
@@ -13,6 +14,7 @@ export const diapers: Product[] = [
   {
     name: 'Huggies',
     company: 'Kimberly-Clark',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Huggies diapers are manufactured in the United States.',
     categoryId: 'diapers',
@@ -22,6 +24,7 @@ export const diapers: Product[] = [
   {
     name: 'Luvs',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Luvs diapers are manufactured in the United States.',
     categoryId: 'diapers',
@@ -31,6 +34,7 @@ export const diapers: Product[] = [
   {
     name: 'President’s Choice Diapers',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaw’s store brand diapers, available in Loblaw locations across Canada.',
     categoryId: 'diapers',
@@ -40,6 +44,7 @@ export const diapers: Product[] = [
   {
     name: 'Compliments Diapers',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ store brand diapers, available in Sobeys stores across Canada.',
     categoryId: 'diapers',
@@ -49,6 +54,7 @@ export const diapers: Product[] = [
   {
     name: 'Seventh Generation',
     company: 'Seventh Generation Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Seventh Generation diapers are a U.S. brand of eco-conscious diapers.',
     categoryId: 'diapers',
@@ -58,6 +64,7 @@ export const diapers: Product[] = [
   {
     name: 'Kirkland Signature Diapers',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Costco’s store brand diapers are manufactured in the US.',
     categoryId: 'diapers',
@@ -67,6 +74,7 @@ export const diapers: Product[] = [
    {
     name: 'Bambo Nature',
     company: 'Abena Group',
+    countryCode: 'DK',
     percentCanadian: 0,
     notes: 'Bambo Nature diapers are a Danish brand known for their eco-friendly diapers.',
     categoryId: 'diapers',
@@ -76,6 +84,7 @@ export const diapers: Product[] = [
    {
     name: 'Parent’s Choice Diapers',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Parent’s Choice is Walmart Canada’s store brand of diapers.',
     categoryId: 'diapers',
@@ -85,6 +94,7 @@ export const diapers: Product[] = [
    {
     name: 'Honest Diapers',
     company: 'The Honest Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Honest Diapers are a U.S. brand, known for their use of organic cotton and eco-friendly materials.',
     categoryId: 'diapers',

@@ -4,6 +4,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Green Giant',
     company: 'B&G Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the United States.',
     categoryId: 'cannedVegetables',
@@ -13,6 +14,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Aylmer',
     company: 'ConAgra Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Aylmer is a Canadian brand and widely available across Canada.',
     categoryId: 'cannedVegetables',
@@ -22,6 +24,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Del Monte',
     company: 'Del Monte Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured in the United States.',
     categoryId: 'cannedVegetables',
@@ -31,6 +34,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Habitant',
     company: 'Smuckers',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Habitant is a Canadian brand and is widespread in the Québec region.',
     categoryId: 'cannedVegetables',
@@ -40,6 +44,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand, widely available in Walmart locations across Canada.',
     categoryId: 'cannedVegetables',
@@ -49,6 +54,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ private label, available in store locations across Canada.',
     categoryId: 'cannedVegetables',
@@ -58,6 +64,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaw’s private label, available in store locations across Canada.',
     categoryId: 'cannedVegetables',
@@ -67,6 +74,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Our Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ premium private label, available in store locations across Canada.',
     categoryId: 'cannedVegetables',
@@ -76,6 +84,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'No Name',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaw’s budget private label, available in store locations across Canada.',
     categoryId: 'cannedVegetables',
@@ -85,6 +94,7 @@ export const cannedVegetables: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label, available at all Costco locations but not in regular grocery stores.',
     categoryId: 'cannedVegetables',

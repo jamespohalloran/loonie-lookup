@@ -13,6 +13,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Colgate',
     company: 'Colgate-Palmolive',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. The most widely available toothpaste in Canadian grocery stores.',
     categoryId: 'toothpaste',
@@ -22,6 +23,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Crest',
     company: 'Procter & Gamble',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. It is widely available in most grocery stores across Canada.',
     categoryId: 'toothpaste',
@@ -31,6 +33,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Sensodyne',
     company: 'GlaxoSmithKline',
+    countryCode: 'GB',
     percentCanadian: 0,
     notes: 'British brand. Popular for sensitivity prevention. Found mostly in drugstores and supermarkets nationwide.',
     categoryId: 'toothpaste',
@@ -40,6 +43,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Arm & Hammer',
     company: 'Church & Dwight',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. Known for baking soda content, available at most grocery stores and pharmacies.',
     categoryId: 'toothpaste',
@@ -49,6 +53,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Close-Up',
     company: 'Unilever',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. Widely available in Walmart locations across Canada.',
     categoryId: 'toothpaste',
@@ -58,6 +63,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Toms of Maine',
     company: 'Colgate-Palmolive',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. Known for natural ingredients, sold in health food stores and major grocery stores.',
     categoryId: 'toothpaste',
@@ -67,6 +73,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Burt’s Bees',
     company: 'The Clorox Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: "American brand. Known for natural ingredients, sold in health food stores, drugstores and select grocery stores in Canada.",
     categoryId: 'toothpaste',
@@ -76,6 +83,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Green Beaver',
     company: 'The Green Beaver Company',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand. Known for natural ingredients and environmentally friendly practices. Found in health food stores and online.',
     categoryId: 'toothpaste',
@@ -85,6 +93,7 @@ export const toothpaste: Product[] = [
   {
     name: 'The Natural Family Co.',
     company: 'The Natural Family Co.',
+    countryCode: 'AU',
     percentCanadian: 0,
     notes: 'Australian brand. Known for natural ingredients, sold in health food stores and online.',
     categoryId: 'toothpaste',
@@ -94,6 +103,7 @@ export const toothpaste: Product[] = [
   {
     name: 'Hello',
     company: 'Hello Products',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American brand. Known for natural ingredients, sold in health food stores and online.',
     categoryId: 'toothpaste',

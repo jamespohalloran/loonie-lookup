@@ -22,6 +22,15 @@ body:
       required: true
 
   - type: input
+  id: country
+  attributes:
+    label: Country
+    description: 'Enter the country where this company is based (e.g., United States).'
+    placeholder: 'United States'
+  validations:
+    required: true
+
+  - type: input
     id: percentCanadian
     attributes:
       label: Percent Canadian

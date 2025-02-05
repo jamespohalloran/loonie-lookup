@@ -4,6 +4,7 @@ export const bacon: Product[] = [
   {
     name: 'Maple Leaf',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A truly Canadian brand using pork raised by Canadian farmers.',
     categoryId: 'bacon',
@@ -13,6 +14,7 @@ export const bacon: Product[] = [
   {
     name: 'Schneiders',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'One of Canada\'s oldest food companies, all bacon products are made with 100% locally sourced pork.',
     categoryId: 'bacon',
@@ -22,6 +24,7 @@ export const bacon: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'The product is made within Canada using Canadian pork with wide availability across the country.',
     categoryId: 'bacon',
@@ -31,6 +34,7 @@ export const bacon: Product[] = [
   {
     name: 'Olymel',
     company: 'Olymel LP',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Fully Canadian company producing traditional smoked bacon, widely available across Canada.',
     categoryId: 'bacon',
@@ -40,6 +44,7 @@ export const bacon: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand bacon that is available in Walmart locations across Canada.',
     categoryId: 'bacon',
@@ -49,6 +54,7 @@ export const bacon: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label bacon available across Costco locations.',
     categoryId: 'bacon',
@@ -58,6 +64,7 @@ export const bacon: Product[] = [
   {
     name: 'Hormel',
     company: 'Hormel',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand with bacon products, but their products are available and popular in Canada.',
     categoryId: 'bacon',
@@ -67,6 +74,7 @@ export const bacon: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sobeys’ private label bacon produced exclusively for their stores across Canada.',
     categoryId: 'bacon',
@@ -76,6 +84,7 @@ export const bacon: Product[] = [
   {
     name: 'Grimm’s Fine Foods',
     company: 'Grimm’s Fine Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Western Canadian company, mainly found in BC, Alberta and select stores nationwide.',
     categoryId: 'bacon',
@@ -85,6 +94,7 @@ export const bacon: Product[] = [
   {
     name: 'Oscar Mayer',
     company: 'Oscar Mayer',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced by an American company and wide-spread across Canada.',
     categoryId: 'bacon',

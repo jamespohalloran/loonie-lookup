@@ -4,6 +4,7 @@ export const cannedFish: Product[] = [
   {
     name: 'Gold Seal',
     company: 'Gold Seal Seafoods',
+    countryCode: 'CA',
     percentCanadian: 70,
     notes: 'A brand known for canned sockeye salmon, mackerel, and sardines sourced partly from Canadian waters.',
     categoryId: 'cannedFish',
@@ -13,6 +14,7 @@ export const cannedFish: Product[] = [
   {
     name: 'Clover Leaf',
     company: 'Clover Leaf Seafoods',
+    countryCode: 'CA',
     percentCanadian: 85,
     notes:
       'A well-known Canadian brand offering a variety of canned seafood products, primarily sourced from Canadian waters.',
@@ -23,6 +25,7 @@ export const cannedFish: Product[] = [
   {
     name: 'Ocean’s',
     company: 'Ocean Brands',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes:
       'A Canadian-owned brand offering a variety of canned seafood, with most species sourced from Canadian waters.',
@@ -33,6 +36,7 @@ export const cannedFish: Product[] = [
   {
     name: 'President’s Choice Canned Fish',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 45,
     notes: 'Loblaw’s private label canned fish, sourced from various locations worldwide.',
     categoryId: 'cannedFish',
@@ -42,6 +46,7 @@ export const cannedFish: Product[] = [
   {
     name: 'Brunswick',
     company: 'Brunswick Seafood',
+    countryCode: 'CA',
     percentCanadian: 40,
     notes:
       'A well-recognized brand for canned sardines in Canada, however, primarily sourced from various locations worldwide.',
@@ -52,8 +57,9 @@ export const cannedFish: Product[] = [
   {
     name: 'Great Value Canned Fish',
     company: 'Walmart Canada',
-    notes: '',
-    percentCanadian: 0,
+    countryCode: 'US',
+    notes: 'Walmart’s store brand canned fish, sourced from various locations worldwide, including Canada. Owned by US based multinational, Walmart.',
+    percentCanadian: 10,
     categoryId: 'cannedFish',
     aliases: ['great value canned fish', 'walmart canned fish'],
     popularity: 75,
@@ -61,9 +67,9 @@ export const cannedFish: Product[] = [
   {
     name: 'Our Finest',
     company: 'Walmart Canada',
-    percentCanadian: 0,
-    notes: '',
-
+    countryCode: 'US',
+    percentCanadian: 10,
+    notes: 'Sourced from various locations worldwide, including Canada. Owned by US based multinational, Walmart.',
     categoryId: 'cannedFish',
     aliases: ['our finest canned fish', 'of canned fish'],
     popularity: 70,
@@ -71,6 +77,7 @@ export const cannedFish: Product[] = [
   {
     name: 'Raincoast Trading',
     company: 'Raincoast Trading Company',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
       'A Canadian canned seafood company that specializes in sustainably sourced products, available in select locations across Canada.',
@@ -78,22 +85,22 @@ export const cannedFish: Product[] = [
     aliases: ['raincoast canned fish'],
     popularity: 70,
   },
-
   {
     name: 'Wild Planet',
     company: 'Wild Planet Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     categoryId: 'cannedFish',
-    notes: '',
-
+    notes: 'US based company offering sustainably sourced canned fish products. Owned by Italian company Bolton Group.',
     aliases: ['wild planet canned fish'],
     popularity: 60,
   },
   {
     name: 'Safe Catch',
     company: 'Safe Catch Foods',
+    countryCode: 'US',
     percentCanadian: 0,
-    notes: '',
+    notes: 'Sustainably sourced packaged fish products, based in California, USA.',
     categoryId: 'cannedFish',
     aliases: ['safe catch canned fish'],
     popularity: 60,

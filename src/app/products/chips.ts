@@ -4,6 +4,7 @@ export const chips: Product[] = [
   {
     name: "Lay's",
     company: 'Frito-Lay Canada (PepsiCo)',
+    countryCode: 'US',
     percentCanadian: 50,
     notes:
       "Lay's chips are produced in Canada using both Canadian and imported ingredients. The brand is owned by the American company PepsiCo.",
@@ -13,6 +14,7 @@ export const chips: Product[] = [
   {
     name: 'Ruffles',
     company: 'Frito-Lay Canada (PepsiCo)',
+    countryCode: 'US',
     percentCanadian: 50,
     notes:
       'Ruffles are manufactured in Canada with a mix of local and imported ingredients. The brand is owned by PepsiCo, a U.S.-based company.',
@@ -22,6 +24,7 @@ export const chips: Product[] = [
   {
     name: "Miss Vickie's",
     company: 'Frito-Lay Canada (PepsiCo)',
+    countryCode: 'US',
     percentCanadian: 50,
     notes:
       "Originating in Canada, Miss Vickie's chips are now owned by PepsiCo. They are produced in Canada using both domestic and imported ingredients.",
@@ -31,6 +34,7 @@ export const chips: Product[] = [
   {
     name: 'Old Dutch',
     company: 'Old Dutch Foods Ltd.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
       'Old Dutch is a Canadian brand with manufacturing facilities across Canada, using primarily Canadian ingredients.',
@@ -40,6 +44,7 @@ export const chips: Product[] = [
   {
     name: 'Humpty Dumpty',
     company: 'Old Dutch Foods Ltd.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes:
       'Originally an independent Canadian brand, Humpty Dumpty was acquired by Old Dutch Foods and continues to be produced in Canada.',
@@ -49,6 +54,7 @@ export const chips: Product[] = [
   {
     name: 'Covered Bridge',
     company: 'Covered Bridge Potato Chip Company',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A family-owned Canadian company based in New Brunswick, using locally sourced potatoes for their chips.',
     categoryId: 'chips',
@@ -57,6 +63,7 @@ export const chips: Product[] = [
   {
     name: "President's Choice",
     company: 'Loblaw Companies Limited',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes:
       "A private label brand of Loblaw Companies, President's Choice chips are produced in Canada, though some ingredients may be imported.",
@@ -66,6 +73,7 @@ export const chips: Product[] = [
   {
     name: 'No Name',
     company: 'Loblaw Companies Limited',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Another Loblaw private label, No Name chips are made in Canada with primarily Canadian ingredients.',
     categoryId: 'chips',
@@ -74,6 +82,7 @@ export const chips: Product[] = [
   {
     name: 'Kettle Brand',
     company: 'Kettle Foods, Inc. (Campbell Soup Company)',
+    countryCode: 'US',
     percentCanadian: 30,
     notes:
       'An American brand with some production in Canada, Kettle Brand chips use a combination of domestic and imported ingredients.',
@@ -83,6 +92,7 @@ export const chips: Product[] = [
   {
     name: 'Yum Yum',
     company: 'Yum Yum Chips',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Quebec-based company producing a variety of chips using locally sourced potatoes.',
     categoryId: 'chips',

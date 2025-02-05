@@ -23,6 +23,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Nature Valley',
     company: 'General Mills',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American granola brand available in many Canadian grocery stores.',
     categoryId: 'granolaBars',
@@ -32,6 +33,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Quaker Chewy',
     company: 'Quaker Oats Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced by the U.S.-based Quaker Oats Company, these granola bars are readily available across Canada.',
     categoryId: 'granolaBars',
@@ -41,6 +43,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Kashi',
     company: 'Kashi Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A U.S. granola brand that is widely available in Canadian grocery stores.',
     categoryId: 'granolaBars',
@@ -50,6 +53,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Clif Bar',
     company: 'Clif Bar & Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Clif Bar is an American company that makes organic foods and drinks. The products are widely available in Canadian stores.',
     categoryId: 'granolaBars',
@@ -59,6 +63,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Kind Bar',
     company: 'Kind LLC',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Kind Bar is an American snack food brand that is available in many grocery stores across Canada.',
     categoryId: 'granolaBars',
@@ -68,6 +73,7 @@ export const granolaBars: Product[] = [
   {
     name: 'MadeGood',
     company: 'Riverside Natural Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian family-owned company that makes granola bars from organic ingredients. Available in various stores across Canada.',
     categoryId: 'granolaBars',
@@ -77,6 +83,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Kirkland Signature is Costco\'s store brand. These granola bars are available in all Costco warehouses in Canada.',
     categoryId: 'granolaBars',
@@ -86,6 +93,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Enjoy Life',
     company: 'Enjoy Life Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Enjoy Life Foods is an American company that specializes in gluten-free and allergy-friendly foods. Their products are available in many Canadian stores.',
     categoryId: 'granolaBars',
@@ -95,6 +103,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Lärabar',
     company: 'General Mills',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Lärabar is a brand of an American company, General Mills. It\'s available in grocery stores across Canada.',
     categoryId: 'granolaBars',
@@ -104,6 +113,7 @@ export const granolaBars: Product[] = [
   {
     name: 'Simply Protein',
     company: 'Wellness Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian company that specializes in providing high protein and low sugar products. Available in many grocery and health food stores across Canada.',
     categoryId: 'granolaBars',

@@ -4,6 +4,7 @@ export const soda: Product[] = [
   {
     name: 'Coca-Cola',
     company: 'The Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand, Coca-Cola products sold in Canada are produced locally but the company is U.S.-owned.',
     categoryId: 'soda',
@@ -12,6 +13,7 @@ export const soda: Product[] = [
   {
     name: 'Pepsi',
     company: 'PepsiCo',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand, Pepsi products sold in Canada are produced locally but the company is U.S.-owned.',
     categoryId: 'soda',
@@ -20,6 +22,7 @@ export const soda: Product[] = [
   {
     name: 'Canada Dry',
     company: 'Keurig Dr Pepper',
+    countryCode: 'US',
     percentCanadian: 50,
     notes:
       'Originally a Canadian brand, now owned by the American company Keurig Dr Pepper. Some production still occurs in Canada.',
@@ -29,6 +32,7 @@ export const soda: Product[] = [
   {
     name: 'Crush',
     company: 'Keurig Dr Pepper',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'An American brand, but popular in Canada with some local production.',
     categoryId: 'soda',
@@ -37,6 +41,7 @@ export const soda: Product[] = [
   {
     name: 'Big 8',
     company: 'Big 8 Beverages',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand based in Nova Scotia, offering a variety of soft drinks.',
     categoryId: 'soda',
@@ -45,6 +50,7 @@ export const soda: Product[] = [
   {
     name: 'Bec Cola',
     company: 'Bec Soda Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Quebec-based company producing organic cola sweetened with maple syrup.',
     categoryId: 'soda',
@@ -53,6 +59,7 @@ export const soda: Product[] = [
   {
     name: 'Brio Chinotto',
     company: 'Brio Beverages Inc.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian-produced Italian-style soda popular in Italian communities.',
     categoryId: 'soda',
@@ -61,6 +68,7 @@ export const soda: Product[] = [
   {
     name: "Bull's Head",
     company: "Bull's Head",
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Quebec-based brand best known for its ginger ale.',
     categoryId: 'soda',
@@ -69,6 +77,7 @@ export const soda: Product[] = [
   {
     name: 'Schweppes',
     company: 'Keurig Dr Pepper',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Originally a Swiss brand, now owned by Keurig Dr Pepper. Some production occurs in Canada.',
     categoryId: 'soda',
@@ -77,6 +86,7 @@ export const soda: Product[] = [
   {
     name: '7UP',
     company: 'Keurig Dr Pepper',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'An American brand, but popular in Canada with some local production.',
     categoryId: 'soda',

@@ -4,6 +4,7 @@ export const juice: Product[] = [
   {
     name: 'Minute Maid',
     company: 'Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'juice',
@@ -13,6 +14,7 @@ export const juice: Product[] = [
   {
     name: 'Tropicana',
     company: 'PepsiCo Inc',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'juice',
@@ -22,6 +24,7 @@ export const juice: Product[] = [
   {
     name: 'Ocean Spray',
     company: 'Ocean Spray',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'juice',
@@ -31,6 +34,7 @@ export const juice: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label juice.',
     categoryId: 'juice',
@@ -40,6 +44,7 @@ export const juice: Product[] = [
   {
     name: 'Sun-Rype',
     company: 'Jim Pattison Group',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Founded in British Columbia and uses Canadian fruit where possible.',
     categoryId: 'juice',
@@ -49,6 +54,7 @@ export const juice: Product[] = [
   {
     name: 'Allen’s',
     company: 'Lassonde Industries',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian company based in Quebec, known for its apple juice.',
     categoryId: 'juice',
@@ -58,6 +64,7 @@ export const juice: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand juice, widely available in Walmart locations across Canada.',
     categoryId: 'juice',
@@ -67,6 +74,7 @@ export const juice: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label juice, available at all Costco locations but not in regular grocery stores.',
     categoryId: 'juice',
@@ -76,6 +84,7 @@ export const juice: Product[] = [
   {
     name: 'Simply Orange',
     company: 'Coca-Cola Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'juice',
@@ -85,6 +94,7 @@ export const juice: Product[] = [
   {
     name: 'Naked',
     company: 'PepsiCo Inc',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Produced in the US.',
     categoryId: 'juice',

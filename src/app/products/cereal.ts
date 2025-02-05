@@ -4,6 +4,7 @@ export const cereal: Product[] = [
   {
     name: 'Shreddies',
     company: 'Post Foods Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian brand, manufactured in Niagara Falls, Ontario.',
     categoryId: 'cereal',
@@ -13,6 +14,7 @@ export const cereal: Product[] = [
   {
     name: 'Vector',
     company: 'Kellogg’s',
+    countryCode: 'US',
     percentCanadian: 100,
     notes: 'A popular cereal for health-conscious Canadians. Made in Canada.',
     categoryId: 'cereal',
@@ -22,6 +24,7 @@ export const cereal: Product[] = [
   {
     name: 'Cheerios',
     company: 'General Mills Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Manufactured in Canada and uses whole grain oats which come from fields in the Prairie Provinces.',
     categoryId: 'cereal',
@@ -31,6 +34,7 @@ export const cereal: Product[] = [
   {
     name: 'Life',
     company: 'Quaker Oats Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made by the US-based Quaker Oats Company.',
     categoryId: 'cereal',
@@ -40,6 +44,7 @@ export const cereal: Product[] = [
   {
     name: 'Frosted Flakes',
     company: 'Kellogg’s',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Half of all Frosted Flakes sold in Canada are made in Canada.',
     categoryId: 'cereal',
@@ -49,6 +54,7 @@ export const cereal: Product[] = [
   {
     name: 'Raisin Bran',
     company: 'Kellogg’s',
+    countryCode: 'US',
     percentCanadian: 75,
     notes: '75% of Raisin Bran sold in Canada is made in Canada.',
     categoryId: 'cereal',
@@ -58,6 +64,7 @@ export const cereal: Product[] = [
   {
     name: 'Honey Nut Cheerios',
     company: 'General Mills Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Manufactured in Canada and uses Canadian honey.',
     categoryId: 'cereal',
@@ -67,6 +74,7 @@ export const cereal: Product[] = [
   {
     name: 'Cinnamon Toast Crunch',
     company: 'General Mills Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Manufactured in Canada and is very popular among children.',
     categoryId: 'cereal',
@@ -76,6 +84,7 @@ export const cereal: Product[] = [
   {
     name: 'Rice Krispies',
     company: 'Kellogg’s',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made by the US-based Kellogg’s Company.',
     categoryId: 'cereal',
@@ -85,6 +94,7 @@ export const cereal: Product[] = [
   {
     name: 'Special K',
     company: 'Kellogg’s',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Half of all Special K sold in Canada is made in Canada.',
     categoryId: 'cereal',

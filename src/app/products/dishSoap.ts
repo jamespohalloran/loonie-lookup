@@ -4,6 +4,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Cascade',
     company: 'Procter & Gamble Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Manufactured in Canada with some imported components. Available nationwide.',
     categoryId: 'dishSoap',
@@ -13,6 +14,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Dawn',
     company: 'Procter & Gamble Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Manufactured in Canada with some imported components. Available nationwide.',
     categoryId: 'dishSoap',
@@ -22,6 +24,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Palmolive',
     company: 'Colgate-Palmolive Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured outside Canada.',
     categoryId: 'dishSoap',
@@ -31,6 +34,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Sunlight',
     company: 'Unilever Canada',
+    countryCode: 'NL',
     percentCanadian: 0,
     notes: 'Manufactured outside Canada.',
     categoryId: 'dishSoap',
@@ -40,6 +44,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Ivory',
     company: 'Procter & Gamble Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Manufactured in Canada with some imported components. Available nationwide.',
     categoryId: 'dishSoap',
@@ -49,6 +54,7 @@ export const dishSoap: Product[] = [
   {
     name: 'President’s Choice Dish Soap',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label dish soap.',
     categoryId: 'dishSoap',
@@ -58,6 +64,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Great Value Dish Soap',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand dish soap, widely available in Walmart locations across Canada.',
     categoryId: 'dishSoap',
@@ -67,6 +74,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Method Dish Soap',
     company: 'Method Products Canada',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured outside Canada.',
     categoryId: 'dishSoap',
@@ -76,6 +84,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Seventh Generation',
     company: 'Seventh Generation',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured outside Canada.',
     categoryId: 'dishSoap',
@@ -85,6 +94,7 @@ export const dishSoap: Product[] = [
   {
     name: 'Better Life Dish Soap',
     company: 'Better Life',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Manufactured outside Canada.',
     categoryId: 'dishSoap',

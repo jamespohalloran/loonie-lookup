@@ -4,6 +4,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Kraft',
     company: 'Kraft Heinz',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the USA.',
     categoryId: 'peanutButter',
@@ -13,6 +14,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Jif',
     company: 'J.M. Smucker Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the USA.',
     categoryId: 'peanutButter',
@@ -22,6 +24,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Skippy',
     company: 'Hormel Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the USA.',
     categoryId: 'peanutButter',
@@ -31,6 +34,7 @@ export const peanutButter: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label, made with mostly Canadian ingredients.',
     categoryId: 'peanutButter',
@@ -40,6 +44,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'Walmart’s store brand, made with a combination of Canadian and international ingredients.',
     categoryId: 'peanutButter',
@@ -49,6 +54,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Costco’s private label, made with a combination of Canadian and international ingredients.',
     categoryId: 'peanutButter',
@@ -58,6 +64,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Adams',
     company: 'Smucker Foods of Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand, made entirely with Canadian peanuts.',
     categoryId: 'peanutButter',
@@ -67,6 +74,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Nuts to You Nut Butter',
     company: 'Nuts to You Nut Butter Inc',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian company, produces organic and all-natural peanut butters.',
     categoryId: 'peanutButter',
@@ -76,6 +84,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Wowbutter',
     company: 'Wowbutter Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand that produces peanut free, tree nut free, gluten free, and dairy free spread.',
     categoryId: 'peanutButter',
@@ -85,6 +94,7 @@ export const peanutButter: Product[] = [
   {
     name: 'Teddie',
     company: 'Leavitt Corporation',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Made in the USA.',
     categoryId: 'peanutButter',

@@ -4,6 +4,7 @@ export const sausages: Product[] = [
   {
     name: 'Maple Leaf',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian company, producing sausages using Canadian pork.',
     categoryId: 'sausages',
@@ -13,6 +14,7 @@ export const sausages: Product[] = [
   {
     name: 'Schneiders',
     company: 'Maple Leaf Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Another brand under Maple Leaf Foods, well-known for its quality sausages across Canada.',
     categoryId: 'sausages',
@@ -22,6 +24,7 @@ export const sausages: Product[] = [
   {
     name: 'President’s Choice Sausages',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 90,
     notes: 'Loblaw’s private label sausages.',
     categoryId: 'sausages',
@@ -31,6 +34,7 @@ export const sausages: Product[] = [
   {
     name: 'Johnsonville',
     company: 'Johnsonville, LLC',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'American-made sausages imported for sale in Canadian markets.',
     categoryId: 'sausages',
@@ -40,6 +44,7 @@ export const sausages: Product[] = [
   {
     name: 'MarcAngelo',
     company: 'Concord Premium Meats Ltd.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand offering a variety of sausage flavours, available in most grocery stores across Canada.',
     categoryId: 'sausages',
@@ -49,6 +54,7 @@ export const sausages: Product[] = [
   {
     name: 'Freybe',
     company: 'Freybe Gourmet Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A BC-based company, producing European-style sausages.',
     categoryId: 'sausages',
@@ -58,6 +64,7 @@ export const sausages: Product[] = [
   {
     name: 'Olymel',
     company: 'Olymel L.P.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Based in Quebec, Olymel offers a wide range of sausages, available across Canada.',
     categoryId: 'sausages',
@@ -67,6 +74,7 @@ export const sausages: Product[] = [
   {
     name: 'European Quality Meats',
     company: 'European Quality Meats & Sausages',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian company best known for their European-style sausages.',
     categoryId: 'sausages',
@@ -76,6 +84,7 @@ export const sausages: Product[] = [
   {
     name: 'Greenfield Natural Meat Co.',
     company: 'Greenfield Natural Meat Co.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand offering all-natural meats, including a variety of sausages.',
     categoryId: 'sausages',
@@ -85,6 +94,7 @@ export const sausages: Product[] = [
   {
     name: 'Grimm’s',
     company: 'Grimm’s Fine Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Grimm’s is a western Canadian brand known for their naturally smoked sausages.',
     categoryId: 'sausages',

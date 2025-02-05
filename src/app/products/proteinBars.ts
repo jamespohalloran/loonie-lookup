@@ -4,6 +4,7 @@ export const proteinBars: Product[] = [
   {
     name: 'PowerBar',
     company: 'PowerBar',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A product of the US and not made in Canada.',
     categoryId: 'proteinBars',
@@ -13,6 +14,7 @@ export const proteinBars: Product[] = [
   {
     name: 'Clif Bar',
     company: 'Clif Bar & Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Purely made in the United States.',
     categoryId: 'proteinBars',
@@ -22,6 +24,7 @@ export const proteinBars: Product[] = [
   {
     name: 'SimplyProtein',
     company: 'SimplyProtein',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A protein bar brand that is 100% Canadian.',
     categoryId: 'proteinBars',
@@ -31,6 +34,7 @@ export const proteinBars: Product[] = [
   {
     name: 'Quest Bar',
     company: 'Quest Nutrition',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A product of the US and not made in Canada.',
     categoryId: 'proteinBars',
@@ -40,6 +44,7 @@ export const proteinBars: Product[] = [
   {
     name: "Kirkland's Signature Protein Bars",
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A product of the US and not made in Canada, distributed by Costco.',
     categoryId: 'proteinBars',
@@ -49,6 +54,7 @@ export const proteinBars: Product[] = [
   {
     name: 'Grenade Carb Killa',
     company: 'Grenade',
+    countryCode: 'UK',
     percentCanadian: 0,
     notes: 'A UK brand, fairly popular but not made in Canada.',
     categoryId: 'proteinBars',
@@ -58,6 +64,7 @@ export const proteinBars: Product[] = [
   {
     name: 'Genuine Health Vegan Proteins+ Bar',
     company: 'Genuine Health',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A 100% Canadian brand offering vegan protein bars.',
     categoryId: 'proteinBars',
@@ -67,6 +74,7 @@ export const proteinBars: Product[] = [
   {
     name: 'RXBAR',
     company: 'RXBAR',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Purely made in the United States.',
     categoryId: 'proteinBars',
@@ -76,6 +84,7 @@ export const proteinBars: Product[] = [
   {
     name: 'No Cow Bar',
     company: 'No Cow',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A product of the US and not made in Canada.',
     categoryId: 'proteinBars',
@@ -85,6 +94,7 @@ export const proteinBars: Product[] = [
   {
     name: 'MuscleTech Nitro Tech Crunch Bars',
     company: 'MuscleTech',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'From a USA sports nutrition company.',
     categoryId: 'proteinBars',

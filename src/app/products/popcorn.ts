@@ -4,6 +4,7 @@ export const popcorn: Product[] = [
   {
     name: 'Orville Redenbacher',
     company: 'Conagra Brands',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American popcorn brand available across Canada.',
     categoryId: 'popcorn',
@@ -13,6 +14,7 @@ export const popcorn: Product[] = [
   {
     name: 'Smartfood',
     company: 'Frito-Lay',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American popcorn brand available across Canada.',
     categoryId: 'popcorn',
@@ -22,6 +24,7 @@ export const popcorn: Product[] = [
   {
     name: 'Crunchy Colonel Popcorn',
     company: 'President’s Choice',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'President’s Choice signature popcorn brand. Available in most grocery stores across Canada.',
     categoryId: 'popcorn',
@@ -31,6 +34,7 @@ export const popcorn: Product[] = [
   {
     name: 'Great Value Popcorn',
     company: 'Walmart',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Walmart’s store brand popcorn. Widely available in Walmart locations across Canada.',
     categoryId: 'popcorn',
@@ -40,6 +44,7 @@ export const popcorn: Product[] = [
   {
     name: 'Kernel Encore Gourmet Popcorn',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Costco’s gourmet popcorn brand. Available in all Costco locations across Canada.',
     categoryId: 'popcorn',
@@ -49,6 +54,7 @@ export const popcorn: Product[] = [
   {
     name: 'Cineplex Popcorn',
     company: 'Cineplex',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canada’s leading cinema chain also sells their popcorn in grocery stores.',
     categoryId: 'popcorn',
@@ -58,6 +64,7 @@ export const popcorn: Product[] = [
   {
     name: 'Act II Popcorn',
     company: 'Conagra Brands',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American popcorn brand available across Canada.',
     categoryId: 'popcorn',
@@ -67,6 +74,7 @@ export const popcorn: Product[] = [
   {
     name: 'Pop Secret',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'An American popcorn brand that is widely available in Canada.',
     categoryId: 'popcorn',
@@ -76,6 +84,7 @@ export const popcorn: Product[] = [
   {
     name: 'Kernels Popcorn',
     company: 'Kernels',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian popcorn brand, available in select grocery stores and Kernels stores nationwide.',
     categoryId: 'popcorn',
@@ -85,6 +94,7 @@ export const popcorn: Product[] = [
   {
     name: 'Popcorn, Indiana',
     company: 'Popcorn, Indiana',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American popcorn brand that is widely available in Canada.',
     categoryId: 'popcorn',

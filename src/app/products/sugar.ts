@@ -4,6 +4,7 @@ export const sugar: Product[] = [
   {
     name: 'Redpath',
     company: 'ASR Group',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand manufacturing sugar from Canadian sugar beets. Available nationwide.',
     categoryId: 'sugar',
@@ -13,6 +14,7 @@ export const sugar: Product[] = [
   {
     name: 'Rogers',
     company: 'Lantic Inc',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian brand, all sugar made from locally-grown sugar beets. Available across the nation.',
     categoryId: 'sugar',
@@ -22,6 +24,7 @@ export const sugar: Product[] = [
   {
     name: 'Lantic',
     company: 'Lantic Inc',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Another popular Canadian brand, Lantic produces sugar from Canadian-grown sugar beets. Widely available.',
     categoryId: 'sugar',
@@ -31,6 +34,7 @@ export const sugar: Product[] = [
   {
     name: 'Great Value Sugar',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 0,
     notes: 'Walmart’s store brand sugar, widely available in Walmart locations across Canada.',
     categoryId: 'sugar',
@@ -40,6 +44,7 @@ export const sugar: Product[] = [
   {
     name: 'President’s Choice Sugar',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes: 'Loblaw’s private label sugar made from Canadian sugar beets.',
     categoryId: 'sugar',
@@ -49,6 +54,7 @@ export const sugar: Product[] = [
   {
     name: 'Superstore No Name Sugar',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 80,
     notes: 'Private label sugar brand from Real Canadian Superstore.',
     categoryId: 'sugar',
@@ -58,6 +64,7 @@ export const sugar: Product[] = [
   {
     name: 'Domino Sugar',
     company: 'Domino Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A popular sugar brand from the US.',
     categoryId: 'sugar',
@@ -67,6 +74,7 @@ export const sugar: Product[] = [
   {
     name: 'Organic Traditions Coconut Sugar',
     company: 'Organic Traditions',
+    countryCode: 'CA',
     percentCanadian: 50,
     notes: 'A Canadian-owned brand specializing in organic sugar alternatives.',
     categoryId: 'sugar',
@@ -76,6 +84,7 @@ export const sugar: Product[] = [
   {
     name: 'Wholesome Sweeteners',
     company: 'Wholesome Sweeteners, Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An organic and fair trade sugar brand originating from the US.',
     categoryId: 'sugar',
@@ -85,6 +94,7 @@ export const sugar: Product[] = [
   {
     name: 'Sugar In The Raw',
     company: 'Cumberland Packing Corp',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Unrefined sugar originating from the US.',
     categoryId: 'sugar',

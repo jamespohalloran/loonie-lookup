@@ -4,6 +4,7 @@ export const crackers: Product[] = [
   {
     name: 'Premium Plus',
     company: 'Mondelez International',
+    countryCode: 'US',
     percentCanadian: 25,
     notes: 'Widely available but only a portion of production occurs in Canada.',
     categoryId: 'crackers',
@@ -13,6 +14,7 @@ export const crackers: Product[] = [
   {
     name: 'Ritz',
     company: 'Mondelez International',
+    countryCode: 'US',
     percentCanadian: 25,
     notes: 'A portion of its production occurs in Canada but it is largely an American brand.',
     categoryId: 'crackers',
@@ -22,6 +24,7 @@ export const crackers: Product[] = [
   {
     name: 'Christie',
     company: 'Mondelez International',
+    countryCode: 'US',
     percentCanadian: 25,
     notes: 'Known for its crackers but only a portion of its production occurs in Canada.',
     categoryId: 'crackers',
@@ -31,6 +34,7 @@ export const crackers: Product[] = [
   {
     name: 'Dare',
     company: 'Dare Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A 100% Canadian company known for its variety of crackers.',
     categoryId: 'crackers',
@@ -40,6 +44,7 @@ export const crackers: Product[] = [
   {
     name: 'Triscuit',
     company: 'Mondelez International',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An entirely American-made product.',
     categoryId: 'crackers',
@@ -49,6 +54,7 @@ export const crackers: Product[] = [
   {
     name: 'Wheat Thins',
     company: 'Mondelez International',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'Entirely made in the US.',
     categoryId: 'crackers',
@@ -58,6 +64,7 @@ export const crackers: Product[] = [
   {
     name: 'Breton',
     company: 'Dare Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Produced by a 100% Canadian company and available in most Canadian grocery stores.',
     categoryId: 'crackers',
@@ -67,6 +74,7 @@ export const crackers: Product[] = [
   {
     name: 'Carr’s',
     company: 'United Biscuits',
+    countryCode: 'GB',
     percentCanadian: 0,
     notes: 'A British brand, widely available in Canada.',
     categoryId: 'crackers',
@@ -76,6 +84,7 @@ export const crackers: Product[] = [
   {
     name: 'Keebler',
     company: 'Ferrero SpA',
+    countryCode: 'IT',
     percentCanadian: 0,
     notes: 'A US brand owned by an Italian company, widely available in Canadian supermarkets.',
     categoryId: 'crackers',
@@ -85,6 +94,7 @@ export const crackers: Product[] = [
   {
     name: 'Grissol',
     company: 'Dare Foods',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A 100% Canadian company producing a variety of crackers.',
     categoryId: 'crackers',

@@ -4,6 +4,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Hellmann’s',
     company: 'Unilever',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand, available throughout Canadian grocery stores.',
     categoryId: 'mayonnaise',
@@ -13,6 +14,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Kraft',
     company: 'Kraft Heinz',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand, widely available in Canadian grocery stores.',
     categoryId: 'mayonnaise',
@@ -22,6 +24,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Compliments',
     company: 'Sobeys',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand, sold at Sobeys, Foodland, and FreshCo.',
     categoryId: 'mayonnaise',
@@ -31,6 +34,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'President’s Choice',
     company: 'Loblaws',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaws private label mayo, available in their stores countrywide.',
     categoryId: 'mayonnaise',
@@ -40,6 +44,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Sold in Walmart stores across Canada.',
     categoryId: 'mayonnaise',
@@ -49,6 +54,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Kirkland Signature',
     company: 'Costco',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand, available at all Costco locations',
     categoryId: 'mayonnaise',
@@ -58,6 +64,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Neilson’s',
     company: 'Saputo',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian brand, available primarily in Ontario.',
     categoryId: 'mayonnaise',
@@ -67,6 +74,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Spectrum',
     company: 'Hain Celestial Canada',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'US based company but with Canadian Manufacturing.',
     categoryId: 'mayonnaise',
@@ -76,6 +84,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Vegenaise',
     company: 'Follow Your Heart',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand, available in many Canadian grocery stores.',
     categoryId: 'mayonnaise',
@@ -85,6 +94,7 @@ export const mayonnaise: Product[] = [
   {
     name: 'Chosen Foods',
     company: 'Chosen Foods',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'US brand, available in select Canadian grocery stores.',
     categoryId: 'mayonnaise',

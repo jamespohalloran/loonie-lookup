@@ -4,6 +4,7 @@ export const flour: Product[] = [
   {
     name: 'Five Roses',
     company: 'Smucker Foods of Canada Corp.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian brand that has been trusted for generations.',
     categoryId: 'flour',
@@ -13,6 +14,7 @@ export const flour: Product[] = [
   {
     name: 'Robin Hood',
     company: 'Smucker Foods of Canada Corp.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A well-known Canadian brand, found in most grocery stores across Canada.',
     categoryId: 'flour',
@@ -22,6 +24,7 @@ export const flour: Product[] = [
   {
     name: 'Rogers',
     company: 'Rogers Foods Ltd.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian milling company producing a variety of flours. Found in grocery stores nationwide.',
     categoryId: 'flour',
@@ -31,6 +34,7 @@ export const flour: Product[] = [
   {
     name: 'PC Organics',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: "President's Choice's organic label flour.",
     categoryId: 'flour',
@@ -40,6 +44,7 @@ export const flour: Product[] = [
   {
     name: 'Anita’s Organic',
     company: 'Anita’s Organic Mill',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Canadian organic flour brand, available in select health food stores and major grocery stores with organic sections.',
     categoryId: 'flour',
@@ -49,6 +54,7 @@ export const flour: Product[] = [
   {
     name: 'Pillsbury Best',
     company: 'Hometown Food Company',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A brand made in the U.S.',
     categoryId: 'flour',
@@ -58,6 +64,7 @@ export const flour: Product[] = [
   {
     name: 'Gold Medal',
     company: 'General Mills, Inc.',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'A brand made in the U.S.',
     categoryId: 'flour',
@@ -67,6 +74,7 @@ export const flour: Product[] = [
   {
     name: 'Arva',
     company: 'Arva Flour Mills Ltd.',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Producing flour using traditional methods and Canadian grains. Primarily available in London, Ontario, but also found online.',
     categoryId: 'flour',
@@ -76,6 +84,7 @@ export const flour: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart Canada',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Walmart’s store brand flour, widely available in Walmart locations across Canada.',
     categoryId: 'flour',
@@ -85,6 +94,7 @@ export const flour: Product[] = [
   {
     name: 'No Name',
     company: 'Loblaw Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaw’s economy label flour. Found in No Frills and associated stores.',
     categoryId: 'flour',

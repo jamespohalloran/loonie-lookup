@@ -4,6 +4,7 @@ export const tea: Product[] = [
   {
     name: 'Red Rose',
     company: 'Unilever',
+    countryCode: 'GB',
     percentCanadian: 50,
     notes: 'Originally a Canadian company but now owned by Unilever, still widely available in Canadian grocery stores.',
     categoryId: 'tea',
@@ -13,6 +14,7 @@ export const tea: Product[] = [
   {
     name: 'David’s Tea',
     company: 'David’s Tea',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian premium tea brand, available online and in select grocery stores nationally.',
     categoryId: 'tea',
@@ -22,6 +24,7 @@ export const tea: Product[] = [
   {
     name: 'Tetley',
     company: 'Tata Global Beverages',
+    countryCode: 'IN',
     percentCanadian: 0,
     notes: 'A British brand widely available in Canadian grocery stores.',
     categoryId: 'tea',
@@ -31,6 +34,7 @@ export const tea: Product[] = [
   {
     name: 'Twinings',
     company: 'Associated British Foods',
+    countryCode: 'GB',
     percentCanadian: 0,
     notes: 'An iconic British brand, widely available in Canadian grocery stores.',
     categoryId: 'tea',
@@ -40,6 +44,7 @@ export const tea: Product[] = [
   {
     name: 'Presidents Choice',
     company: 'Loblaws Companies',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'Loblaws’ private label tea.',
     categoryId: 'tea',
@@ -49,6 +54,7 @@ export const tea: Product[] = [
   {
     name: 'Great Value',
     company: 'Walmart',
+    countryCode: 'US',
     percentCanadian: 50,
     notes: 'Walmarts store brand tea, widely available in Walmart locations across Canada.',
     categoryId: 'tea',
@@ -58,6 +64,7 @@ export const tea: Product[] = [
   {
     name: 'Lipton',
     company: 'Unilever',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand that is widely available in Canadian grocery stores.',
     categoryId: 'tea',
@@ -67,6 +74,7 @@ export const tea: Product[] = [
   {
     name: 'Tim Hortons',
     company: 'Tim Hortons',
+    countryCode: 'CA',
     percentCanadian: 100,
     notes: 'A Canadian coffee shop brand that also sells tea in grocery stores.',
     categoryId: 'tea',
@@ -76,6 +84,7 @@ export const tea: Product[] = [
   {
     name: 'Teavana',
     company: 'Starbucks',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American brand owned by Starbucks, available online and in select grocery stores nationwide.',
     categoryId: 'tea',
@@ -85,12 +94,33 @@ export const tea: Product[] = [
   {
     name: 'Numi',
     company: 'Numi',
+    countryCode: 'US',
     percentCanadian: 0,
     notes: 'An American organic tea brand, found in organic or health conscious stores.',
     categoryId: 'tea',
     aliases: ['numi tea'],
     popularity: 60
-  }
+  },
+  {
+    name: 'Tazo',
+    company: 'Unilever',
+    countryCode: 'US',
+    percentCanadian: 0,
+    notes: 'An American brand owned by Unilever, available in select grocery stores.',
+    categoryId: 'tea',
+    aliases: ['tazo tea'],
+    popularity: 60
+  },
+  {
+    name: 'Yorkshire Tea',
+    company: 'Taylors of Harrogate',
+    countryCode: 'GB',
+    percentCanadian: 0,
+    notes: 'A British brand available in select grocery stores.',
+    categoryId: 'tea',
+    aliases: ['yorkshire tea'],
+    popularity: 60
+  },
 ];
 
 export const teaCategory = {
