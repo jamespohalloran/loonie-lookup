@@ -2,62 +2,56 @@
 
 import { PlusIcon } from '@heroicons/react/16/solid'
 import { useState } from 'react'
-import { SuggestProductDialog } from './suggest-product-dialog'
 import { RequestProductDialog } from './request-product-dialog'
+import { SuggestProductDialog } from './suggest-product-dialog'
 
 export function SearchResultsEmpty() {
   const [showSuggestDialog, setShowSuggestDialog] = useState(false)
   const [showRequestDialog, setShowRequestDialog] = useState(false)
 
   return (
-    <div className="mt-2 text-center">
+    <div className="mt-4 text-center">
       <svg
+        xmlns="http://www.w3.org/2000/svg"
         fill="none"
-        stroke="currentColor"
         viewBox="0 0 24 24"
-        aria-hidden="true"
-        className="mx-auto size-12 text-gray-400"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="m-auto size-12 text-gray-400"
       >
         <path
-          d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
-          strokeWidth={2}
-          vectorEffect="non-scaling-stroke"
           strokeLinecap="round"
           strokeLinejoin="round"
+          d="M15.182 16.318A4.486 4.486 0 0 0 12.016 15a4.486 4.486 0 0 0-3.198 1.318M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
         />
       </svg>
+
       {/* <h3 className="mt-2 text-sm font-semibold text-gray-900">No Products</h3> */}
       <p className="mt-1 text-sm text-gray-500">No matching results.</p>
       <p className="mt-5 text-sm text-gray-500">Help us by suggesting or requesting a product.</p>
       <div className="mt-6 flex justify-center gap-4">
         <button
           type="button"
-          className="inline-flex cursor-pointer items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="shadow-xs inline-flex cursor-pointer items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           onClick={() => setShowSuggestDialog(true)}
         >
-          <PlusIcon aria-hidden="true" className="mr-1.5 -ml-0.5 size-5" />
+          <PlusIcon aria-hidden="true" className="-ml-0.5 mr-1.5 size-5" />
           Suggest a Product
         </button>
 
         <button
           type="button"
-          className="inline-flex cursor-pointer items-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+          className="shadow-xs inline-flex cursor-pointer items-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
           onClick={() => setShowRequestDialog(true)}
         >
-          <PlusIcon aria-hidden="true" className="mr-1.5 -ml-0.5 size-5" />
+          <PlusIcon aria-hidden="true" className="-ml-0.5 mr-1.5 size-5" />
           Request a Product
         </button>
       </div>
 
-      <SuggestProductDialog 
-        open={showSuggestDialog} 
-        onOpenChange={setShowSuggestDialog} 
-      />
-      
-      <RequestProductDialog 
-        open={showRequestDialog} 
-        onOpenChange={setShowRequestDialog} 
-      />
+      <SuggestProductDialog open={showSuggestDialog} onOpenChange={setShowSuggestDialog} />
+
+      <RequestProductDialog open={showRequestDialog} onOpenChange={setShowRequestDialog} />
     </div>
   )
 }
