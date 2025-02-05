@@ -1,23 +1,12 @@
-"use client"
+'use client'
 
-import * as React from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command"
-import { ChevronDown } from "lucide-react"
-import { getCategories } from "@/app/products"
+import { getCategories } from '@/app/products'
+import { Button } from '@/components/ui/button'
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command'
+import { Input } from '@/components/ui/input'
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import { ChevronDown } from 'lucide-react'
+import * as React from 'react'
 interface SearchBoxProps {
   searchTerm: string
   category: string
@@ -27,22 +16,19 @@ interface SearchBoxProps {
   onChange: (terms: string, category: string) => void
 }
 
-export function SearchBox({ 
-  searchTerm, 
-  category, 
-  setSearchTerm, 
+export function SearchBox({
+  searchTerm,
+  category,
+  setSearchTerm,
   setCategory,
-  placeholder = "Search...", 
-  onChange 
+  placeholder = 'Search...',
+  onChange,
 }: SearchBoxProps) {
-  const categories = [
-    { key: "", name: "All Categories" },
-    ...getCategories()
-  ]
-  
+  const categories = [{ key: '', name: 'All Categories' }, ...getCategories()]
+
   const [open, setOpen] = React.useState(false)
   const [selectedCategory, setSelectedCategory] = React.useState(
-    categories.find(c => c.key === category) || categories[0]
+    categories.find((c) => c.key === category) || categories[0]
   )
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,7 +38,7 @@ export function SearchBox({
     onChange(newTerm, selectedCategory.key)
   }
 
-  const handleCategorySelect = (category: typeof categories[0]) => {
+  const handleCategorySelect = (category: (typeof categories)[0]) => {
     setSelectedCategory(category)
     setOpen(false)
     setSearchTerm(searchTerm)
@@ -63,12 +49,12 @@ export function SearchBox({
   return (
     <div className="flex w-full max-w-3xl items-center space-x-2">
       <div className="relative flex-grow">
-        <Input 
-          type="text" 
+        <Input
+          type="text"
           value={searchTerm}
           onChange={handleInputChange}
-          placeholder={placeholder} 
-          className="pr-20 rounded-r-none" 
+          placeholder={placeholder}
+          className="pr-20"
         />
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
@@ -76,7 +62,7 @@ export function SearchBox({
               variant="outline"
               role="combobox"
               aria-expanded={open}
-              className="absolute right-0 top-0 h-full rounded-l-none border-l-0"
+              className="absolute right-0 top-0 mr-[1px] mt-[1px] h-[95%] rounded-l-none border-none"
             >
               {selectedCategory.name}
               <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
