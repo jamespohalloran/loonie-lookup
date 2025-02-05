@@ -38,7 +38,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       lang="en"
       className="text-zinc-950 antialiased lg:bg-zinc-100 dark:bg-zinc-900 dark:text-white dark:lg:bg-zinc-950"
     >
-      <head></head>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={inter.className}>
         <ApplicationLayout>{children}</ApplicationLayout>
         <Toaster />
