@@ -11,7 +11,7 @@ export function SearchResults({ products, query, category }: { products: Product
   }
 
   if (!products.length) {
-    return <SearchResultsEmpty />
+    return <SearchResultsEmpty showPlaceholderImg={true} />
   }
 
   const mappedProducts = products.map((product) => {
@@ -27,14 +27,18 @@ export function SearchResults({ products, query, category }: { products: Product
         <h3 className="text-base font-semibold text-gray-900">🇨🇦 Canadian</h3>
         <div className="rounded-lg border border-gray-200 p-4">
           <SearchColumn products={mappedProducts.filter((p) => p.isCanadian)} />
-          {query && mappedProducts.filter((p) => p.isCanadian).length === 0 && <SearchResultsEmpty />}
+          {query && mappedProducts.filter((p) => p.isCanadian).length === 0 && (
+            <SearchResultsEmpty showPlaceholderImg={true} />
+          )}
         </div>
       </div>
       <div>
         <h3 className="text-base font-semibold text-gray-900">👎 Not Canadian</h3>
         <div className="rounded-lg border border-gray-200 p-4">
           <SearchColumn products={mappedProducts.filter((p) => !p.isCanadian)} />
-          {mappedProducts.filter((p) => !p.isCanadian).length === 0 && <SearchResultsEmpty />}
+          {mappedProducts.filter((p) => !p.isCanadian).length === 0 && (
+            <SearchResultsEmpty showPlaceholderImg={false} />
+          )}
         </div>
       </div>
     </div>
