@@ -1,10 +1,9 @@
 'use client'
 
-import { categories, Product, countryCode } from '@/app/products'
-import { PlusIcon } from '@heroicons/react/16/solid'
+import { categories, countryCode, Product } from '@/app/products'
 import { PencilSquareIcon } from '@heroicons/react/24/outline'
-import { SearchResultsEmpty } from './search-results-empty';
 import { EditProductDialog } from './edit-product-dialog'
+import { SearchResultsEmpty } from './search-results-empty'
 
 export function SearchResults({ products, query, category }: { products: Product[]; query: string; category: string }) {
   if (!query && !category) {
@@ -49,7 +48,7 @@ function SearchColumn({ products }: { products: Product[] }) {
         <li key={`${product.name}-${product.categoryId}`} className="relative flex flex-col py-2 first:pt-0">
           <EditProductDialog product={product}>
             <button
-              className="absolute top-2 right-2 cursor-pointer text-gray-400 hover:text-gray-600"
+              className="absolute right-2 top-2 cursor-pointer text-gray-400 hover:text-gray-600"
               aria-label={`Edit ${product.name}`}
             >
               <PencilSquareIcon className="h-5 w-5" />
@@ -57,18 +56,18 @@ function SearchColumn({ products }: { products: Product[] }) {
           </EditProductDialog>
           <p className="text-sm font-semibold text-gray-900">{product.name}</p>
           <a href={`/?query=${categories[product.categoryId].name.toString()}`}>
-            <span className="pointer inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-gray-200 ring-inset">
+            <span className="pointer inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200">
               {categories[product.categoryId].name}
             </span>
           </a>
-            {!product.countryCode || product.countryCode === undefined ? (
+          {!product.countryCode || product.countryCode === undefined ? (
             <p className="text-xs text-gray-500">{product.company}</p>
-            ) : (
+          ) : (
             <p className="text-xs text-gray-500">
-              {product.company} {countryCode[product.countryCode as keyof typeof countryCode].flag} ({countryCode[product.countryCode as keyof typeof countryCode].name})
+              {countryCode[product.countryCode as keyof typeof countryCode].flag} {product.company}
             </p>
-            )}
-          <p className="text-xs text-gray-500">🇨🇦 {product.percentCanadian}% Canadian</p>
+          )}
+          <p className="text-xs text-gray-500">{product.percentCanadian}% Canadian</p>
           {product.notes && <p className="text-xs text-gray-400">{product.notes}</p>}
         </li>
       ))}
