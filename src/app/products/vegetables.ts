@@ -38,7 +38,7 @@ export const vegetables: Product[] = [
     percentCanadian: 100,
     notes: 'Available during the summer from local farms.',
     categoryId: 'vegetables',
-    aliases: ['bell peppers cucumbers'],
+    aliases: ['bell', 'peppers', 'cucumbers'],
     popularity: 95
   },
   {
@@ -48,7 +48,7 @@ export const vegetables: Product[] = [
     percentCanadian: 0,
     notes: 'Off-season supplies are often imported from Mexico or the United States.',
     categoryId: 'vegetables',
-    aliases: ['bell peppers cucumbers'],
+    aliases: ['bell', 'peppers', 'cucumbers'],
     popularity: 95
   },
   {
