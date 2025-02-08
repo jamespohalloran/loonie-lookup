@@ -89,6 +89,7 @@ import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { woodPolish, woodPolishCategory } from './products/wood-polish'
 import { yogurt, yogurtCategory } from './products/yogurt'
+import {fruits, fruitsCategory} from "@/app/products/fruits";
 
 export const products: Product[] = [
   ...airFresheners,
@@ -161,6 +162,7 @@ export const products: Product[] = [
   ...popcorn,
   ...pork,
   ...proteinBars,
+  ...fruits,
   ...rice,
   ...rugUpholsteryCleaners,
   ...saladDressing,
@@ -284,6 +286,7 @@ export const categories = {
   frozenMeals: frozenMealsCategory,
   frozenPizza: frozenPizzaCategory,
   frozenVegetables: frozenVegetablesCategory,
+  fruits: fruitsCategory,
   garbageDisposalCleaners: garbageDisposalCleanersCategory,
   glassCleaners: glassCleanersCategory,
   granolaBars: granolaBarsCategory,
@@ -367,11 +370,6 @@ export const categories = {
   petStainOdorRemovers: petStainOdorRemoversCategory,
   popcorn: popcornCategory,
   pork: porkCategory,
-  produce: {
-    name: 'Produce',
-    description: 'Fruits and vegetables',
-    aliases: ['produce', 'fruits', 'vegetables'],
-  },
   proteinBars: proteinBarsCategory,
   rice: riceCategory,
   rugUpholsteryCleaners: rugUpholsteryCleanersCategory,
