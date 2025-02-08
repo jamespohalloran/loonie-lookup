@@ -28,7 +28,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Almost exclusively sourced from Latin American countries (e.g., Ecuador, Costa Rica, Colombia).',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['bananas'],
     popularity: 95
   },
   {
@@ -38,7 +38,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Commonly imported from the United States (Florida/California), Mexico, or Chile. Very limited citrus grows in Canada due to the climate.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['bananas'],
     popularity: 95
   },
   {
@@ -48,7 +48,7 @@ export const fruits: Product[] = [
     percentCanadian: 100,
     notes: 'Grown in regions like British Columbia and Ontario during local growing seasons.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['grapes'],
     popularity: 95
   },
   {
@@ -58,7 +58,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Off-season supplies often come from Chile or the United States.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['grapes'],
     popularity: 95
   },
   {
@@ -68,7 +68,7 @@ export const fruits: Product[] = [
     percentCanadian: 100,
     notes: 'Available during the summer months from provinces like Ontario and British Columbia.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['strawberries'],
     popularity: 95
   },
   {
@@ -78,7 +78,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Off-season strawberries are sometimes imported from Mexico or the United States.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['strawberries'],
     popularity: 95
   },
   {
@@ -88,7 +88,7 @@ export const fruits: Product[] = [
     percentCanadian: 100,
     notes: 'Grown in provinces such as British Columbia and Atlantic Canada during summer.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['blueberries'],
     popularity: 95
   },
   {
@@ -98,7 +98,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Typically imported from tropical regions, with Mexico, Peru, or Brazil being common sources.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['blueberries'],
     popularity: 95
   },
   {
@@ -108,7 +108,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Sourced mainly from Costa Rica.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['pineapples'],
     popularity: 95
   },
   {
@@ -118,7 +118,7 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Often come from countries like New Zealand, Italy, or Chile.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['pineapples'],
     popularity: 95
   },
   {
@@ -128,7 +128,7 @@ export const fruits: Product[] = [
     percentCanadian: 100,
     notes: 'Often come from countries like New Zealand, Italy, or Chile.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['pears'],
     popularity: 95
   },
   {
@@ -138,13 +138,13 @@ export const fruits: Product[] = [
     percentCanadian: 0,
     notes: 'Often come from countries like New Zealand, Italy, or Chile.',
     categoryId: 'fruits',
-    aliases: ['apples'],
+    aliases: ['pears'],
     popularity: 95
   },
 ]
 
 export const fruitsCategory = {
-  name: 'Produce',
-  description: 'Fruits and vegetables',
-  aliases: ['fruits', 'fruits', 'vegetables'],
+  name: 'Fruits',
+  description: 'Fruits',
+  aliases: ['fruits'],
 }
