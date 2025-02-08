@@ -367,6 +367,11 @@ export const categories = {
     description: 'Pet food and supplies',
     aliases: ['pet', 'food', 'supplies'],
   },
+  produce: {
+    name: 'Produce',
+    description: 'Fruits and vegetables',
+    aliases: ['produce', 'fruits', 'vegetables'],
+  },
   petStainOdorRemovers: petStainOdorRemoversCategory,
   popcorn: popcornCategory,
   pork: porkCategory,
