@@ -89,6 +89,8 @@ import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
 import { woodPolish, woodPolishCategory } from './products/wood-polish'
 import { yogurt, yogurtCategory } from './products/yogurt'
+import {fruits, fruitsCategory} from "@/app/products/fruits";
+import {vegetables, vegetablesCategory} from "@/app/products/vegetables";
 
 export const products: Product[] = [
   ...airFresheners,
@@ -134,6 +136,7 @@ export const products: Product[] = [
   ...frozenMeals,
   ...frozenPizza,
   ...frozenVegetables,
+  ...fruits,
   ...garbageDisposalCleaners,
   ...glassCleaners,
   ...granolaBars,
@@ -180,6 +183,7 @@ export const products: Product[] = [
   ...toiletBowlCleaners,
   ...toiletPaper,
   ...toothpaste,
+  ...vegetables,
   ...woodPolish,
   ...yogurt,
 ]
@@ -284,6 +288,7 @@ export const categories = {
   frozenMeals: frozenMealsCategory,
   frozenPizza: frozenPizzaCategory,
   frozenVegetables: frozenVegetablesCategory,
+  fruits: fruitsCategory,
   garbageDisposalCleaners: garbageDisposalCleanersCategory,
   glassCleaners: glassCleanersCategory,
   granolaBars: granolaBarsCategory,
@@ -427,6 +432,7 @@ export const categories = {
     aliases: ['toys', 'games'],
   },
   woodPolish: woodPolishCategory,
+  vegetables: vegetablesCategory,
   yogurt: yogurtCategory,
 }
 
