@@ -1,3 +1,5 @@
+import { fruits, fruitsCategory } from '@/app/products/fruits'
+import { vegetables, vegetablesCategory } from '@/app/products/vegetables'
 import { airFresheners, airFreshenersCategory } from './products/air-fresheners'
 import { allPurposeCleanerCategory, allPurposeCleaners } from './products/all-purpose-cleaners'
 import { automotiveCleaners, automotiveCleanersCategory } from './products/automotive-cleaners'
@@ -88,10 +90,9 @@ import { tileLaminateCleaner, tileLaminateCleanerCategory } from './products/til
 import { toiletBowlCleaners, toiletBowlCleanersCategory } from './products/toilet-bowl-cleaners'
 import { toiletPaper, toiletPaperCategory } from './products/toiletPaper'
 import { toothpaste, toothpasteCategory } from './products/toothpaste'
+import { whiskey, whiskeyCategory } from './products/whiskey'
 import { woodPolish, woodPolishCategory } from './products/wood-polish'
 import { yogurt, yogurtCategory } from './products/yogurt'
-import {fruits, fruitsCategory} from "@/app/products/fruits";
-import {vegetables, vegetablesCategory} from "@/app/products/vegetables";
 
 export const products: Product[] = [
   ...airFresheners,
@@ -186,6 +187,7 @@ export const products: Product[] = [
   ...toiletPaper,
   ...toothpaste,
   ...vegetables,
+  ...whiskey,
   ...woodPolish,
   ...yogurt,
 ]
@@ -437,6 +439,7 @@ export const categories = {
   woodPolish: woodPolishCategory,
   vegetables: vegetablesCategory,
   yogurt: yogurtCategory,
+  whiskey: whiskeyCategory,
 }
 
 export interface Product {
