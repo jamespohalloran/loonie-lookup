@@ -25,7 +25,6 @@ import { coffee, coffeeCategory } from './products/coffee'
 import { cookingOil, cookingOilCategory } from './products/cookingOil'
 import { crackers, crackersCategory } from './products/crackers'
 import { diapers, diapersCategory } from './products/diapers'
-import { detergentCategory, laundryDetergent } from './products/laundryDetergent'
 import { dinnerware } from './products/dinnerware'
 import { dishSoap, dishSoapCategory } from './products/dishSoap'
 import { dishwasherDetergents, dishwasherDetergentsCategory } from './products/dishwasher-detergents'
@@ -53,6 +52,7 @@ import { jewelryCleaners, jewelryCleanersCategory } from './products/jewelry-cle
 import { juice, juiceCategory } from './products/juice'
 import { ketchup, ketchupCategory } from './products/ketchup'
 import { laundryDetergents, laundryDetergentsCategory } from './products/laundry-detergents'
+import { detergentCategory, laundryDetergent } from './products/laundryDetergent'
 import { leatherCleaners, leatherCleanersCategory } from './products/leather-cleaners'
 import { mayoCategory, mayonnaise } from './products/mayonnaise'
 import { menstrualCare } from './products/menstrual'
@@ -77,6 +77,7 @@ import { shoeCleaners, shoeCleanersCategory } from './products/shoe-cleaners'
 import { showerTubCleaner, showerTubCleanerCategory } from './products/shower-tub-cleaners'
 import { soap, soapCategory } from './products/soap'
 import { soda } from './products/soda'
+import { sparklingWater, sparklingWaterCategory } from './products/sparkling-water'
 import { stainRemovers, stainRemoversCategory } from './products/stain-removers'
 import { stainlessSteelCleaners, stainlessSteelCleanersCategory } from './products/stainless-steel-cleaners'
 import { streamingServices, streamingServicesCategory } from './products/streamingService'
@@ -172,6 +173,7 @@ export const products: Product[] = [
   ...shoeCleaners,
   ...showerTubCleaner,
   ...soap,
+  ...sparklingWater,
   ...soda,
   ...stainRemovers,
   ...stainlessSteelCleaners,
@@ -390,6 +392,7 @@ export const categories = {
   shampoo: shampooCategory,
   shoeCleaners: shoeCleanersCategory,
   showerTubCleaner: showerTubCleanerCategory,
+  sparklingWater: sparklingWaterCategory,
   chips: {
     name: 'Chips',
     description: 'Chips, tortilla chips, and other snacks',
@@ -532,7 +535,7 @@ export const countryCode = {
   ZM: { flag: '🇿🇲', name: 'Zambia' },
   ZW: { flag: '🇿🇼', name: 'Zimbabwe' },
   GLOBAL: { flag: '🌍', name: 'Global' },
-};
+}
 
 export function getProductsByCategory(categoryId: keyof typeof categories) {
   return products.filter((product) => product.categoryId === categoryId)
@@ -544,5 +547,5 @@ export function getCategories() {
       key,
       ...value,
     }))
-    .sort((a, b) => (a.name || "").localeCompare(b.name || ""))
+    .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
 }
