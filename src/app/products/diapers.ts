@@ -9,7 +9,7 @@ export const diapers: Product[] = [
     notes: 'Pampers diapers are manufactured in the United States.',
     categoryId: 'diapers',
     aliases: ['pampers diapers'],
-    popularity: 95
+    popularity: 95,
   },
   {
     name: 'Huggies',
@@ -19,7 +19,7 @@ export const diapers: Product[] = [
     notes: 'Huggies diapers are manufactured in the United States.',
     categoryId: 'diapers',
     aliases: ['huggies diapers'],
-    popularity: 90
+    popularity: 90,
   },
   {
     name: 'Luvs',
@@ -29,7 +29,7 @@ export const diapers: Product[] = [
     notes: 'Luvs diapers are manufactured in the United States.',
     categoryId: 'diapers',
     aliases: ['luvs diapers'],
-    popularity: 75
+    popularity: 75,
   },
   {
     name: 'President’s Choice Diapers',
@@ -39,7 +39,7 @@ export const diapers: Product[] = [
     notes: 'Loblaw’s store brand diapers, available in Loblaw locations across Canada.',
     categoryId: 'diapers',
     aliases: ['pc diapers', "president's choice diapers"],
-    popularity: 80
+    popularity: 80,
   },
   {
     name: 'Compliments Diapers',
@@ -49,7 +49,7 @@ export const diapers: Product[] = [
     notes: 'Sobeys’ store brand diapers, available in Sobeys stores across Canada.',
     categoryId: 'diapers',
     aliases: ['compliments diapers', 'sobeys diapers'],
-    popularity: 70
+    popularity: 70,
   },
   {
     name: 'Seventh Generation',
@@ -59,7 +59,7 @@ export const diapers: Product[] = [
     notes: 'Seventh Generation diapers are a U.S. brand of eco-conscious diapers.',
     categoryId: 'diapers',
     aliases: ['seventh generation diapers'],
-    popularity: 60
+    popularity: 60,
   },
   {
     name: 'Kirkland Signature Diapers',
@@ -69,9 +69,9 @@ export const diapers: Product[] = [
     notes: 'Costco’s store brand diapers are manufactured in the US.',
     categoryId: 'diapers',
     aliases: ['kirkland diapers', 'costco diapers'],
-    popularity: 85
-   },
-   {
+    popularity: 85,
+  },
+  {
     name: 'Bambo Nature',
     company: 'Abena Group',
     countryCode: 'DK',
@@ -79,19 +79,19 @@ export const diapers: Product[] = [
     notes: 'Bambo Nature diapers are a Danish brand known for their eco-friendly diapers.',
     categoryId: 'diapers',
     aliases: ['bambo nature diapers'],
-    popularity: 50
-   },
-   {
+    popularity: 50,
+  },
+  {
     name: 'Parent’s Choice Diapers',
     company: 'Walmart Canada',
     countryCode: 'CA',
-    percentCanadian: 100,
+    percentCanadian: 0,
     notes: 'Parent’s Choice is Walmart Canada’s store brand of diapers.',
     categoryId: 'diapers',
     aliases: ['parents choice diapers', 'walmart diapers'],
-    popularity: 65
-   },
-   {
+    popularity: 65,
+  },
+  {
     name: 'Honest Diapers',
     company: 'The Honest Company',
     countryCode: 'US',
@@ -99,12 +99,13 @@ export const diapers: Product[] = [
     notes: 'Honest Diapers are a U.S. brand, known for their use of organic cotton and eco-friendly materials.',
     categoryId: 'diapers',
     aliases: ['honest diapers'],
-    popularity: 55
-   }
+    popularity: 55,
+  },
 ]
 
 export const diapersCategory = {
   name: 'Diapers',
-  description: 'Baby care essentials aiming at providing comfort, dryness and health protection. Available in multiple sizes targeting various age groups.',
-  aliases: ['nappies', 'baby care', 'infant products']
+  description:
+    'Baby care essentials aiming at providing comfort, dryness and health protection. Available in multiple sizes targeting various age groups.',
+  aliases: ['nappies', 'baby care', 'infant products'],
 }
